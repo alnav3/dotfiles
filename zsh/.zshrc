@@ -20,3 +20,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 alias cl="clear"
 alias podman="sudo podman"
+
+# Source .local_zshrc if it exists
+if [ -f ~/.local_zshrc ]; then
+    source ~/.local_zshrc
+fi
+
