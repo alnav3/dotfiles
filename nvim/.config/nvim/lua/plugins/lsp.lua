@@ -41,13 +41,14 @@ return {
                 ["jdtls"] = function()
                     local lspconfig = require("lspconfig")
                     local lombok_path = vim.fn.stdpath('data') .. "/mason/packages/jdtls/lombok.jar"
+                    local home_dir = vim.fn.expand('~')
 
                     lspconfig.jdtls.setup {
                         cmd = {
-                            "/Users/alexnavia3/.dotfiles/data/nvim/mason/bin/jdtls",
+                            vim.fn.glob(vim.fn.stdpath('data') .. "/mason/bin/jdtls"),
                             "--jvm-arg=" .. string.format("-javaagent:" ..lombok_path),
-                            "-configuration /Users/alexnavia3/.cache/jdtls/config",
-                            "-data /Users/alexnavia3/.cache/jdtls/workspace",
+                            vim.fn.glob("-configuration " .. home_dir .. "/.cache/jdtls/config"),
+                            vim.fn.glob("-data " .. home_dir .. "/.cache/jdtls/workspace"),
                         },
                         init_options = {
                             bundles = {
