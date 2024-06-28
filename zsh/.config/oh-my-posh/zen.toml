@@ -20,6 +20,12 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
       style = 'full'
 
   [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "magenta"
+    background = "transparent"
+    template = "{{ if .Env.IN_NIX_SHELL }} <b>nix-shell</b> {{ end }}"
+  [[blocks.segments]]
     type = 'git'
     style = 'plain'
     foreground = 'p:grey'
