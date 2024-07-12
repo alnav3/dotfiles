@@ -8,6 +8,7 @@ function welcome_message() {
 welcome_message
 source ~/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.nix-profile/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source ~/.nix-profile/share/zsh-fzf-history-search/zsh-fzf-history-search.plugin.zsh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/zen.toml)"
