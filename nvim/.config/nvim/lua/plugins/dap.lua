@@ -26,7 +26,8 @@ return {
             {"<leader>dg",  ':lua require"dapui".toggle()<CR>', mode = "n"},
         }
     },
-    {"mfussenegger/nvim-jdtls"},
+    --{"mfussenegger/nvim-jdtls"},
+    {"nvim-java/nvim-java"},
 
     {
         "mfussenegger/nvim-dap",
@@ -54,6 +55,5 @@ return {
             {"<leader>dg",  ':lua require"dapui".toggle()<CR>', mode = "n"},
         }
     },
-    {"mfussenegger/nvim-jdtls"},
 }
 

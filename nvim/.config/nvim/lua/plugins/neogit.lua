@@ -5,10 +5,8 @@ return {
       "sindrets/diffview.nvim",        -- optional - Diff integration
       "nvim-telescope/telescope.nvim", -- optional
     },
-    config = function ()
-        -- init.lua
-        local neogit = require('neogit')
-        neogit.setup {}
+    config = function()
+      require("neogit").setup()
     end,
     keys = {
       { "<leader>gs", function() require('neogit').open() end, {silent = true, noremap = true} },

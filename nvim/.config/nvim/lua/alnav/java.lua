@@ -65,21 +65,6 @@ function! OpenJavaTerminalWithScrollback()
 endfunction
 
 ]])
-if vim.fn.has("win32") == 1 then
-    -- utilizamos un file dentro del proyecto para saltarnos el limite de caracteres en la terminal
-    -- Maven Start Normal
-    vim.api.nvim_set_keymap('n', '<Leader>msn', ':call OpenJavaTerminalWithScrollback()<CR>', { noremap = true, silent = true })
-
-    -- Maven Start Modo Debug
-    vim.api.nvim_set_keymap('n', '<Leader>msd', ':lua vim.run_in_new_tab("java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005 @dependencies")<CR>', { noremap = true, silent = true })
-
-else
-    -- Maven Start Normal
-    vim.api.nvim_set_keymap('n', '<Leader>msn', ':lua CheckProjectFilesAndRun()<CR>', { noremap = true, silent = true })
-
-    -- Maven Start Modo Debug
-    vim.api.nvim_set_keymap('n', '<Leader>msd', ':lua vim.run_in_new_tab("mvn spring-boot:run -Dspring-boot.run.jvmArguments=\'-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005\'")<CR>', { noremap = true, silent = true })
-end
 
 function CheckProjectFilesAndRun()
     if vim.fn.glob("*.go") ~= "" then
@@ -87,23 +72,49 @@ function CheckProjectFilesAndRun()
         vim.cmd("lua vim.run_in_new_tab(\"air\")")
     else
         -- Se encontró pom.xml, ejecutar Maven
-        vim.cmd("lua vim.run_in_new_tab(\"mvn spring-boot:run\")")
+        Run_maven_test("mvn spring-boot:run", "mvn_start")
     end
 end
 
+-- Function to create a tmux new window with Maven command
+function Run_maven_test(cmd, window_name)
+    local green = "\27[38;2;166;227;161m" -- True color escape code for #a6e3a1
+    local reset = "\27[0m"   -- ANSI escape code to reset text color
+    local blank_lines = "\n\n\n" -- Three blank lines
+    local full_cmd = "JAVA_HOME=~/.jdks/11.0.21 " .. cmd .. '; echo "' .. blank_lines
+        .. green .. 'Press ENTER to close...' .. reset .. '"; read'
+    local tmux_cmd = "tmux new-window -n " .. window_name .. " '" .. full_cmd .. "'"
+    vim.fn.system(tmux_cmd)
+end
+
 -- Maven Test Class Normal
---vim.api.nvim_set_keymap('n', '<Leader>mtc', ':lua vim.run_in_new_tab("mvn test -Dtest=" .. vim.fn.expand("%:t:r"))<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mtc',
+    ':lua Run_maven_test("mvn test -Dtest=" .. vim.fn.expand("%:t:r"), "mvn_test")<CR>',
+    { noremap = true, silent = true })
 
 -- Maven Test Class Debug
-vim.api.nvim_set_keymap('n', '<Leader>mtd', ':lua vim.run_in_new_tab("mvn test -Dtest=" .. vim.fn.expand("%:t:r") .. " -Dmaven.surefire.debug")<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mtd',
+    ':lua Run_maven_test("mvn test -Dtest=" .. vim.fn.expand("%:t:r") .. " -Dmaven.surefire.debug", "mvn_debug")<CR>',
+    { noremap = true, silent = true })
 
 -- Maven Test Method Normal
-vim.api.nvim_set_keymap('n', '<Leader>mtm', ':lua vim.run_in_new_tab(vim.fn.BuildMavenTestCommand())<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mtm',
+    ':lua Run_maven_test(vim.fn.BuildMavenTestCommand(), "mvn_test_method")<CR>',
+    { noremap = true, silent = true })
 
 -- Maven Test Method Debug
-vim.api.nvim_set_keymap('n', '<Leader>mmd', ':lua vim.run_in_new_tab("mvn test -Dtest=" .. vim.fn.BuildMavenTestCommand() .. " -Dmaven.surefire.debug")<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mmd',
+    ':lua Run_maven_test(vim.fn.BuildMavenTestCommand() .. " -Dmaven.surefire.debug", "mvn_method_debug")<CR>',
+    { noremap = true, silent = true })
 
 -- Maven Clean Install
-vim.api.nvim_set_keymap('n', '<Leader>ci', ':lua vim.run_in_new_tab("mvn clean install -DskipTests")<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ci',
+    ':lua Run_maven_test("mvn clean install -DskipTests", "mvn_clean_install")<CR>',
+    { noremap = true, silent = true })
 
+-- Maven Start Normal
+vim.api.nvim_set_keymap('n', '<Leader>msn', ':lua CheckProjectFilesAndRun()<CR>', { noremap = true, silent = true })
+
+-- Map 'msd' to run the Maven debug command using the Run_maven_test function
+vim.api.nvim_set_keymap('n', '<Leader>msd', [[:lua Run_maven_test('mvn spring-boot:run -Dspring-boot.run.jvmArguments=\\"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005\\"', 'mvn_debug')<CR>]], { noremap = true, silent = true })
 

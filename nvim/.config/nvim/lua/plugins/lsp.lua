@@ -12,15 +12,35 @@ return {
         "saadparwaiz1/cmp_luasnip",
         "mfussenegger/nvim-dap",
         "rcarriga/nvim-dap-ui",
+        "nvim-java/nvim-java",
     },
     config = function()
+        local java_path = vim.fn.expand("$HOME") .. "/.jdks/17.0.9"
         vim.filetype.add({ extension = { templ = "templ" } })
         require("mason").setup()
+        -- configure java settings to use main java / required for nixOS
+        require("java").setup({
+            jdk = {
+                -- install jdk using mason.nvim
+                auto_install = false,
+            },
+            java = {
+                home = java_path,
+                configuration = {
+                    runtimes = {
+                        {
+                            name = "JavaSE-17",
+                            path = java_path,
+                            default = true,
+                        },
+                    },
+                },
+            },
+        })
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
                 "gopls",
-                "jdtls",
             },
             handlers = {
                 function(name)
@@ -39,23 +59,7 @@ return {
                     }
                 end,
                 ["jdtls"] = function()
-                    local lspconfig = require("lspconfig")
-                    local lombok_path = vim.fn.stdpath('data') .. "/mason/packages/jdtls/lombok.jar"
-                    local home_dir = vim.fn.expand('~')
-
-                    lspconfig.jdtls.setup {
-                        cmd = {
-                            vim.fn.glob(vim.fn.stdpath('data') .. "/mason/bin/jdtls"),
-                            "--jvm-arg=" .. string.format("-javaagent:" ..lombok_path),
-                            vim.fn.glob("-configuration " .. home_dir .. "/.cache/jdtls/config"),
-                            vim.fn.glob("-data " .. home_dir .. "/.cache/jdtls/workspace"),
-                        },
-                        init_options = {
-                            bundles = {
-                                vim.fn.glob(vim.fn.stdpath('data') .. "/mason/packages/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar", 1)
-                            }
-                        },
-                    }
+                    require("lspconfig").jdtls.setup({})
                 end,
                 ["html"] = function()
                     local lspconfig = require("lspconfig")
@@ -102,8 +106,5 @@ return {
                 { name = 'buffer' },
             })
         })
-        require("jdtls").setup_dap({ hotcodereplace = 'auto' })
-
-
     end,
 }
