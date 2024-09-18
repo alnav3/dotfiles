@@ -69,7 +69,7 @@ endfunction
 function CheckProjectFilesAndRun()
     if vim.fn.glob("*.go") ~= "" then
         -- Se encontró un archivo .go, ejecutar Go
-        vim.cmd("lua vim.run_in_new_tab(\"air\")")
+        vim.fn.system("tmux new-window -n go_run 'air'")
     else
         -- Se encontró pom.xml, ejecutar Maven
         Run_maven_test("mvn spring-boot:run", "mvn_start")

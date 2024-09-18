@@ -4,7 +4,7 @@ function Setup_lualine()
             icons_enabled = true,
             theme = 'catppuccin-mocha',
             component_separators = { left = ' ', right = ' '},
-            section_separators = { left = ' ', right = ' '},
+            section_separators = { left = '', right = ''},
             disabled_filetypes = {
                 statusline = {},
                 winbar = {},

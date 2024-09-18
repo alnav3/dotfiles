@@ -15,6 +15,7 @@ return {
         "nvim-java/nvim-java",
     },
     config = function()
+        local home = vim.fn.expand("$HOME")
         local java_path = vim.fn.expand("$HOME") .. "/.jdks/17.0.9"
         vim.filetype.add({ extension = { templ = "templ" } })
         require("mason").setup()
@@ -73,6 +74,19 @@ return {
                         filetypes = { "templ", "astro", "javascript", "typescript", "react" },
                         init_options = { userLanguages = { templ = "html" } },
                     })
+                end,
+                ["groovyls"] = function ()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.groovyls.setup {
+                        filetypes = { "groovy" },
+                        settings = {
+                            groovy = {
+                                classpath = {
+                                    home .. "/dev/ewe-git/bonita/dependencies/extensions", --TODO: add the path to the groovy library
+                                }
+                            }
+                        }
+                    }
                 end,
                 ["htmx"] = function()
                     local lspconfig = require("lspconfig")
