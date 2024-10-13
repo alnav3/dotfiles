@@ -16,13 +16,12 @@
   border-radius: 1rem;
   margin: 5px;
   background-color: @surface0;
-  margin-left: 1rem;
 }
 
 #workspaces button {
+  padding-right: 1rem;
   color: @lavender;
   border-radius: 1rem;
-  padding: 0.4rem;
 }
 
 #workspaces button.active {
@@ -41,21 +40,23 @@
 #clock,
 #battery,
 #pulseaudio,
+#bluetooth,
+#network,
 #custom-lock,
 #custom-power {
   background-color: @surface0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   margin: 5px 0;
 }
 
 #clock {
   color: @blue;
   border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
 }
 
 #battery {
   color: @green;
+  margin-right: 5px;
 }
 
 #battery.charging {
@@ -68,10 +69,8 @@
 
 #backlight {
   color: @yellow;
-}
-
-#backlight, #battery {
-    border-radius: 0;
+  border-radius: 0px 1rem 1rem 0px;
+  padding-right: 1rem;
 }
 
 #pulseaudio {
@@ -85,15 +84,25 @@
   border-radius: 1rem;
 }
 
-#custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
-    color: @lavender;
+#clock {
+  border-radius: 1rem 0px 0px 1rem;
+  padding: 0.5rem 0rem;
+  padding-left: 1rem;
+  color: @lavender;
 }
 
 #custom-power {
     margin-right: 1rem;
     border-radius: 0px 1rem 1rem 0px;
     color: @red;
+}
+
+#battery {
+  border-radius: 0px 1rem 1rem 0px;
+}
+
+#network {
+  padding-right: 1rem;
 }
 
 #tray {
