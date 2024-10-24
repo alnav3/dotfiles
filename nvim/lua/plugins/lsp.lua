@@ -59,7 +59,7 @@ return {
                         }
                     }
                 end,
-                ["nix"] = function()
+                ["nixd"] = function()
                     require("lspconfig").nixd.setup({
                         cmd = {"nixd"},
                         settings = {
