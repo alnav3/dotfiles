@@ -42,7 +42,6 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "gopls",
-                "nixd",
             },
             handlers = {
                 function(name)
@@ -60,7 +59,7 @@ return {
                         }
                     }
                 end,
-                ["nixd"] = function()
+                ["nil_ls"] = function()
                     require("lspconfig").nixd.setup({
                         cmd = {"nixd"},
                         settings = {
