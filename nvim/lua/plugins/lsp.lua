@@ -59,21 +59,6 @@ return {
                         }
                     }
                 end,
-                ["nil_ls"] = function()
-                    require("lspconfig").nixd.setup({
-                        cmd = {"nixd"},
-                        settings = {
-                            nixd = {
-                                nixpkgs = {
-                                    expr = "import <nixpkgs> { }",
-                                },
-                                formatting = {
-                                    command = "alejandra",
-                                },
-                            },
-                        },
-                    })
-                end,
                 ["jdtls"] = function()
                     require("lspconfig").jdtls.setup({})
                 end,
@@ -110,6 +95,19 @@ return {
                     })
                 end,
             }
+        })
+        require("lspconfig").nixd.setup({
+            cmd = {"nixd"},
+            settings = {
+                nixd = {
+                    nixpkgs = {
+                        expr = "import <nixpkgs> { }",
+                    },
+                    formatting = {
+                        command = "alejandra",
+                    },
+                },
+            },
         })
         -- Set up nvim-cmp.
         local cmp = require'cmp'
