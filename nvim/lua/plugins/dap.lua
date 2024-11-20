@@ -58,26 +58,7 @@ return {
     {
         "leoluz/nvim-dap-go",
         config = function()
-            require("dap-go").setup() {
-                delve = {
-                    path = "dlv",
-                    initialize_timeout_sec = 20,
-                    args = {
-                        "--", "CGO_CFLAGS=-O2", -- Pass CGO_CFLAGS as an argument
-                    },
-                    build_flags = {},
-                    detached = vim.fn.has("win32") == 0,
-                    cwd = nil,
-                    -- Alternatively, use an environment variable setup if delve supports it
-                    env = {
-                        CGO_CFLAGS = "-O2",
-                    },
-                },
-                tests = {
-                    verbose = false,
-                },
-            }
-        end,
-    },
+            require("dap-go").setup()
+        },
 }
 
