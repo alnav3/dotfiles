@@ -55,5 +55,11 @@ return {
             {"<leader>dg",  ':lua require"dapui".toggle()<CR>', mode = "n"},
         }
     },
+    {
+        "leoluz/nvim-dap-go"
+        config = function()
+            require("dap-go").setup()
+        end,
+    },
 }
 
