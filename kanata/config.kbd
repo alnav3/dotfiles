@@ -1,0 +1,10 @@
+;; kanata config for my laptop keyboard
+(defsrc
+  caps
+)
+(defalias
+  esctrl (tap-hold 0 200 esc lctrl)
+)
+(deflayer base
+  @esctrl
+)
