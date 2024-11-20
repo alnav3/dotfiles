@@ -76,7 +76,7 @@ return {
                 tests = {
                     verbose = false,
                 },
-            },
+            }
         end,
     },
 }
