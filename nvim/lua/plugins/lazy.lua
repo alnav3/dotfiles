@@ -66,7 +66,7 @@ return {
         keys = {
             {"<leader>g", ":lua require('neogen').generate()<CR>", mode = "n"}
         }
-    }
+    },
     {
         "ThePrimeagen/rfceez",
         config = function()
