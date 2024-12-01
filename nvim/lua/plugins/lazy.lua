@@ -67,4 +67,18 @@ return {
             {"<leader>g", ":lua require('neogen').generate()<CR>", mode = "n"}
         }
     }
+    {
+        "ThePrimeagen/rfceez",
+        config = function()
+            local rfc = require("rfceez")
+            rfc.setup()
+
+            vim.keymap.set("n", "<leader>ma", function() rfc.add() end)
+            vim.keymap.set("n", "<leader>md", function() rfc.rm() end)
+            vim.keymap.set("n", "<leader>ms", function() rfc.show_notes() end)
+            vim.keymap.set("n", "[m", function() rfc.nav_next() end)
+            vim.keymap.set("n", "[[m", function() rfc.show_next() end)
+        end
+
+    }
 }
