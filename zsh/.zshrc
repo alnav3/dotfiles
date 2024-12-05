@@ -20,7 +20,7 @@ eval "$(fzf --zsh)"
 export EDITOR=nvim
 export VISUAL=nvim
 export XDG_CONFIG_HOME=$HOME/.config
-export JAVA_HOME=~/.jdks/17.0.9
+export JAVA_HOME=~/.jdks/17.0.12
 export NIX_LD=/nix/store/r8qsxm85rlxzdac7988psm7gimg4dl3q-glibc-2.39-52/lib/ld-linux-x86-64.so.2
 export NIX_LD_LIBRARY_PATH=/nix/store/qksd2mz9f5iasbsh398akdb58fx9kx6d-gcc-13.2.0-lib/lib:/nix/store/mg1284kfh1m2xms1ghsw4nv8vhqisj22-openssl-3.0.14/lib
 export PATH=~/.local/.npm-global/bin:$PATH
@@ -34,7 +34,7 @@ export KUBECONFIG_TEST=/home/alnav/.config/kubectl/kube-ewe-test.conf
 alias cl="clear"
 alias k="kubectl"
 alias nix-shell="nix-shell --command zsh"
-alias mvn="JAVA_HOME=~/.jdks/11.0.21 mvn"
+alias mvn="JAVA_HOME=~/.jdks/11.0.24 mvn"
 alias ls="eza --icons=always"
 alias hibernate="hyprlock & systemctl hibernate"
 
