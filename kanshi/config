@@ -1,0 +1,8 @@
+profile home_office {
+  output "Microstep MSI G272 0x0000115A" mode 1920x1080@120Hz position 0,0
+  output "eDP-1" disable
+}
+
+profile undocked {
+  output "eDP-1" enable
+}
