@@ -15,7 +15,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(fzf --zsh)"
+eval "$(fzf --zsh disable_notice true)"
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -37,7 +37,6 @@ alias nix-shell="nix-shell --command zsh"
 alias mvn="JAVA_HOME=~/.jdks/11.0.24 mvn"
 alias ls="eza --icons=always"
 alias hibernate="hyprlock & systemctl hibernate"
-oh-my-posh disable notice
 
 # Source .local_zshrc if it exists
 if [ -f ~/.local_zshrc ]; then
