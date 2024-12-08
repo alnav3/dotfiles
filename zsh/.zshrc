@@ -15,7 +15,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(fzf --zsh disable_notice true)"
+eval "$(fzf --zsh)"
 
 export EDITOR=nvim
 export VISUAL=nvim

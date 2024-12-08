@@ -80,5 +80,5 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   template = '❯❯ '
 
 [upgrade]
-  notice = true
+  notice = false
 
