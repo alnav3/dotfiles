@@ -88,5 +88,15 @@ return {
             vim.keymap.set("n", "[[m", function() rfc.show_next() end)
         end
 
+    },
+    {
+        "ibhagwan/fzf-lua",
+        -- optional for icon support
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            -- calling `setup` is optional for customization
+            require("fzf-lua").setup({})
+        end
     }
+
 }
