@@ -12,6 +12,7 @@ local function setup_treesitter()
 
         highlight = {
             enable = true,
+            disable = {"html"},
 
 
             -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
