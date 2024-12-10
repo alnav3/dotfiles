@@ -22,8 +22,10 @@ return {
     },
     {
         "CopilotC-Nvim/CopilotChat.nvim",
+        branch = "main",
         dependencies = {
             { "github/copilot.vim" }, -- or github/copilot.vim
+            { "nvim-telescope/telescope.nvim" }, -- Use telescope for help actions
             { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
         },
         opts = {
@@ -37,6 +39,14 @@ return {
         },
         -- See Configuration section for rest
         keys = {
+            {
+                "<leader>ap",
+                function()
+                    local actions = require("CopilotChat.actions")
+                    require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
+                end,
+                desc = "CopilotChat - Prompt actions",
+            },
             {
                 "<leader>cc",
                 function() vim.cmd('CopilotChatToggle') end,
