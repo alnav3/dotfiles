@@ -39,6 +39,7 @@
 #backlight,
 #clock,
 #battery,
+#power-profiles-daemon,
 #pulseaudio,
 #bluetooth,
 #network,
@@ -64,6 +65,10 @@
 }
 
 #battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
   color: @red;
 }
 
@@ -75,8 +80,6 @@
 
 #pulseaudio {
   color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
 }
 
 #custom-music {
@@ -102,7 +105,9 @@
 }
 
 #network {
+  border-radius: 1rem 0px 0px 1rem;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 #tray {
