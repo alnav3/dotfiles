@@ -16,6 +16,7 @@ fi
 
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
+eval "$(direnv hook zsh)"
 
 export EDITOR=nvim
 export VISUAL=nvim
