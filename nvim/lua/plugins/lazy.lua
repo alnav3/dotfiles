@@ -61,7 +61,7 @@ return {
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {},
         keys = {
-            {"<leader>tt", "<cmd>TroubleToggle<cr>", mode = "n"},
+            {"<leader>tt", "<cmd>Trouble diagnostics<cr>", mode = "n"},
         }
     },
     { "nvim-tree/nvim-web-devicons" },
@@ -69,8 +69,6 @@ return {
         "danymat/neogen",
         dependencies = "nvim-treesitter/nvim-treesitter",
         config = true,
-        -- follow only stable versions
-        version = "*",
         keys = {
             {"<leader>g", ":lua require('neogen').generate()<CR>", mode = "n"}
         }
