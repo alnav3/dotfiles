@@ -22,6 +22,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 export XDG_CONFIG_HOME=$HOME/.config
 export JAVA_HOME=~/.jdks/21.0.4
+export PATH=$JAVA_HOME/bin:$PATH
 export NIX_LD=/nix/store/r8qsxm85rlxzdac7988psm7gimg4dl3q-glibc-2.39-52/lib/ld-linux-x86-64.so.2
 export NIX_LD_LIBRARY_PATH=/nix/store/qksd2mz9f5iasbsh398akdb58fx9kx6d-gcc-13.2.0-lib/lib:/nix/store/mg1284kfh1m2xms1ghsw4nv8vhqisj22-openssl-3.0.14/lib
 export PATH=~/.local/.npm-global/bin:$PATH
