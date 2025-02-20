@@ -36,7 +36,7 @@ export KUBECONFIG_TEST=/home/alnav/.config/kubectl/kube-ewe-test.conf
 alias cl="clear"
 alias k="kubectl"
 alias nix-shell="nix-shell --command zsh"
-alias mvn="JAVA_HOME=~/.jdks/11.0.24 mvn"
+alias mvn="JAVA_HOME=~/.jdks/21.0.4 mvn"
 alias ls="eza --icons=always"
 #alias hibernate="hyprlock & systemctl hibernate"
 
