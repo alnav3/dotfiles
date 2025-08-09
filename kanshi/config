@@ -1,8 +1,16 @@
 profile home_office {
   output "Microstep MSI G272 0x0000115A" mode 1920x1080@120Hz position 0,0
-  output "eDP-1" disable
+  # keep the laptop panel enabled but place it to the right of the external one.
+  # adjust position if your external width isn't 1920
+  output "eDP-1" enable mode 1920x1080 position 1920,0
+
+  # run our script to DPMS-off the internal display after the profile applied
+  exec "~/.local/bin/kanshi-dpms.sh off"
 }
 
 profile undocked {
-  output "eDP-1" enable
+  output "eDP-1" enable mode 1920x1080 position 0,0
+
+  # re-enable and restart panel when undocked
+  exec "~/.local/bin/kanshi-dpms.sh on"
 }
