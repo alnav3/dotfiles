@@ -39,7 +39,11 @@ alias nix-shell="nix-shell --command zsh"
 alias mvn="JAVA_HOME=~/.jdks/21.0.6 mvn"
 alias ls="eza --icons=always"
 set -o vi
-eval "$(carapace _carapace)"
+# carapace installation
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
+
 #alias hibernate="hyprlock & systemctl hibernate"
 
 # Source .local_zshrc if it exists
