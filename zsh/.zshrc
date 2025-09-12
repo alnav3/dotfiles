@@ -39,6 +39,7 @@ alias nix-shell="nix-shell --command zsh"
 alias mvn="JAVA_HOME=~/.jdks/21.0.6 mvn"
 alias ls="eza --icons=always"
 set -o vi
+eval "$(carapace _carapace)"
 #alias hibernate="hyprlock & systemctl hibernate"
 
 # Source .local_zshrc if it exists
