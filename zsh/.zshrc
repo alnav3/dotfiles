@@ -36,7 +36,7 @@ export KUBECONFIG_TEST=/home/alnav/.config/kubectl/kube-ewe-test.conf
 alias cl="clear"
 alias k="kubectl"
 alias nix-shell="nix-shell --command zsh"
-alias mvn="JAVA_HOME=~/.jdks/21.0.6 mvn"
+alias mvn="JAVA_HOME=~/.jdks/21.0.8 mvn"
 alias ls="eza --icons=always"
 set -o vi
 # carapace installation
