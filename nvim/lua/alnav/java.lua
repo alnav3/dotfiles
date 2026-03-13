@@ -66,22 +66,28 @@ endfunction
 
 ]])
 
+function StartOpenCode()
+    vim.fn.system("tmux new-window -n opencode 'opencode'")
+end
+
 function CheckProjectFilesAndRun()
     if vim.fn.glob("*.go") ~= "" then
         -- Se encontró un archivo .go, ejecutar Go
         vim.fn.system("tmux new-window -n go_run 'air'")
     else
         -- Se encontró pom.xml, ejecutar Maven
-        Run_maven_test("mvn spring-boot:run", "mvn_start")
+        Run_maven_test("JAVA_HOME=/home/alnav/.jdks/21.0.8 mvn spring-boot:run", "mvn_start")
     end
 end
+
+
 
 -- Function to create a tmux new window with Maven command
 function Run_maven_test(cmd, window_name)
     local green = "\27[38;2;166;227;161m" -- True color escape code for #a6e3a1
     local reset = "\27[0m"   -- ANSI escape code to reset text color
     local blank_lines = "\n\n\n" -- Three blank lines
-    local full_cmd = "JAVA_HOME=~/.jdks/11.0.21 " .. cmd .. '; echo "' .. blank_lines
+    local full_cmd = "JAVA_HOME=~/.jdks/21.0.8 " .. cmd .. '; echo "' .. blank_lines
         .. green .. 'Press ENTER to close...' .. reset .. '"; read'
     local tmux_cmd = "tmux new-window -n " .. window_name .. " '" .. full_cmd .. "'"
     vim.fn.system(tmux_cmd)
@@ -89,7 +95,7 @@ end
 
 -- Maven Test Class Normal
 vim.api.nvim_set_keymap('n', '<Leader>mtc',
-    ':lua Run_maven_test("mvn test -Dtest=" .. vim.fn.expand("%:t:r"), "mvn_test")<CR>',
+    ':lua Run_maven_test("JAVA_HOME=/home/alnav/.jdks/21.0.8 mvn test -Dtest=" .. vim.fn.expand("%:t:r"), "mvn_test")<CR>',
     { noremap = true, silent = true })
 
 -- Maven Test Class Debug
@@ -109,11 +115,13 @@ vim.api.nvim_set_keymap('n', '<Leader>mmd',
 
 -- Maven Clean Install
 vim.api.nvim_set_keymap('n', '<Leader>ci',
-    ':lua Run_maven_test("mvn clean install -DskipTests", "mvn_clean_install")<CR>',
+    ':lua Run_maven_test("JAVA_HOME=/home/alnav/.jdks/21.0.8 mvn clean install -DskipTests", "mvn_clean_install")<CR>',
     { noremap = true, silent = true })
 
 -- Maven Start Normal
 vim.api.nvim_set_keymap('n', '<Leader>msn', ':lua CheckProjectFilesAndRun()<CR>', { noremap = true, silent = true })
+-- start opencode in the folder
+vim.api.nvim_set_keymap('n', '<Leader>ai', ':lua StartOpenCode()<CR>', { noremap = true, silent = true })
 
 -- Map 'msd' to run the Maven debug command using the Run_maven_test function
 vim.api.nvim_set_keymap('n', '<Leader>msd', [[:lua Run_maven_test('mvn spring-boot:run -Dspring-boot.run.jvmArguments=\\"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005\\"', 'mvn_debug')<CR>]], { noremap = true, silent = true })

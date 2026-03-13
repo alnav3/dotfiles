@@ -16,7 +16,7 @@ return {
     },
     config = function()
         local home = vim.fn.expand("$HOME")
-        local java_path = vim.fn.expand("$HOME") .. "/.jdks/17.0.9"
+        local java_path = vim.fn.expand("$HOME") .. "/.jdks/21.0.8"
         vim.filetype.add({ extension = { templ = "templ" } })
         require("mason").setup()
         -- configure java settings to use main java / required for nixOS
@@ -30,7 +30,7 @@ return {
                 configuration = {
                     runtimes = {
                         {
-                            name = "JavaSE-17",
+                            name = "JavaSE-21",
                             path = java_path,
                             default = true,
                         },
@@ -45,39 +45,52 @@ return {
             },
             handlers = {
                 function(name)
-                    require("lspconfig")[name].setup({})
+                    vim.lsp.config[name] = {}
                 end,
                 ["lua_ls"] = function ()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.lua_ls.setup {
+                    vim.lsp.config.lua_ls = {
                         settings = {
                             Lua = {
                                 diagnostics = {
                                     globals = { "vim" }
+                                },
+                                workspace = {
+                                    library = {
+                                        [vim.fn.expand "$VIMRUNTIME/lua"] = true,
+                                        [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
+                                        [vim.fn.stdpath "data" .. "/lazy/ui/nvchad_types"] = true,
+                                        [vim.fn.stdpath "data" .. "/lazy/lazy.nvim/lua/lazy"] = true,
+                                        [vim.fn.expand "${3rd}/love2d/library"] = true,
+                                    },
+                                    maxPreload = 100000,
+                                    preloadFileSize = 10000,
+
                                 }
                             }
                         }
                     }
                 end,
                 ["jdtls"] = function()
-                    require("lspconfig").jdtls.setup({})
+                    vim.lsp.config.jdtls = {}
+                end,
+                ["htmx"] = function ()
+                    vim.lsp.config.htmx = {
+                        filetypes = { "html", "templ" },
+                    }
                 end,
                 ["html"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.html.setup({
+                    vim.lsp.config.html = {
                         filetypes = { "html", "templ" },
-                    })
+                    }
                 end,
                 ["tailwindcss"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.tailwindcss.setup({
-                        filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+                    vim.lsp.config.tailwindcss = {
+                        filetypes = { "templ", "astro", "javascript", "typescript", "react", "html" },
                         init_options = { userLanguages = { templ = "html" } },
-                    })
+                    }
                 end,
                 ["groovyls"] = function ()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.groovyls.setup {
+                    vim.lsp.config.groovyls = {
                         filetypes = { "groovy" },
                         settings = {
                             groovy = {
@@ -88,15 +101,9 @@ return {
                         }
                     }
                 end,
-                ["htmx"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.htmx.setup({
-                        filetypes = { "html", "templ" },
-                    })
-                end,
             }
         })
-        require("lspconfig").nixd.setup({
+        vim.lsp.config.nixd = {
             cmd = {"nixd"},
             settings = {
                 nixd = {
@@ -108,7 +115,8 @@ return {
                     },
                 },
             },
-        })
+        }
+        vim.lsp.config.openscad_lsp = {}
         -- Set up nvim-cmp.
         local cmp = require'cmp'
         local cmd_select = {behavior = cmp.SelectBehavior.Select}
