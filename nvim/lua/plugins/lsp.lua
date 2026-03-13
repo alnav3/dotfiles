@@ -42,6 +42,10 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "gopls",
+                "jdtls",        -- Java
+                "html",         -- HTML
+                "htmx",         -- HTMX
+                "tailwindcss",  -- Tailwind CSS
             },
             handlers = {
                 function(name)
@@ -87,18 +91,6 @@ return {
                     vim.lsp.config.tailwindcss = {
                         filetypes = { "templ", "astro", "javascript", "typescript", "react", "html" },
                         init_options = { userLanguages = { templ = "html" } },
-                    }
-                end,
-                ["groovyls"] = function ()
-                    vim.lsp.config.groovyls = {
-                        filetypes = { "groovy" },
-                        settings = {
-                            groovy = {
-                                classpath = {
-                                    home .. "/dev/ewe-git/bonita/dependencies/extensions", --TODO: add the path to the groovy library
-                                }
-                            }
-                        }
                     }
                 end,
             }
