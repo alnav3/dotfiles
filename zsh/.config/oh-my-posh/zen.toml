@@ -20,13 +20,6 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
       style = 'full'
 
   [[blocks.segments]]
-    type = 'session'
-    style = 'plain'
-    background = 'transparent'
-    foreground = 'green'
-    template = '@{{ .HostName }}'
-
-  [[blocks.segments]]
     type = "text"
     style = "plain"
     foreground = "magenta"
@@ -47,6 +40,13 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
 [[blocks]]
   type = 'rprompt'
   overflow = 'hidden'
+
+  [[blocks.segments]]
+    type = 'session'
+    style = 'plain'
+    background = 'transparent'
+    foreground = 'green'
+    template = '@{{ .HostName }} '
 
   [[blocks.segments]]
     type = 'executiontime'
