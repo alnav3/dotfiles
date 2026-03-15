@@ -22,8 +22,17 @@ return {
         -- configure java settings to use main java / required for nixOS
         require("java").setup({
             jdk = {
-                -- install jdk using mason.nvim
                 auto_install = false,
+            },
+            -- Enable auto-installation of Java development tools
+            java_debug_adapter = {
+                enable = true,
+            },
+            java_test = {
+                enable = true,
+            },
+            spring_boot_tools = {
+                enable = true,
             },
             java = {
                 home = java_path,
@@ -42,10 +51,10 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "gopls",
-                "jdtls",        -- Java
-                "html",         -- HTML
-                "htmx",         -- HTMX
-                "tailwindcss",  -- Tailwind CSS
+                "jdtls",
+                "html",
+                "htmx",
+                "tailwindcss",
             },
             handlers = {
                 function(name)

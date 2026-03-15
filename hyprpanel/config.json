@@ -26,7 +26,7 @@
   "theme.tooltip.scaling": 60,
   "theme.bar.menus.popover.scaling": 80,
   "bar.layouts": {
-    "0": {
+    "*": {
       "left": [
         "clock",
         "volume",
@@ -43,40 +43,6 @@
         "bluetooth",
         "notifications",
         "battery"
-      ]
-    },
-    "1": {
-      "left": [
-        "clock",
-        "volume",
-        "hyprsunset",
-        "hypridle"
-      ],
-      "middle": [
-        "media",
-        "workspaces"
-      ],
-      "right": [
-        "systray",
-        "network",
-        "bluetooth",
-        "notifications",
-        "battery"
-      ]
-    },
-    "2": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
       ]
     }
   },
@@ -101,7 +67,7 @@
   "theme.bar.buttons.network.enableBorder": false,
   "bar.bluetooth.label": false,
   "bar.battery.hideLabelWhenFull": true,
-  "bar.clock.format": "%H:%M",
+  "bar.clock.format": "%I:%M",
   "bar.clock.icon": "󰸗",
   "bar.clock.showTime": true,
   "bar.clock.showIcon": false,
@@ -124,7 +90,7 @@
   "theme.bar.buttons.workspaces.pill.active_width": "12em",
   "bar.workspaces.spacing": 2.7,
   "menus.volume.raiseMaximumVolume": true,
-  "menus.clock.weather.location": "",
+  "menus.clock.weather.location": "<39.4699, -0.3763>",
   "menus.clock.weather.unit": "metric",
   "menus.dashboard.stats.enabled": true,
   "theme.bar.menus.menu.dashboard.profile.size": "0em",
@@ -145,7 +111,5 @@
   "bar.customModules.hyprsunset.temperature": "4000k",
   "bar.customModules.hyprsunset.label": false,
   "bar.customModules.hypridle.label": false,
-  "theme.bar.buttons.y_margins": "0.3em",
-  "menus.clock.weather.enabled": false,
-  "menus.clock.time.military": true
+  "theme.bar.buttons.y_margins": "0.3em"
 }
