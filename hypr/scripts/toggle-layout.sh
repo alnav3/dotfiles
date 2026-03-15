@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Toggle the layout on the current active workspace between dwindle and scrolling
+
+ACTIVE_WORKSPACE=$(hyprctl activeworkspace -j | jq -r '.id')
+CURRENT_LAYOUT=$(hyprctl activeworkspace -j | jq -r '.tiledLayout')
+
+case "$CURRENT_LAYOUT" in
+  dwindle) NEW_LAYOUT=scrolling ;;
+  *) NEW_LAYOUT=dwindle ;;
+esac
+
+hyprctl keyword workspace $ACTIVE_WORKSPACE, layout:$NEW_LAYOUT
