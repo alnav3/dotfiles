@@ -39,6 +39,71 @@ elseif stridx(l:path, l:testPath) == 0
     endfunction
 ]])
 
+-- Build tool detection
+function DetectBuildTool()
+    local cwd = vim.fn.getcwd()
+    if vim.fn.filereadable(cwd .. "/build.gradle") == 1 or vim.fn.filereadable(cwd .. "/build.gradle.kts") == 1 or vim.fn.filereadable(cwd .. "/settings.gradle") == 1 then
+        return "gradle"
+    elseif vim.fn.filereadable(cwd .. "/pom.xml") == 1 then
+        return "maven"
+    end
+    return nil
+end
+
+-- Get the gradle wrapper or fallback to gradle command
+function GetGradleCommand()
+    local cwd = vim.fn.getcwd()
+    if vim.fn.filereadable(cwd .. "/gradlew") == 1 then
+        return "./gradlew"
+    end
+    return "gradle"
+end
+
+-- Read JVM args from ~/.gradle-jvm-args if it exists
+-- Returns empty string if file doesn't exist
+function GetGradleJvmArgs()
+    local args_file = vim.fn.expand("~/.gradle-jvm-args")
+    if vim.fn.filereadable(args_file) == 1 then
+        local lines = vim.fn.readfile(args_file)
+        local args = {}
+        for _, line in ipairs(lines) do
+            -- Skip empty lines and comments
+            line = vim.fn.trim(line)
+            if line ~= "" and not vim.startswith(line, "#") then
+                table.insert(args, line)
+            end
+        end
+        if #args > 0 then
+            return table.concat(args, " ")
+        end
+    end
+    return ""
+end
+
+-- Build the JAVA_TOOL_OPTIONS prefix if gradle args file exists
+function GetGradleEnvPrefix()
+    local jvm_args = GetGradleJvmArgs()
+    if jvm_args ~= "" then
+        -- Use double quotes and escape any special chars
+        -- (the args typically don't contain $ or " so this is safe)
+        jvm_args = jvm_args:gsub('\\', '\\\\'):gsub('"', '\\"')
+        return 'JAVA_TOOL_OPTIONS="' .. jvm_args .. '" '
+    end
+    return ""
+end
+
+-- Build Gradle test command for class
+function BuildGradleTestClassCommand(class_name)
+    return GetGradleCommand() .. " test --tests \"" .. class_name .. "\""
+end
+
+-- Build Gradle test command for method
+function BuildGradleTestMethodCommand()
+    local full_class_name = vim.fn.GetFullClassName()
+    local method_name = vim.fn.GetJavaMethodName()
+    return GetGradleCommand() .. " test --tests \"" .. full_class_name .. "." .. method_name .. "\""
+end
+
 -- Función auxiliar para ejecutar comandos en una nueva pestaña de terminal
 vim.run_in_new_tab = function(command)
     vim.cmd('tabnew') -- abre una nueva pestaña
@@ -72,18 +137,22 @@ end
 
 function CheckProjectFilesAndRun()
     if vim.fn.glob("*.go") ~= "" then
-        -- Se encontró un archivo .go, ejecutar Go
+        -- Go project found
         vim.fn.system("tmux new-window -n go_run 'air'")
     else
-        -- Se encontró pom.xml, ejecutar Maven
-        Run_maven_test("JAVA_HOME=/home/alnav/.jdks/21.0.8 mvn spring-boot:run", "mvn_start")
+        local build_tool = DetectBuildTool()
+        if build_tool == "gradle" then
+            local env_prefix = GetGradleEnvPrefix()
+            Run_java_command(env_prefix .. GetGradleCommand() .. " bootRun", "gradle_start")
+        else
+            -- Default to Maven
+            Run_java_command("mvn spring-boot:run", "mvn_start")
+        end
     end
 end
 
-
-
--- Function to create a tmux new window with Maven command
-function Run_maven_test(cmd, window_name)
+-- Function to create a tmux new window with build command
+function Run_java_command(cmd, window_name)
     local green = "\27[38;2;166;227;161m" -- True color escape code for #a6e3a1
     local reset = "\27[0m"   -- ANSI escape code to reset text color
     local blank_lines = "\n\n\n" -- Three blank lines
@@ -93,36 +162,93 @@ function Run_maven_test(cmd, window_name)
     vim.fn.system(tmux_cmd)
 end
 
--- Maven Test Class Normal
-vim.api.nvim_set_keymap('n', '<Leader>mtc',
-    ':lua Run_maven_test("JAVA_HOME=/home/alnav/.jdks/21.0.8 mvn test -Dtest=" .. vim.fn.expand("%:t:r"), "mvn_test")<CR>',
-    { noremap = true, silent = true })
+-- Unified test class command
+function TestClass()
+    local build_tool = DetectBuildTool()
+    local class_name = vim.fn.expand("%:t:r")
+    if build_tool == "gradle" then
+        Run_java_command(BuildGradleTestClassCommand(class_name), "gradle_test")
+    else
+        Run_java_command("mvn test -Dtest=" .. class_name, "mvn_test")
+    end
+end
 
--- Maven Test Class Debug
-vim.api.nvim_set_keymap('n', '<Leader>mtd',
-    ':lua Run_maven_test("mvn test -Dtest=" .. vim.fn.expand("%:t:r") .. " -Dmaven.surefire.debug", "mvn_debug")<CR>',
-    { noremap = true, silent = true })
+-- Unified test class debug command
+function TestClassDebug()
+    local build_tool = DetectBuildTool()
+    local class_name = vim.fn.expand("%:t:r")
+    if build_tool == "gradle" then
+        Run_java_command(BuildGradleTestClassCommand(class_name) .. " --debug-jvm", "gradle_debug")
+    else
+        Run_java_command("mvn test -Dtest=" .. class_name .. " -Dmaven.surefire.debug", "mvn_debug")
+    end
+end
 
--- Maven Test Method Normal
-vim.api.nvim_set_keymap('n', '<Leader>mtm',
-    ':lua Run_maven_test(vim.fn.BuildMavenTestCommand(), "mvn_test_method")<CR>',
-    { noremap = true, silent = true })
+-- Unified test method command
+function TestMethod()
+    local build_tool = DetectBuildTool()
+    if build_tool == "gradle" then
+        Run_java_command(BuildGradleTestMethodCommand(), "gradle_test_method")
+    else
+        Run_java_command(vim.fn.BuildMavenTestCommand(), "mvn_test_method")
+    end
+end
 
--- Maven Test Method Debug
-vim.api.nvim_set_keymap('n', '<Leader>mmd',
-    ':lua Run_maven_test(vim.fn.BuildMavenTestCommand() .. " -Dmaven.surefire.debug", "mvn_method_debug")<CR>',
-    { noremap = true, silent = true })
+-- Unified test method debug command
+function TestMethodDebug()
+    local build_tool = DetectBuildTool()
+    if build_tool == "gradle" then
+        Run_java_command(BuildGradleTestMethodCommand() .. " --debug-jvm", "gradle_method_debug")
+    else
+        Run_java_command(vim.fn.BuildMavenTestCommand() .. " -Dmaven.surefire.debug", "mvn_method_debug")
+    end
+end
 
--- Maven Clean Install
-vim.api.nvim_set_keymap('n', '<Leader>ci',
-    ':lua Run_maven_test("JAVA_HOME=/home/alnav/.jdks/21.0.8 mvn clean install -DskipTests", "mvn_clean_install")<CR>',
-    { noremap = true, silent = true })
+-- Unified clean build command
+function CleanBuild()
+    local build_tool = DetectBuildTool()
+    if build_tool == "gradle" then
+        Run_java_command(GetGradleCommand() .. " clean build -x test", "gradle_build")
+    else
+        Run_java_command("mvn clean install -DskipTests", "mvn_clean_install")
+    end
+end
 
--- Maven Start Normal
+-- Unified start with debug command
+function StartDebug()
+    local build_tool = DetectBuildTool()
+    if build_tool == "gradle" then
+        local env_prefix = GetGradleEnvPrefix()
+        Run_java_command(env_prefix .. GetGradleCommand() .. " bootRun --debug-jvm", "gradle_debug")
+    else
+        Run_java_command('mvn spring-boot:run -Dspring-boot.run.jvmArguments="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"', "mvn_debug")
+    end
+end
+
+-- Keep Run_maven_test as alias for backwards compatibility
+Run_maven_test = Run_java_command
+
+-- Test Class Normal (works for both Maven and Gradle)
+vim.api.nvim_set_keymap('n', '<Leader>mtc', ':lua TestClass()<CR>', { noremap = true, silent = true })
+
+-- Test Class Debug (works for both Maven and Gradle)
+vim.api.nvim_set_keymap('n', '<Leader>mtd', ':lua TestClassDebug()<CR>', { noremap = true, silent = true })
+
+-- Test Method Normal (works for both Maven and Gradle)
+vim.api.nvim_set_keymap('n', '<Leader>mtm', ':lua TestMethod()<CR>', { noremap = true, silent = true })
+
+-- Test Method Debug (works for both Maven and Gradle)
+vim.api.nvim_set_keymap('n', '<Leader>mmd', ':lua TestMethodDebug()<CR>', { noremap = true, silent = true })
+
+-- Clean Build (works for both Maven and Gradle)
+vim.api.nvim_set_keymap('n', '<Leader>ci', ':lua CleanBuild()<CR>', { noremap = true, silent = true })
+
+-- Start App Normal (works for Go, Maven, and Gradle)
 vim.api.nvim_set_keymap('n', '<Leader>msn', ':lua CheckProjectFilesAndRun()<CR>', { noremap = true, silent = true })
+
 -- start opencode in the folder
 vim.api.nvim_set_keymap('n', '<Leader>ai', ':lua StartOpenCode()<CR>', { noremap = true, silent = true })
 
--- Map 'msd' to run the Maven debug command using the Run_maven_test function
-vim.api.nvim_set_keymap('n', '<Leader>msd', [[:lua Run_maven_test('mvn spring-boot:run -Dspring-boot.run.jvmArguments=\\"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005\\"', 'mvn_debug')<CR>]], { noremap = true, silent = true })
+-- Start App Debug (works for both Maven and Gradle)
+vim.api.nvim_set_keymap('n', '<Leader>msd', ':lua StartDebug()<CR>', { noremap = true, silent = true })
 
