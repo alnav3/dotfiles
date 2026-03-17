@@ -40,6 +40,7 @@ alias mvn="JAVA_HOME=~/.jdks/21.0.8 mvn"
 alias ls="eza --icons=always"
 set -o vi
 # carapace installation
+autoload -U compinit && compinit
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 source <(carapace _carapace)
