@@ -10,8 +10,6 @@ return {
         "hrsh7th/nvim-cmp",
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
-        "mfussenegger/nvim-dap",
-        "rcarriga/nvim-dap-ui",
         "nvim-java/nvim-java",
     },
     config = function()
@@ -20,11 +18,28 @@ return {
         vim.filetype.add({ extension = { templ = "templ" } })
         require("mason").setup()
         -- configure java settings to use main java / required for nixOS
+        -- Monkey-patch nvim-java's DAP auto-setup to prevent the
+        -- "mainClass should already be present" crash. We still enable
+        -- java_debug_adapter so the jar bundle gets loaded into jdtls,
+        -- but we replace the fragile auto-config with our own in debug.lua.
+        local java_dap = require("java-dap")
+        local original_setup = java_dap.setup
+        java_dap.setup = function()
+            -- Only register the on_jdtls_attach event WITHOUT calling
+            -- project_config.setup() or config_dap() automatically.
+            -- debug.lua handles DAP configuration safely.
+            local event = require("java-core.utils.event")
+            event.on_jdtls_attach({
+                callback = function()
+                    -- Silently skip - debug.lua will handle this
+                end,
+            })
+        end
+
         require("java").setup({
             jdk = {
                 auto_install = false,
             },
-            -- Enable auto-installation of Java development tools
             java_debug_adapter = {
                 enable = true,
             },
@@ -52,6 +67,7 @@ return {
                 "lua_ls",
                 "gopls",
                 "jdtls",
+                "pyright",
                 "html",
                 "htmx",
                 "tailwindcss",
