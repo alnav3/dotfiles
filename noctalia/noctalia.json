@@ -1,0 +1,1988 @@
+{
+  "settings": {
+    "settingsVersion": 59,
+    "bar": {
+      "barType": "floating",
+      "position": "top",
+      "monitors": [
+        "DP-10",
+        "DP-11",
+        "eDP-1"
+      ],
+      "density": "spacious",
+      "showOutline": false,
+      "showCapsule": true,
+      "capsuleOpacity": 1,
+      "capsuleColorKey": "none",
+      "widgetSpacing": 6,
+      "contentPadding": 2,
+      "fontScale": 1,
+      "enableExclusionZoneInset": true,
+      "backgroundOpacity": 0.93,
+      "useSeparateOpacity": false,
+      "marginVertical": 11,
+      "marginHorizontal": 10,
+      "frameThickness": 8,
+      "frameRadius": 12,
+      "outerCorners": true,
+      "hideOnOverview": false,
+      "displayMode": "always_visible",
+      "autoHideDelay": 500,
+      "autoShowDelay": 150,
+      "showOnWorkspaceSwitch": true,
+      "widgets": {
+        "left": [
+          {
+            "clockColor": "primary",
+            "customFont": "FiraCode Nerd Font Mono SemBd",
+            "formatHorizontal": "HH:mm",
+            "formatVertical": "HH mm - dd MM",
+            "id": "Clock",
+            "tooltipFormat": "HH:mm ddd, MMM dd",
+            "useCustomFont": true
+          },
+          {
+            "displayMode": "onhover",
+            "iconColor": "primary",
+            "id": "Volume",
+            "middleClickCommand": "pwvucontrol || pavucontrol",
+            "textColor": "none"
+          },
+          {
+            "applyToAllMonitors": false,
+            "displayMode": "onhover",
+            "iconColor": "secondary",
+            "id": "Brightness",
+            "textColor": "secondary"
+          },
+          {
+            "iconColor": "none",
+            "id": "KeepAwake",
+            "textColor": "none"
+          },
+          {
+            "defaultSettings": {
+              "activeColor": "primary",
+              "enableToast": true,
+              "hideInactive": false,
+              "iconSpacing": 4,
+              "inactiveColor": "none",
+              "micFilterRegex": "",
+              "removeMargins": false
+            },
+            "id": "plugin:privacy-indicator"
+          }
+        ],
+        "center": [
+          {
+            "compactMode": false,
+            "hideMode": "idle",
+            "hideWhenIdle": false,
+            "id": "MediaMini",
+            "maxWidth": 145,
+            "panelShowAlbumArt": true,
+            "scrollingMode": "hover",
+            "showAlbumArt": true,
+            "showArtistFirst": true,
+            "showProgressRing": true,
+            "showVisualizer": false,
+            "textColor": "none",
+            "useFixedWidth": false,
+            "visualizerType": "linear"
+          },
+          {
+            "characterCount": 2,
+            "colorizeIcons": false,
+            "emptyColor": "secondary",
+            "enableScrollWheel": true,
+            "focusedColor": "primary",
+            "followFocusedScreen": false,
+            "fontWeight": "bold",
+            "groupedBorderOpacity": 1,
+            "hideUnoccupied": true,
+            "iconScale": 0.8,
+            "id": "Workspace",
+            "labelMode": "none",
+            "occupiedColor": "secondary",
+            "pillSize": 0.68,
+            "showApplications": false,
+            "showApplicationsHover": false,
+            "showBadge": true,
+            "showLabelsOnlyWhenOccupied": true,
+            "unfocusedIconsOpacity": 1
+          }
+        ],
+        "right": [
+          {
+            "blacklist": [],
+            "chevronColor": "none",
+            "colorizeIcons": false,
+            "drawerEnabled": true,
+            "hidePassive": false,
+            "id": "Tray",
+            "pinned": []
+          },
+          {
+            "defaultSettings": {
+              "autoStartBreaks": false,
+              "autoStartWork": false,
+              "longBreakDuration": 15,
+              "sessionsBeforeLongBreak": 4,
+              "shortBreakDuration": 5,
+              "workDuration": 25
+            },
+            "id": "plugin:pomodoro"
+          },
+          {
+            "displayMode": "onhover",
+            "iconColor": "primary",
+            "id": "Network",
+            "textColor": "primary"
+          },
+          {
+            "displayMode": "onhover",
+            "iconColor": "tertiary",
+            "id": "Bluetooth",
+            "textColor": "none"
+          },
+          {
+            "hideWhenZero": false,
+            "hideWhenZeroUnread": false,
+            "iconColor": "secondary",
+            "id": "NotificationHistory",
+            "showUnreadBadge": true,
+            "unreadBadgeColor": "secondary"
+          },
+          {
+            "deviceNativePath": "__default__",
+            "displayMode": "graphic",
+            "hideIfIdle": true,
+            "hideIfNotDetected": true,
+            "id": "Battery",
+            "showNoctaliaPerformance": true,
+            "showPowerProfiles": true
+          }
+        ]
+      },
+      "mouseWheelAction": "none",
+      "reverseScroll": false,
+      "mouseWheelWrap": true,
+      "middleClickAction": "none",
+      "middleClickFollowMouse": false,
+      "middleClickCommand": "",
+      "rightClickAction": "controlCenter",
+      "rightClickFollowMouse": true,
+      "rightClickCommand": "",
+      "screenOverrides": [
+        {
+          "enabled": false,
+          "name": "eDP-1"
+        }
+      ]
+    },
+    "general": {
+      "avatarImage": "/home/alnav/.face",
+      "dimmerOpacity": 0.2,
+      "showScreenCorners": false,
+      "forceBlackScreenCorners": false,
+      "scaleRatio": 1,
+      "radiusRatio": 1,
+      "iRadiusRatio": 1,
+      "boxRadiusRatio": 1,
+      "screenRadiusRatio": 1,
+      "animationSpeed": 1,
+      "animationDisabled": false,
+      "compactLockScreen": true,
+      "lockScreenAnimations": true,
+      "lockOnSuspend": true,
+      "showSessionButtonsOnLockScreen": false,
+      "showHibernateOnLockScreen": true,
+      "enableLockScreenMediaControls": false,
+      "enableShadows": false,
+      "enableBlurBehind": true,
+      "shadowDirection": "bottom_right",
+      "shadowOffsetX": 2,
+      "shadowOffsetY": 3,
+      "language": "",
+      "allowPanelsOnScreenWithoutBar": true,
+      "showChangelogOnStartup": true,
+      "telemetryEnabled": false,
+      "enableLockScreenCountdown": true,
+      "lockScreenCountdownDuration": 10000,
+      "autoStartAuth": false,
+      "allowPasswordWithFprintd": true,
+      "clockStyle": "digital",
+      "clockFormat": "hh\\nmm",
+      "passwordChars": false,
+      "lockScreenMonitors": [],
+      "lockScreenBlur": 0.36,
+      "lockScreenTint": 0.44,
+      "keybinds": {
+        "keyUp": [
+          "Up"
+        ],
+        "keyDown": [
+          "Down"
+        ],
+        "keyLeft": [
+          "Left"
+        ],
+        "keyRight": [
+          "Right"
+        ],
+        "keyEnter": [
+          "Return",
+          "Enter"
+        ],
+        "keyEscape": [
+          "Esc"
+        ],
+        "keyRemove": [
+          "Del"
+        ]
+      },
+      "reverseScroll": false
+    },
+    "ui": {
+      "fontDefault": "DejaVu Sans",
+      "fontFixed": "monospace",
+      "fontDefaultScale": 1,
+      "fontFixedScale": 1,
+      "tooltipsEnabled": true,
+      "scrollbarAlwaysVisible": true,
+      "boxBorderEnabled": false,
+      "panelBackgroundOpacity": 0.93,
+      "translucentWidgets": false,
+      "panelsAttachedToBar": true,
+      "settingsPanelMode": "attached",
+      "settingsPanelSideBarCardStyle": false
+    },
+    "location": {
+      "name": "Madrid",
+      "weatherEnabled": true,
+      "weatherShowEffects": true,
+      "useFahrenheit": false,
+      "use12hourFormat": false,
+      "showWeekNumberInCalendar": false,
+      "showCalendarEvents": true,
+      "showCalendarWeather": true,
+      "analogClockInCalendar": false,
+      "firstDayOfWeek": 1,
+      "hideWeatherTimezone": false,
+      "hideWeatherCityName": true
+    },
+    "calendar": {
+      "cards": [
+        {
+          "enabled": true,
+          "id": "calendar-header-card"
+        },
+        {
+          "enabled": true,
+          "id": "calendar-month-card"
+        },
+        {
+          "enabled": true,
+          "id": "weather-card"
+        }
+      ]
+    },
+    "wallpaper": {
+      "enabled": true,
+      "overviewEnabled": false,
+      "directory": "/home/alnav/wallpapers",
+      "monitorDirectories": [],
+      "enableMultiMonitorDirectories": false,
+      "showHiddenFiles": false,
+      "viewMode": "browse",
+      "setWallpaperOnAllMonitors": true,
+      "fillMode": "crop",
+      "fillColor": "#000000",
+      "useSolidColor": false,
+      "solidColor": "#1a1a2e",
+      "automationEnabled": false,
+      "wallpaperChangeMode": "random",
+      "randomIntervalSec": 300,
+      "transitionDuration": 1500,
+      "transitionType": [
+        "fade",
+        "disc",
+        "stripes",
+        "wipe",
+        "pixelate",
+        "honeycomb"
+      ],
+      "skipStartupTransition": false,
+      "transitionEdgeSmoothness": 0.05,
+      "panelPosition": "follow_bar",
+      "hideWallpaperFilenames": false,
+      "useOriginalImages": true,
+      "overviewBlur": 0.4,
+      "overviewTint": 0.6,
+      "useWallhaven": false,
+      "wallhavenQuery": "",
+      "wallhavenSorting": "relevance",
+      "wallhavenOrder": "desc",
+      "wallhavenCategories": "111",
+      "wallhavenPurity": "100",
+      "wallhavenRatios": "",
+      "wallhavenApiKey": "",
+      "wallhavenResolutionMode": "atleast",
+      "wallhavenResolutionWidth": "",
+      "wallhavenResolutionHeight": "",
+      "sortOrder": "date_desc",
+      "favorites": [
+        {
+          "colorScheme": "Catppuccin",
+          "darkMode": true,
+          "generationMethod": "tonal-spot",
+          "paletteColors": [
+            "#cba6f7",
+            "#fab387",
+            "#94e2d5",
+            "#f38ba8"
+          ],
+          "path": "/home/alnav/Pictures/Wallpapers/comfy-home.png",
+          "useWallpaperColors": false
+        }
+      ]
+    },
+    "appLauncher": {
+      "enableClipboardHistory": false,
+      "autoPasteClipboard": false,
+      "enableClipPreview": true,
+      "clipboardWrapText": true,
+      "enableClipboardSmartIcons": true,
+      "enableClipboardChips": true,
+      "clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
+      "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
+      "position": "center",
+      "pinnedApps": [],
+      "sortByMostUsed": true,
+      "terminalCommand": "kitty -e",
+      "customLaunchPrefixEnabled": false,
+      "customLaunchPrefix": "",
+      "viewMode": "list",
+      "showCategories": false,
+      "iconMode": "native",
+      "showIconBackground": false,
+      "enableSettingsSearch": true,
+      "enableWindowsSearch": true,
+      "enableSessionSearch": true,
+      "ignoreMouseInput": false,
+      "screenshotAnnotationTool": "",
+      "overviewLayer": false,
+      "density": "default"
+    },
+    "controlCenter": {
+      "position": "close_to_bar_button",
+      "diskPath": "/",
+      "shortcuts": {
+        "left": [
+          {
+            "id": "Network"
+          },
+          {
+            "id": "Bluetooth"
+          },
+          {
+            "id": "WallpaperSelector"
+          },
+          {
+            "id": "NoctaliaPerformance"
+          }
+        ],
+        "right": [
+          {
+            "id": "Notifications"
+          },
+          {
+            "id": "PowerProfile"
+          },
+          {
+            "id": "KeepAwake"
+          },
+          {
+            "id": "NightLight"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "enabled": true,
+          "id": "profile-card"
+        },
+        {
+          "enabled": true,
+          "id": "shortcuts-card"
+        },
+        {
+          "enabled": true,
+          "id": "audio-card"
+        },
+        {
+          "enabled": false,
+          "id": "brightness-card"
+        },
+        {
+          "enabled": false,
+          "id": "weather-card"
+        },
+        {
+          "enabled": false,
+          "id": "media-sysmon-card"
+        }
+      ]
+    },
+    "systemMonitor": {
+      "cpuWarningThreshold": 80,
+      "cpuCriticalThreshold": 90,
+      "tempWarningThreshold": 80,
+      "tempCriticalThreshold": 90,
+      "gpuWarningThreshold": 80,
+      "gpuCriticalThreshold": 90,
+      "memWarningThreshold": 80,
+      "memCriticalThreshold": 90,
+      "swapWarningThreshold": 80,
+      "swapCriticalThreshold": 90,
+      "diskWarningThreshold": 80,
+      "diskCriticalThreshold": 90,
+      "diskAvailWarningThreshold": 20,
+      "diskAvailCriticalThreshold": 10,
+      "batteryWarningThreshold": 20,
+      "batteryCriticalThreshold": 5,
+      "enableDgpuMonitoring": false,
+      "useCustomColors": false,
+      "warningColor": "",
+      "criticalColor": "",
+      "externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor"
+    },
+    "noctaliaPerformance": {
+      "disableWallpaper": true,
+      "disableDesktopWidgets": true
+    },
+    "dock": {
+      "enabled": false,
+      "position": "bottom",
+      "displayMode": "always_visible",
+      "dockType": "floating",
+      "backgroundOpacity": 1,
+      "floatingRatio": 1,
+      "size": 1,
+      "onlySameOutput": true,
+      "monitors": [],
+      "pinnedApps": [],
+      "colorizeIcons": false,
+      "showLauncherIcon": false,
+      "launcherPosition": "end",
+      "launcherUseDistroLogo": false,
+      "launcherIcon": "",
+      "launcherIconColor": "none",
+      "pinnedStatic": false,
+      "inactiveIndicators": false,
+      "groupApps": false,
+      "groupContextMenuMode": "extended",
+      "groupClickAction": "cycle",
+      "groupIndicatorStyle": "dots",
+      "deadOpacity": 0.6,
+      "animationSpeed": 1,
+      "sitOnFrame": false,
+      "showDockIndicator": false,
+      "indicatorThickness": 3,
+      "indicatorColor": "primary",
+      "indicatorOpacity": 0.6
+    },
+    "network": {
+      "airplaneModeEnabled": false,
+      "bluetoothRssiPollingEnabled": false,
+      "bluetoothRssiPollIntervalMs": 60000,
+      "networkPanelView": "wifi",
+      "wifiDetailsViewMode": "list",
+      "bluetoothDetailsViewMode": "grid",
+      "bluetoothHideUnnamedDevices": false,
+      "disableDiscoverability": false,
+      "bluetoothAutoConnect": false
+    },
+    "sessionMenu": {
+      "enableCountdown": true,
+      "countdownDuration": 10000,
+      "position": "center",
+      "showHeader": true,
+      "showKeybinds": true,
+      "largeButtonsStyle": false,
+      "largeButtonsLayout": "single-row",
+      "powerOptions": [
+        {
+          "action": "lock",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "1"
+        },
+        {
+          "action": "suspend",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "2"
+        },
+        {
+          "action": "hibernate",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "3"
+        },
+        {
+          "action": "reboot",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "4"
+        },
+        {
+          "action": "logout",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "5"
+        },
+        {
+          "action": "shutdown",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "6"
+        },
+        {
+          "action": "rebootToUefi",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": true,
+          "keybind": "7"
+        },
+        {
+          "action": "userspaceReboot",
+          "command": "",
+          "countdownEnabled": true,
+          "enabled": false,
+          "keybind": ""
+        }
+      ]
+    },
+    "notifications": {
+      "enabled": true,
+      "enableMarkdown": false,
+      "density": "default",
+      "monitors": [],
+      "location": "top_right",
+      "overlayLayer": true,
+      "backgroundOpacity": 1,
+      "respectExpireTimeout": false,
+      "lowUrgencyDuration": 3,
+      "normalUrgencyDuration": 8,
+      "criticalUrgencyDuration": 15,
+      "clearDismissed": true,
+      "saveToHistory": {
+        "low": true,
+        "normal": true,
+        "critical": true
+      },
+      "sounds": {
+        "enabled": false,
+        "volume": 0.5,
+        "separateSounds": false,
+        "criticalSoundFile": "",
+        "normalSoundFile": "",
+        "lowSoundFile": "",
+        "excludedApps": "discord,firefox,chrome,chromium,edge"
+      },
+      "enableMediaToast": false,
+      "enableKeyboardLayoutToast": true,
+      "enableBatteryToast": true
+    },
+    "osd": {
+      "enabled": true,
+      "location": "top_right",
+      "autoHideMs": 2000,
+      "overlayLayer": true,
+      "backgroundOpacity": 1,
+      "enabledTypes": [
+        0,
+        1,
+        2
+      ],
+      "monitors": []
+    },
+    "audio": {
+      "volumeStep": 5,
+      "volumeOverdrive": false,
+      "spectrumFrameRate": 30,
+      "visualizerType": "linear",
+      "spectrumMirrored": true,
+      "mprisBlacklist": [],
+      "preferredPlayer": "",
+      "volumeFeedback": false,
+      "volumeFeedbackSoundFile": ""
+    },
+    "brightness": {
+      "brightnessStep": 5,
+      "enforceMinimum": false,
+      "enableDdcSupport": false,
+      "backlightDeviceMappings": []
+    },
+    "colorSchemes": {
+      "useWallpaperColors": false,
+      "predefinedScheme": "Catppuccin",
+      "darkMode": true,
+      "schedulingMode": "off",
+      "manualSunrise": "06:30",
+      "manualSunset": "18:30",
+      "generationMethod": "tonal-spot",
+      "monitorForColors": "",
+      "syncGsettings": true
+    },
+    "templates": {
+      "activeTemplates": [
+        {
+          "enabled": true,
+          "id": "kitty"
+        },
+        {
+          "enabled": true,
+          "id": "zenBrowser"
+        },
+        {
+          "enabled": true,
+          "id": "hyprland"
+        },
+        {
+          "enabled": true,
+          "id": "gtk"
+        }
+      ],
+      "enableUserTheming": false
+    },
+    "nightLight": {
+      "enabled": true,
+      "forced": false,
+      "autoSchedule": true,
+      "nightTemp": "4046",
+      "dayTemp": "6500",
+      "manualSunrise": "06:30",
+      "manualSunset": "20:00"
+    },
+    "hooks": {
+      "enabled": true,
+      "wallpaperChange": "",
+      "darkModeChange": "",
+      "screenLock": "",
+      "screenUnlock": "",
+      "performanceModeEnabled": "",
+      "performanceModeDisabled": "",
+      "startup": "",
+      "session": "",
+      "colorGeneration": ""
+    },
+    "plugins": {
+      "autoUpdate": false,
+      "notifyUpdates": true
+    },
+    "idle": {
+      "enabled": true,
+      "screenOffTimeout": 180,
+      "lockTimeout": 0,
+      "suspendTimeout": 0,
+      "fadeDuration": 5,
+      "screenOffCommand": "",
+      "lockCommand": "",
+      "suspendCommand": "",
+      "resumeScreenOffCommand": "",
+      "resumeLockCommand": "",
+      "resumeSuspendCommand": "",
+      "customCommands": "[{\"name\":\"lock with hyprlock\",\"timeout\":300,\"command\":\"status=$(cat /sys/class/power_supply/ACAD/online); [ \\\"$status\\\" -eq 1 ] && noctalia-shell ipc call lockScreen lock || (noctalia-shell ipc call lockScreen lock & systemctl suspend-then-hibernate)\",\"resumeCommand\":\"\"}]"
+    },
+    "desktopWidgets": {
+      "enabled": false,
+      "overviewEnabled": true,
+      "gridSnap": false,
+      "gridSnapScale": false,
+      "monitorWidgets": [
+        {
+          "name": "eDP-1",
+          "widgets": [
+            {
+              "id": "Weather",
+              "scale": 1.3740852671824144,
+              "showBackground": true,
+              "x": 1059,
+              "y": 76
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "state": {
+    "doNotDisturb": false,
+    "noctaliaPerformanceMode": false,
+    "barVisible": true,
+    "openedPanel": "",
+    "lockScreenActive": false,
+    "wallpapers": {
+      "": "/home/alnav/wallpapers/comfy-home.png",
+      "DP-10": "/home/alnav/wallpapers/comfy-home.png",
+      "DP-11": "/home/alnav/wallpapers/comfy-home.png",
+      "eDP-1": "/home/alnav/wallpapers/comfy-home.png"
+    },
+    "desktopWidgetsEditMode": false,
+    "display": {
+      "eDP-1": {
+        "name": "eDP-1",
+        "scale": 2,
+        "width": 2880,
+        "height": 1920,
+        "refresh_rate": 60.001,
+        "x": 0,
+        "y": 0,
+        "active_workspace": 4,
+        "vrr": true,
+        "focused": true
+      }
+    },
+    "notificationsState": {
+      "lastSeenTs": 1774435656000
+    },
+    "changelogState": {
+      "lastSeenVersion": "v4.7.2"
+    },
+    "colorSchemesList": {
+      "schemes": [
+        {
+          "dark": {
+            "mError": "#c01c28",
+            "mHover": "#3584e4",
+            "mOnError": "#ffffff",
+            "mOnHover": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#ffffff",
+            "mOnSurfaceVariant": "#ffffff",
+            "mOnTertiary": "#2e3436",
+            "mOutline": "#3d3846",
+            "mPrimary": "#3584e4",
+            "mSecondary": "#1b467c",
+            "mShadow": "#000000",
+            "mSurface": "#242424",
+            "mSurfaceVariant": "#1e1e1e",
+            "mTertiary": "#ffffff"
+          },
+          "light": {
+            "mError": "#e01b24",
+            "mHover": "#3584e4",
+            "mOnError": "#ffffff",
+            "mOnHover": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#2e3436",
+            "mOnSurfaceVariant": "#2e3436",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#d6d6d6",
+            "mPrimary": "#3584e4",
+            "mSecondary": "#2e3436",
+            "mShadow": "#000000",
+            "mSurface": "#fafafa",
+            "mSurfaceVariant": "#ffffff",
+            "mTertiary": "#2ec27e"
+          },
+          "name": "ADW",
+          "path": "ADW"
+        },
+        {
+          "dark": {
+            "mError": "#da4453",
+            "mHover": "#3daee9",
+            "mOnError": "#141618",
+            "mOnHover": "#141618",
+            "mOnPrimary": "#141618",
+            "mOnSecondary": "#141618",
+            "mOnSurface": "#fcfcfc",
+            "mOnSurfaceVariant": "#a1a9b1",
+            "mOnTertiary": "#141618",
+            "mOutline": "#707d8a",
+            "mPrimary": "#3daee9",
+            "mSecondary": "#1d99f3",
+            "mShadow": "#272c31",
+            "mSurface": "#202224",
+            "mSurfaceVariant": "#292d32",
+            "mTertiary": "#9b59b6"
+          },
+          "light": {
+            "mError": "#da4453",
+            "mHover": "#3daee9",
+            "mOnError": "#ffffff",
+            "mOnHover": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#232629",
+            "mOnSurfaceVariant": "#707d8a",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#e3e5e7",
+            "mPrimary": "#3daee9",
+            "mSecondary": "#2980b9",
+            "mShadow": "#e3e5e7",
+            "mSurface": "#ffffff",
+            "mSurfaceVariant": "#eff0f1",
+            "mTertiary": "#9b59b6"
+          },
+          "name": "Breeze",
+          "path": "Breeze"
+        },
+        {
+          "dark": {
+            "mError": "#f38ba8",
+            "mHover": "#c6a0f6",
+            "mOnError": "#11111b",
+            "mOnHover": "#11111b",
+            "mOnPrimary": "#11111b",
+            "mOnSecondary": "#11111b",
+            "mOnSurface": "#cdd6f4",
+            "mOnSurfaceVariant": "#a3b4eb",
+            "mOnTertiary": "#11111b",
+            "mOutline": "#4c4f69",
+            "mPrimary": "#b4befe",
+            "mSecondary": "#f5bde6",
+            "mShadow": "#11111b",
+            "mSurface": "#1e1e2e",
+            "mSurfaceVariant": "#313244",
+            "mTertiary": "#c6a0f6"
+          },
+          "light": {
+            "mError": "#d20f39",
+            "mHover": "#d20f39",
+            "mOnError": "#dce0e8",
+            "mOnHover": "#eff1f5",
+            "mOnPrimary": "#eff1f5",
+            "mOnSecondary": "#eff1f5",
+            "mOnSurface": "#4c4f69",
+            "mOnSurfaceVariant": "#6c6f85",
+            "mOnTertiary": "#eff1f5",
+            "mOutline": "#a5adcb",
+            "mPrimary": "#1e66f5",
+            "mSecondary": "#ea76cb",
+            "mShadow": "#dce0e8",
+            "mSurface": "#eff1f5",
+            "mSurfaceVariant": "#ccd0da",
+            "mTertiary": "#8839ef"
+          },
+          "name": "Catppuccin Lavender",
+          "path": "Catppuccin Lavender"
+        },
+        {
+          "dark": {
+            "mError": "#EC8A92",
+            "mHover": "#F4D86A",
+            "mOnError": "#2A1B21",
+            "mOnHover": "#2A1B21",
+            "mOnPrimary": "#2A1B21",
+            "mOnSecondary": "#2A1B21",
+            "mOnSurface": "#F3C7D7",
+            "mOnSurfaceVariant": "#EFDCE8",
+            "mOnTertiary": "#2A1B21",
+            "mOutline": "#5C1A28",
+            "mPrimary": "#F2C1D4",
+            "mSecondary": "#FFD6E2",
+            "mShadow": "#4F3A47",
+            "mSurface": "#2A1922",
+            "mSurfaceVariant": "#4D3745",
+            "mTertiary": "#D4A3BD"
+          },
+          "light": {
+            "mError": "#E6687C",
+            "mHover": "#FFD970",
+            "mOnError": "#6F4E63",
+            "mOnHover": "#2A1B21",
+            "mOnPrimary": "#F7E2EB",
+            "mOnSecondary": "#2A1B21",
+            "mOnSurface": "#2A1B21",
+            "mOnSurfaceVariant": "#6F4E63",
+            "mOnTertiary": "#FAE8F0",
+            "mOutline": "#2A1B21",
+            "mPrimary": "#6F4E63",
+            "mSecondary": "#F2C1D4",
+            "mShadow": "#FCEFF5",
+            "mSurface": "#F7E6EE",
+            "mSurfaceVariant": "#F9EDF3",
+            "mTertiary": "#8F6A7C"
+          },
+          "name": "Cherry Blossom",
+          "path": "Cherry Blossom"
+        },
+        {
+          "dark": {
+            "mError": "#B32D2D",
+            "mHover": "#00A66C",
+            "mOnError": "#0E1015",
+            "mOnHover": "#0E1015",
+            "mOnPrimary": "#0E1015",
+            "mOnSecondary": "#0E1015",
+            "mOnSurface": "#5C8AC4",
+            "mOnSurfaceVariant": "#9B6BC1",
+            "mOnTertiary": "#0E1015",
+            "mOutline": "#45A0D6",
+            "mPrimary": "#C4A82E",
+            "mSecondary": "#D14358",
+            "mShadow": "#090D13",
+            "mSurface": "#0C1017",
+            "mSurfaceVariant": "#11151D",
+            "mTertiary": "#00A66C"
+          },
+          "light": {
+            "mError": "#E63E5D",
+            "mHover": "#45D395",
+            "mOnError": "#1A1914",
+            "mOnHover": "#1A1914",
+            "mOnPrimary": "#1A1914",
+            "mOnSecondary": "#1A1914",
+            "mOnSurface": "#1A1914",
+            "mOnSurfaceVariant": "#1A1914",
+            "mOnTertiary": "#1A1914",
+            "mOutline": "#7B52AB",
+            "mPrimary": "#00B8B3",
+            "mSecondary": "#D957A0",
+            "mShadow": "#B8D4E6",
+            "mSurface": "#DAE6E8",
+            "mSurfaceVariant": "#C8DEE6",
+            "mTertiary": "#45D395"
+          },
+          "name": "Cyberpunk",
+          "path": "Cyberpunk"
+        },
+        {
+          "dark": {
+            "mError": "#ffb4ab",
+            "mHover": "#e9c258",
+            "mOnError": "#690005",
+            "mOnHover": "#3d2e00",
+            "mOnPrimary": "#621000",
+            "mOnSecondary": "#522216",
+            "mOnSurface": "#f4ded9",
+            "mOnSurfaceVariant": "#dfc0b8",
+            "mOnTertiary": "#3d2e00",
+            "mOutline": "#58423c",
+            "mPrimary": "#ffb4a3",
+            "mSecondary": "#ffb4a3",
+            "mShadow": "#000000",
+            "mSurface": "#1c110e",
+            "mSurfaceVariant": "#291d1a",
+            "mTertiary": "#e9c258"
+          },
+          "light": {
+            "mError": "#ba1a1a",
+            "mHover": "#755b00",
+            "mOnError": "#ffffff",
+            "mOnHover": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#251916",
+            "mOnSurfaceVariant": "#58423c",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#dfc0b8",
+            "mPrimary": "#a03218",
+            "mSecondary": "#8a4e40",
+            "mShadow": "#000000",
+            "mSurface": "#fff8f6",
+            "mSurfaceVariant": "#ffe9e4",
+            "mTertiary": "#755b00"
+          },
+          "name": "Everdeer",
+          "path": "Everdeer"
+        },
+        {
+          "dark": {
+            "mError": "#E67E80",
+            "mHover": "#A7C080",
+            "mOnError": "#232A2E",
+            "mOnHover": "#232A2E",
+            "mOnPrimary": "#232A2E",
+            "mOnSecondary": "#232A2E",
+            "mOnSurface": "#859289",
+            "mOnSurfaceVariant": "#D3C6AA",
+            "mOnTertiary": "#232A2E",
+            "mOutline": "#7A8478",
+            "mPrimary": "#A7C080",
+            "mSecondary": "#D3C6AA",
+            "mShadow": "#475258",
+            "mSurface": "#232A2E",
+            "mSurfaceVariant": "#2D353B",
+            "mTertiary": "#9DA9A0"
+          },
+          "light": {
+            "mError": "#E66868",
+            "mHover": "#333c43",
+            "mOnError": "#9DA9A0",
+            "mOnHover": "#9DA9A0",
+            "mOnPrimary": "#D3C6AA",
+            "mOnSecondary": "#D3C6AA",
+            "mOnSurface": "#232A2E",
+            "mOnSurfaceVariant": "#333C43",
+            "mOnTertiary": "#9DA9A0",
+            "mOutline": "#232A2E",
+            "mPrimary": "#434F55",
+            "mSecondary": "#232a2e",
+            "mShadow": "#ECF5ED",
+            "mSurface": "#9DA9A0",
+            "mSurfaceVariant": "#BEC5B2",
+            "mTertiary": "#333c43"
+          },
+          "name": "Everforest",
+          "path": "Everforest"
+        },
+        {
+          "dark": {
+            "mError": "#f85149",
+            "mHover": "#21262d",
+            "mOnError": "#010409",
+            "mOnHover": "#c9d1d9",
+            "mOnPrimary": "#010409",
+            "mOnSecondary": "#010409",
+            "mOnSurface": "#c9d1d9",
+            "mOnSurfaceVariant": "#8b949e",
+            "mOnTertiary": "#010409",
+            "mOutline": "#30363d",
+            "mPrimary": "#58a6ff",
+            "mSecondary": "#bc8cff",
+            "mShadow": "#010409",
+            "mSurface": "#010409",
+            "mSurfaceVariant": "#161b22",
+            "mTertiary": "#bc8cff"
+          },
+          "light": {
+            "mError": "#cf222e",
+            "mHover": "#eaeef2",
+            "mOnError": "#ffffff",
+            "mOnHover": "#1f2328",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#1f2328",
+            "mOnSurfaceVariant": "#656d76",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#d0d7de",
+            "mPrimary": "#0969da",
+            "mSecondary": "#1a7f37",
+            "mShadow": "#ffffff",
+            "mSurface": "#ffffff",
+            "mSurfaceVariant": "#f6f8fa",
+            "mTertiary": "#8250df"
+          },
+          "name": "GitHub Dark",
+          "path": "GitHub Dark"
+        },
+        {
+          "dark": {
+            "mError": "#f43841",
+            "mHover": "#453d41",
+            "mOnError": "#101010",
+            "mOnHover": "#e4e4ef",
+            "mOnPrimary": "#181818",
+            "mOnSecondary": "#101010",
+            "mOnSurface": "#e4e4ef",
+            "mOnSurfaceVariant": "#95a99f",
+            "mOnTertiary": "#101010",
+            "mOutline": "#484848",
+            "mPrimary": "#ffdd33",
+            "mSecondary": "#96a6c8",
+            "mShadow": "#101010",
+            "mSurface": "#181818",
+            "mSurfaceVariant": "#282828",
+            "mTertiary": "#9e95c7"
+          },
+          "light": {
+            "mError": "#c73c3f",
+            "mHover": "#d8d8e4",
+            "mOnError": "#ffffff",
+            "mOnHover": "#181818",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#181818",
+            "mOnSurfaceVariant": "#453d41",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#c8c8d0",
+            "mPrimary": "#5f627f",
+            "mSecondary": "#4a8a14",
+            "mShadow": "#f5f5f5",
+            "mSurface": "#f5f5f5",
+            "mSurfaceVariant": "#e4e4ef",
+            "mTertiary": "#7a6ea8"
+          },
+          "name": "Gruber Darker",
+          "path": "Gruber Darker"
+        },
+        {
+          "dark": {
+            "mError": "#fb4934",
+            "mHover": "#83a598",
+            "mOnError": "#282828",
+            "mOnHover": "#282828",
+            "mOnPrimary": "#282828",
+            "mOnSecondary": "#282828",
+            "mOnSurface": "#fbf1c7",
+            "mOnSurfaceVariant": "#ebdbb2",
+            "mOnTertiary": "#282828",
+            "mOutline": "#57514e",
+            "mPrimary": "#ebdbb2",
+            "mSecondary": "#8ec07c",
+            "mShadow": "#282828",
+            "mSurface": "#282828",
+            "mSurfaceVariant": "#3c3836",
+            "mTertiary": "#83a598"
+          },
+          "light": {
+            "mError": "#cc241d",
+            "mHover": "#458588",
+            "mOnError": "#fbf1c7",
+            "mOnHover": "#fbf1c7",
+            "mOnPrimary": "#fbf1c7",
+            "mOnSecondary": "#fbf1c7",
+            "mOnSurface": "#3c3836",
+            "mOnSurfaceVariant": "#7c6f64",
+            "mOnTertiary": "#fbf1c7",
+            "mOutline": "#bdae93",
+            "mPrimary": "#3c3836",
+            "mSecondary": "#689d6a",
+            "mShadow": "#d5c4a1",
+            "mSurface": "#fbf1c7",
+            "mSurfaceVariant": "#ebddb2",
+            "mTertiary": "#458588"
+          },
+          "name": "GruvboxAlt",
+          "path": "GruvboxAlt"
+        },
+        {
+          "dark": {
+            "mError": "#ffb4ab",
+            "mOnError": "#690005",
+            "mOnPrimary": "#003916",
+            "mOnSecondary": "#233425",
+            "mOnSurface": "#dfe4dc",
+            "mOnSurfaceVariant": "#c1c9be",
+            "mOnTertiary": "#00363e",
+            "mOutline": "#8b9389",
+            "mPrimary": "#9ad4a1",
+            "mSecondary": "#b7ccb6",
+            "mShadow": "#000000",
+            "mSurface": "#101510",
+            "mSurfaceVariant": "#101510",
+            "mTertiary": "#a1ced8"
+          },
+          "light": {
+            "mError": "#ba1a1a",
+            "mOnError": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#181d18",
+            "mOnSurfaceVariant": "#414941",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#727970",
+            "mPrimary": "#346940",
+            "mSecondary": "#506351",
+            "mShadow": "#000000",
+            "mSurface": "#d7dbd3",
+            "mSurfaceVariant": "#f6fbf2",
+            "mTertiary": "#39656d"
+          },
+          "name": "Hexa34C",
+          "path": "Hexa34C"
+        },
+        {
+          "dark": {
+            "mError": "#c4746e",
+            "mHover": "#363646",
+            "mOnError": "#1F1F28",
+            "mOnHover": "#DCD7BA",
+            "mOnPrimary": "#1F1F28",
+            "mOnSecondary": "#1F1F28",
+            "mOnSurface": "#DCD7BA",
+            "mOnSurfaceVariant": "#C8C093",
+            "mOnTertiary": "#1F1F28",
+            "mOutline": "#435965",
+            "mPrimary": "#c4b28a",
+            "mSecondary": "#8ea49e",
+            "mShadow": "#000000",
+            "mSurface": "#1F1F28",
+            "mSurfaceVariant": "#2A2A37",
+            "mTertiary": "#938AA9"
+          },
+          "light": {
+            "mError": "#c27672",
+            "mHover": "#c9cdd7",
+            "mOnError": "#ffffff",
+            "mOnHover": "#4f5357",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#4f5357",
+            "mOnSurfaceVariant": "#666b70",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#8e8a80",
+            "mPrimary": "#6b7f9f",
+            "mSecondary": "#6f8795",
+            "mShadow": "#c8c5bd",
+            "mSurface": "#f2f1ec",
+            "mSurfaceVariant": "#e4e1d8",
+            "mTertiary": "#8b6e86"
+          },
+          "name": "Kanagawa Paper",
+          "path": "Kanagawa Paper"
+        },
+        {
+          "dark": {
+            "mError": "#ff6f9b",
+            "mOnError": "#000000",
+            "mOnPrimary": "#000000",
+            "mOnSecondary": "#000000",
+            "mOnSurface": "#e8d8ff",
+            "mOnSurfaceVariant": "#b58fff",
+            "mOnTertiary": "#000000",
+            "mOutline": "#4c3a70",
+            "mPrimary": "#b58fff",
+            "mSecondary": "#c79aff",
+            "mShadow": "#000000",
+            "mSurface": "#000000",
+            "mSurfaceVariant": "#110d1a",
+            "mTertiary": "#d8b4ff"
+          },
+          "light": {
+            "mError": "#ff6f9b",
+            "mOnError": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#1a1428",
+            "mOnSurfaceVariant": "#8a56d4",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#9b85c2",
+            "mPrimary": "#8a56d4",
+            "mSecondary": "#a074ff",
+            "mShadow": "#e2d8f5",
+            "mSurface": "#fbf8ff",
+            "mSurfaceVariant": "#e8e0f8",
+            "mTertiary": "#c79aff"
+          },
+          "name": "Lilac AMOLED",
+          "path": "Lilac AMOLED"
+        },
+        {
+          "dark": {
+            "mError": "#b36d43",
+            "mOnError": "#222222",
+            "mOnPrimary": "#222222",
+            "mOnSecondary": "#222222",
+            "mOnSurface": "#c2c2b0",
+            "mOnSurfaceVariant": "#c9a554",
+            "mOnTertiary": "#222222",
+            "mOutline": "#666666",
+            "mPrimary": "#c9a554",
+            "mSecondary": "#b36d43",
+            "mShadow": "#1a1a1a",
+            "mSurface": "#222222",
+            "mSurfaceVariant": "#2a2a2a",
+            "mTertiary": "#bb7744"
+          },
+          "light": {
+            "mError": "#b36d43",
+            "mOnError": "#fafaf5",
+            "mOnPrimary": "#fafaf5",
+            "mOnSecondary": "#fafaf5",
+            "mOnSurface": "#222222",
+            "mOnSurfaceVariant": "#b36d43",
+            "mOnTertiary": "#fafaf5",
+            "mOutline": "#999980",
+            "mPrimary": "#c9a554",
+            "mSecondary": "#b36d43",
+            "mShadow": "#d7d7d0",
+            "mSurface": "#fafaf5",
+            "mSurfaceVariant": "#e8e8e0",
+            "mTertiary": "#bb7744"
+          },
+          "name": "Miasma",
+          "path": "Miasma"
+        },
+        {
+          "dark": {
+            "mError": "#dddddd",
+            "mHover": "#cccccc",
+            "mOnError": "#111111",
+            "mOnHover": "#111111",
+            "mOnPrimary": "#111111",
+            "mOnSecondary": "#111111",
+            "mOnSurface": "#828282",
+            "mOnSurfaceVariant": "#5d5d5d",
+            "mOnTertiary": "#111111",
+            "mOutline": "#3c3c3c",
+            "mPrimary": "#aaaaaa",
+            "mSecondary": "#a7a7a7",
+            "mShadow": "#000000",
+            "mSurface": "#111111",
+            "mSurfaceVariant": "#191919",
+            "mTertiary": "#cccccc"
+          },
+          "light": {
+            "mError": "#222222",
+            "mHover": "#333333",
+            "mOnError": "#efefef",
+            "mOnHover": "#eeeeee",
+            "mOnPrimary": "#eeeeee",
+            "mOnSecondary": "#eeeeee",
+            "mOnSurface": "#696969",
+            "mOnSurfaceVariant": "#9e9e9e",
+            "mOnTertiary": "#eeeeee",
+            "mOutline": "#c3c3c3",
+            "mPrimary": "#555555",
+            "mSecondary": "#505058",
+            "mShadow": "#fafafa",
+            "mSurface": "#d4d4d4",
+            "mSurfaceVariant": "#e8e8e8",
+            "mTertiary": "#333333"
+          },
+          "name": "Monochrome",
+          "path": "Monochrome"
+        },
+        {
+          "dark": {
+            "mError": "#e80e4f",
+            "mHover": "#6f099a",
+            "mOnError": "#fee7ee",
+            "mOnHover": "#fef7e7",
+            "mOnPrimary": "#8e0cc6",
+            "mOnSecondary": "#e8bcfb",
+            "mOnSurface": "#fef7e7",
+            "mOnSurfaceVariant": "#e8bcfb",
+            "mOnTertiary": "#90f9d9",
+            "mOutline": "#8e0cc6",
+            "mPrimary": "#e8bcfb",
+            "mSecondary": "#8e0cc6",
+            "mShadow": "#110118",
+            "mSurface": "#300443",
+            "mSurfaceVariant": "#50066f",
+            "mTertiary": "#066f50"
+          },
+          "light": {
+            "mError": "#f33971",
+            "mHover": "#d990f9",
+            "mOnError": "#430417",
+            "mOnHover": "#300443",
+            "mOnPrimary": "#e8bcfb",
+            "mOnSecondary": "#a70ee8",
+            "mOnSurface": "#6f099a",
+            "mOnSurfaceVariant": "#50066f",
+            "mOnTertiary": "#066f50",
+            "mOutline": "#ca65f6",
+            "mPrimary": "#8e0cc6",
+            "mSecondary": "#ca65f6",
+            "mShadow": "#f7e7fe",
+            "mSurface": "#f7e7fe",
+            "mSurfaceVariant": "#e8bcfb",
+            "mTertiary": "#bcfbe8"
+          },
+          "name": "Murasaki",
+          "path": "Murasaki"
+        },
+        {
+          "dark": {
+            "mError": "#ff0000",
+            "mHover": "#0b3335",
+            "mOnError": "#062329",
+            "mOnHover": "#d1b897",
+            "mOnPrimary": "#062329",
+            "mOnSecondary": "#062329",
+            "mOnSurface": "#d1b897",
+            "mOnSurfaceVariant": "#c1d1e3",
+            "mOnTertiary": "#d1b897",
+            "mOutline": "#126367",
+            "mPrimary": "#2ec09c",
+            "mSecondary": "#8cde94",
+            "mShadow": "#062329",
+            "mSurface": "#062329",
+            "mSurfaceVariant": "#0b3335",
+            "mTertiary": "#7ad0c6"
+          },
+          "light": {
+            "mError": "#F92672",
+            "mHover": "#e8f4f5",
+            "mOnError": "#ffffff",
+            "mOnHover": "#062329",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#062329",
+            "mOnSurface": "#062329",
+            "mOnSurfaceVariant": "#126367",
+            "mOnTertiary": "#062329",
+            "mOutline": "#c1d1e3",
+            "mPrimary": "#2ec09c",
+            "mSecondary": "#8cde94",
+            "mShadow": "#e0e0e0",
+            "mSurface": "#ffffff",
+            "mSurfaceVariant": "#f0f0f0",
+            "mTertiary": "#7ad0c6"
+          },
+          "name": "NaySayer",
+          "path": "NaySayer"
+        },
+        {
+          "dark": {
+            "mError": "#e9899d",
+            "mHover": "#e0b7c9",
+            "mOnError": "#1e1418",
+            "mOnHover": "#20161f",
+            "mOnPrimary": "#1a151f",
+            "mOnSecondary": "#f3edf7",
+            "mOnSurface": "#e9e4f0",
+            "mOnSurfaceVariant": "#a79ab0",
+            "mOnTertiary": "#20161f",
+            "mOutline": "#3e364e",
+            "mPrimary": "#c7a1d8",
+            "mSecondary": "#a984c4",
+            "mShadow": "#120f18",
+            "mSurface": "#1c1822",
+            "mSurfaceVariant": "#262130",
+            "mTertiary": "#e0b7c9"
+          },
+          "light": {
+            "mError": "#e9899d",
+            "mHover": "#c17093",
+            "mOnError": "#1e1418",
+            "mOnHover": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#1c1822",
+            "mOnSurfaceVariant": "#4a3d59",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#cebedc",
+            "mPrimary": "#9b59ba",
+            "mSecondary": "#784999",
+            "mShadow": "#ffffff",
+            "mSurface": "#f5f1fa",
+            "mSurfaceVariant": "#e7dfee",
+            "mTertiary": "#c17093"
+          },
+          "name": "Noctalia legacy",
+          "path": "Noctalia legacy"
+        },
+        {
+          "dark": {
+            "mError": "#FFA0A0",
+            "mOnError": "#1A1A1A",
+            "mOnPrimary": "#1A1A1A",
+            "mOnSecondary": "#1A1A1A",
+            "mOnSurface": "#FFDACC",
+            "mOnSurfaceVariant": "#F0EBE6",
+            "mOnTertiary": "#1A1A1A",
+            "mOutline": "#5E5148",
+            "mPrimary": "#D06666",
+            "mSecondary": "#FFA247",
+            "mShadow": "#050505",
+            "mSurface": "#1A1A1A",
+            "mSurfaceVariant": "#080808",
+            "mTertiary": "#F0E68C"
+          },
+          "light": {
+            "mError": "#b36d43",
+            "mOnError": "#e8e0d8",
+            "mOnPrimary": "#e8e0d8",
+            "mOnSecondary": "#e8e0d8",
+            "mOnSurface": "#7c4734",
+            "mOnSurfaceVariant": "#555555",
+            "mOnTertiary": "#e8e0d8",
+            "mOutline": "#978e88",
+            "mPrimary": "#7d2b2b",
+            "mSecondary": "#ab5807",
+            "mShadow": "#eee8e2",
+            "mSurface": "#e8e0d8",
+            "mSurfaceVariant": "#f3efeb",
+            "mTertiary": "#696223"
+          },
+          "name": "Oasis Abyss",
+          "path": "Oasis Abyss"
+        },
+        {
+          "dark": {
+            "mError": "#C25B5B",
+            "mHover": "#A83A3A",
+            "mOnError": "#0A0A12",
+            "mOnHover": "#E4DED2",
+            "mOnPrimary": "#1C1C28",
+            "mOnSecondary": "#0A0A12",
+            "mOnSurface": "#E4DED2",
+            "mOnSurfaceVariant": "#F2EADF",
+            "mOnTertiary": "#0A0A12",
+            "mOutline": "#3A3A4A",
+            "mPrimary": "#8B2E2E",
+            "mSecondary": "#8BAA82",
+            "mShadow": "#000000",
+            "mSurface": "#0A0A12",
+            "mSurfaceVariant": "#14141E",
+            "mTertiary": "#9A7398"
+          },
+          "light": {
+            "mError": "#C25B5B",
+            "mHover": "#8B2E2E",
+            "mOnError": "#FFF8F2",
+            "mOnHover": "#FFF8F2",
+            "mOnPrimary": "#FFF8F2",
+            "mOnSecondary": "#FFF8F2",
+            "mOnSurface": "#0A0A12",
+            "mOnSurfaceVariant": "#0A0A12",
+            "mOnTertiary": "#FFF8F2",
+            "mOutline": "#8B2E2E",
+            "mPrimary": "#8B2E2E",
+            "mSecondary": "#5A1F6F",
+            "mShadow": "#000000",
+            "mSurface": "#EFE6DA",
+            "mSurfaceVariant": "#D2B48C",
+            "mTertiary": "#3F1C4A"
+          },
+          "name": "Occult Umbral",
+          "path": "Occult Umbral"
+        },
+        {
+          "dark": {
+            "mError": "#e06c75",
+            "mHover": "#56b6c2",
+            "mOnError": "#1e2127",
+            "mOnHover": "#1e2127",
+            "mOnPrimary": "#1e2127",
+            "mOnSecondary": "#1e2127",
+            "mOnSurface": "#cdd4e1",
+            "mOnSurfaceVariant": "#61afef",
+            "mOnTertiary": "#1e2127",
+            "mOutline": "#3e4451",
+            "mPrimary": "#61afef",
+            "mSecondary": "#c678dd",
+            "mShadow": "#181a1f",
+            "mSurface": "#1e2127",
+            "mSurfaceVariant": "#282c34",
+            "mTertiary": "#98c379"
+          },
+          "light": {
+            "mError": "#b64439",
+            "mHover": "#36b6a2",
+            "mOnError": "#fafafa",
+            "mOnHover": "#e8e8e8",
+            "mOnPrimary": "#e8e8e8",
+            "mOnSecondary": "#e8e8e8",
+            "mOnSurface": "#383a42",
+            "mOnSurfaceVariant": "#383a42",
+            "mOnTertiary": "#e8e8e8",
+            "mOutline": "#4078f2",
+            "mPrimary": "#4078f2",
+            "mSecondary": "#a626a4",
+            "mShadow": "#d0d0d0",
+            "mSurface": "#e8e8e8",
+            "mSurfaceVariant": "#e5e5e6",
+            "mTertiary": "#50a14f"
+          },
+          "name": "One",
+          "path": "One"
+        },
+        {
+          "dark": {
+            "mError": "#E27881",
+            "mHover": "#62BAC6",
+            "mOnError": "#21252B",
+            "mOnHover": "#282C34",
+            "mOnPrimary": "#21252B",
+            "mOnSecondary": "#21252B",
+            "mOnSurface": "#C9CCD3",
+            "mOnSurfaceVariant": "#78C4CE",
+            "mOnTertiary": "#21252B",
+            "mOutline": "#393E47",
+            "mPrimary": "#62BAC6",
+            "mSecondary": "#EAC786",
+            "mShadow": "#1D1F23",
+            "mSurface": "#21252B",
+            "mSurfaceVariant": "#282C34",
+            "mTertiary": "#98C379"
+          },
+          "light": {
+            "mError": "#B4656E",
+            "mHover": "#7C9D68",
+            "mOnError": "#DDDEDF",
+            "mOnHover": "#E6E6E6",
+            "mOnPrimary": "#DDDEDF",
+            "mOnSecondary": "#DDDEDF",
+            "mOnSurface": "#282C34",
+            "mOnSurfaceVariant": "#393E47",
+            "mOnTertiary": "#DDDEDF",
+            "mOutline": "#C9CCD3",
+            "mPrimary": "#5497A2",
+            "mSecondary": "#BAA072",
+            "mShadow": "#E6E6E6",
+            "mSurface": "#E6E6E6",
+            "mSurfaceVariant": "#DDDEDF",
+            "mTertiary": "#7C9D68"
+          },
+          "name": "One Dark Two",
+          "path": "One Dark Two"
+        },
+        {
+          "dark": {
+            "mError": "#933636",
+            "mHover": "#26A589",
+            "mOnError": "#B8C8C4",
+            "mOnHover": "#B8C8C4",
+            "mOnPrimary": "#B8C8C4",
+            "mOnSecondary": "#B8C8C4",
+            "mOnSurface": "#A6B5B1",
+            "mOnSurfaceVariant": "#99A8A4",
+            "mOnTertiary": "#B8C8C4",
+            "mOutline": "#1B6352",
+            "mPrimary": "#1E9177",
+            "mSecondary": "#167A63",
+            "mShadow": "#040A09",
+            "mSurface": "#081512",
+            "mSurfaceVariant": "#0F251F",
+            "mTertiary": "#26A589"
+          },
+          "light": {
+            "mError": "#854145",
+            "mHover": "#4A8069",
+            "mOnError": "#D8E5DB",
+            "mOnHover": "#D8E5DB",
+            "mOnPrimary": "#D8E5DB",
+            "mOnSecondary": "#D8E5DB",
+            "mOnSurface": "#2C3D35",
+            "mOnSurfaceVariant": "#263731",
+            "mOnTertiary": "#D8E5DB",
+            "mOutline": "#5C7A6A",
+            "mPrimary": "#3B7561",
+            "mSecondary": "#526E4A",
+            "mShadow": "#8A9E90",
+            "mSurface": "#AEC2B4",
+            "mSurfaceVariant": "#95AD9C",
+            "mTertiary": "#4A8069"
+          },
+          "name": "Osaka jade",
+          "path": "Osaka jade"
+        },
+        {
+          "dark": {
+            "mError": "#C25D4E",
+            "mHover": "#463B38",
+            "mOnError": "#E6DBD3",
+            "mOnHover": "#E6DBD3",
+            "mOnPrimary": "#1D1816",
+            "mOnSecondary": "#1D1816",
+            "mOnSurface": "#E6DBD3",
+            "mOnSurfaceVariant": "#B8ACA2",
+            "mOnTertiary": "#1D1816",
+            "mOutline": "#3E3532",
+            "mPrimary": "#B85A30",
+            "mSecondary": "#8B9A5A",
+            "mShadow": "#1D1816",
+            "mSurface": "#231D1B",
+            "mSurfaceVariant": "#2E2623",
+            "mTertiary": "#D8A657"
+          },
+          "light": {
+            "mError": "#AD4433",
+            "mHover": "#DCCFBD",
+            "mOnError": "#FFFCF8",
+            "mOnHover": "#3A2E25",
+            "mOnPrimary": "#FFFCF8",
+            "mOnSecondary": "#FFFCF8",
+            "mOnSurface": "#3A2E25",
+            "mOnSurfaceVariant": "#6A5D51",
+            "mOnTertiary": "#FFFCF8",
+            "mOutline": "#D8CCBA",
+            "mPrimary": "#B85A30",
+            "mSecondary": "#6B8050",
+            "mShadow": "#FFFFFF",
+            "mSurface": "#F2E8D8",
+            "mSurfaceVariant": "#F7F0E5",
+            "mTertiary": "#BD8838"
+          },
+          "name": "Oxide",
+          "path": "Oxide"
+        },
+        {
+          "dark": {
+            "mError": "#ee5396",
+            "mHover": "#78a9ff",
+            "mOnError": "#161616",
+            "mOnHover": "#161616",
+            "mOnPrimary": "#161616",
+            "mOnSecondary": "#161616",
+            "mOnSurface": "#f2f4f8",
+            "mOnSurfaceVariant": "#dde1e6",
+            "mOnTertiary": "#161616",
+            "mOutline": "#525252",
+            "mPrimary": "#33b1ff",
+            "mSecondary": "#42be65",
+            "mShadow": "#000000",
+            "mSurface": "#161616",
+            "mSurfaceVariant": "#262626",
+            "mTertiary": "#be95ff"
+          },
+          "light": {
+            "mError": "#ee5396",
+            "mHover": "#0f62fe",
+            "mOnError": "#f2f4f8",
+            "mOnHover": "#f2f4f8",
+            "mOnPrimary": "#f2f4f8",
+            "mOnSecondary": "#f2f4f8",
+            "mOnSurface": "#161616",
+            "mOnSurfaceVariant": "#393939",
+            "mOnTertiary": "#f2f4f8",
+            "mOutline": "#525252",
+            "mPrimary": "#0f62fe",
+            "mSecondary": "#42be65",
+            "mShadow": "#ffffff",
+            "mSurface": "#f2f4f8",
+            "mSurfaceVariant": "#dde1e6",
+            "mTertiary": "#673ab7"
+          },
+          "name": "Oxocarbon",
+          "path": "Oxocarbon"
+        },
+        {
+          "dark": {
+            "mError": "#A7CCE1",
+            "mHover": "#E8B8A8",
+            "mOnError": "#0e1214",
+            "mOnHover": "#0e1214",
+            "mOnPrimary": "#0e1214",
+            "mOnSecondary": "#0e1214",
+            "mOnSurface": "#ABBCC4",
+            "mOnSurfaceVariant": "#DBE2E6",
+            "mOnTertiary": "#0e1214",
+            "mOutline": "#212B30",
+            "mPrimary": "#9DD2C0",
+            "mSecondary": "#FADDD2",
+            "mShadow": "#000000",
+            "mSurface": "#0e1214",
+            "mSurfaceVariant": "#192024",
+            "mTertiary": "#E8B8A8"
+          },
+          "light": {
+            "mError": "#7FAFC7",
+            "mHover": "#D68F6E",
+            "mOnError": "#E5EDF0",
+            "mOnHover": "#E5EDF0",
+            "mOnPrimary": "#E5EDF0",
+            "mOnSecondary": "#E5EDF0",
+            "mOnSurface": "#738A92",
+            "mOnSurfaceVariant": "#435860",
+            "mOnTertiary": "#E5EDF0",
+            "mOutline": "#C2CFD6",
+            "mPrimary": "#6DB09A",
+            "mSecondary": "#EABCAE",
+            "mShadow": "#B8C5D0",
+            "mSurface": "#E8EFF2",
+            "mSurfaceVariant": "#CFD9DE",
+            "mTertiary": "#E0A990"
+          },
+          "name": "Peche",
+          "path": "Peche"
+        },
+        {
+          "dark": {
+            "mError": "#eb6f92",
+            "mHover": "#56526e",
+            "mOnError": "#232136",
+            "mOnHover": "#e0def4",
+            "mOnPrimary": "#232136",
+            "mOnSecondary": "#232136",
+            "mOnSurface": "#e0def4",
+            "mOnSurfaceVariant": "#908caa",
+            "mOnTertiary": "#e0def4",
+            "mOutline": "#44415a",
+            "mPrimary": "#ea9a97",
+            "mSecondary": "#9ccfd8",
+            "mShadow": "#232136",
+            "mSurface": "#232136",
+            "mSurfaceVariant": "#393552",
+            "mTertiary": "#3e8fb0"
+          },
+          "light": {
+            "mError": "#b4637a",
+            "mHover": "#cecacd",
+            "mOnError": "#faf4ed",
+            "mOnHover": "#575279",
+            "mOnPrimary": "#faf4ed",
+            "mOnSecondary": "#faf4ed",
+            "mOnSurface": "#575279",
+            "mOnSurfaceVariant": "#797593",
+            "mOnTertiary": "#faf4ed",
+            "mOutline": "#dfdad9",
+            "mPrimary": "#d7827e",
+            "mSecondary": "#56949f",
+            "mShadow": "#faf4ed",
+            "mSurface": "#fffaf3",
+            "mSurfaceVariant": "#f2e9e1",
+            "mTertiary": "#286983"
+          },
+          "name": "Rose Pine Moon",
+          "path": "Rose Pine Moon"
+        },
+        {
+          "dark": {
+            "mError": "#ff99b8",
+            "mOnError": "#000000",
+            "mOnPrimary": "#000000",
+            "mOnSecondary": "#000000",
+            "mOnSurface": "#ffe0eb",
+            "mOnSurfaceVariant": "#ff8cb3",
+            "mOnTertiary": "#000000",
+            "mOutline": "#5a3f4d",
+            "mPrimary": "#ff8cb3",
+            "mSecondary": "#ffb3cc",
+            "mShadow": "#000000",
+            "mSurface": "#000000",
+            "mSurfaceVariant": "#1a0f16",
+            "mTertiary": "#ffcce0"
+          },
+          "light": {
+            "mError": "#ff99b8",
+            "mOnError": "#ffffff",
+            "mOnPrimary": "#ffffff",
+            "mOnSecondary": "#ffffff",
+            "mOnSurface": "#2c1822",
+            "mOnSurfaceVariant": "#e57399",
+            "mOnTertiary": "#ffffff",
+            "mOutline": "#b38099",
+            "mPrimary": "#e57399",
+            "mSecondary": "#ff99b8",
+            "mShadow": "#f0d0e0",
+            "mSurface": "#fff5fa",
+            "mSurfaceVariant": "#f5d6e3",
+            "mTertiary": "#ffb3cc"
+          },
+          "name": "Rosey AMOLED",
+          "path": "Rosey AMOLED"
+        },
+        {
+          "dark": {
+            "mError": "#dc322f",
+            "mHover": "#cb4b16",
+            "mOnError": "#002b36",
+            "mOnHover": "#002b36",
+            "mOnPrimary": "#002b36",
+            "mOnSecondary": "#002b36",
+            "mOnSurface": "#839496",
+            "mOnSurfaceVariant": "#657b83",
+            "mOnTertiary": "#002b36",
+            "mOutline": "#0c5c70",
+            "mPrimary": "#b58900",
+            "mSecondary": "#d33682",
+            "mShadow": "#002b36",
+            "mSurface": "#002b36",
+            "mSurfaceVariant": "#073642",
+            "mTertiary": "#cb4b16"
+          },
+          "light": {
+            "mError": "#dc322f",
+            "mHover": "#cb4b16",
+            "mOnError": "#fdf6e3",
+            "mOnHover": "#fdf6e3",
+            "mOnPrimary": "#fdf6e3",
+            "mOnSecondary": "#fdf6e3",
+            "mOnSurface": "#657b83",
+            "mOnSurfaceVariant": "#839496",
+            "mOnTertiary": "#fdf6e3",
+            "mOutline": "#dfd4b1",
+            "mPrimary": "#b58900",
+            "mSecondary": "#d33682",
+            "mShadow": "#eee8d5",
+            "mSurface": "#fdf6e3",
+            "mSurfaceVariant": "#eee8d5",
+            "mTertiary": "#cb4b16"
+          },
+          "name": "Solarized",
+          "path": "Solarized"
+        },
+        {
+          "dark": {
+            "mError": "#f7768e",
+            "mHover": "#9cd58a",
+            "mOnError": "#1f2335",
+            "mOnHover": "#1f2335",
+            "mOnPrimary": "#1f2335",
+            "mOnSecondary": "#1f2335",
+            "mOnSurface": "#a9b1d6",
+            "mOnSurfaceVariant": "#c0caf5",
+            "mOnTertiary": "#1f2335",
+            "mOutline": "#4b517a",
+            "mPrimary": "#7a88cf",
+            "mSecondary": "#d7729f",
+            "mShadow": "#181b2a",
+            "mSurface": "#1f2335",
+            "mSurfaceVariant": "#2c314a",
+            "mTertiary": "#9cd58a"
+          },
+          "light": {
+            "mError": "#e55561",
+            "mHover": "#4c663b",
+            "mOnError": "#f0f2f7",
+            "mOnHover": "#f0f2f7",
+            "mOnPrimary": "#f0f2f7",
+            "mOnSecondary": "#f0f2f7",
+            "mOnSurface": "#4e70c2",
+            "mOnSurfaceVariant": "#444b6a",
+            "mOnTertiary": "#f0f2f7",
+            "mOutline": "#c8ccd8",
+            "mPrimary": "#4e70c2",
+            "mSecondary": "#85539c",
+            "mShadow": "#a4a8b7",
+            "mSurface": "#f0f2f7",
+            "mSurfaceVariant": "#dbdfea",
+            "mTertiary": "#4c663b"
+          },
+          "name": "Tokyo Night Moon",
+          "path": "Tokyo Night Moon"
+        },
+        {
+          "dark": {
+            "mError": "#FF8080",
+            "mHover": "#282828",
+            "mOnError": "#000000",
+            "mOnHover": "#FFFFFF",
+            "mOnPrimary": "#000000",
+            "mOnSecondary": "#000000",
+            "mOnSurface": "#FFFFFF",
+            "mOnSurfaceVariant": "#A0A0A0",
+            "mOnTertiary": "#000000",
+            "mOutline": "#505050",
+            "mPrimary": "#FFC799",
+            "mSecondary": "#99FFE4",
+            "mShadow": "#000000",
+            "mSurface": "#0C0C0C",
+            "mSurfaceVariant": "#1C1C1C",
+            "mTertiary": "#FBADFF"
+          },
+          "light": {
+            "mError": "#FF8080",
+            "mHover": "#E0E0E0",
+            "mOnError": "#0C0C0C",
+            "mOnHover": "#0C0C0C",
+            "mOnPrimary": "#0C0C0C",
+            "mOnSecondary": "#0C0C0C",
+            "mOnSurface": "#0C0C0C",
+            "mOnSurfaceVariant": "#282828",
+            "mOnTertiary": "#0C0C0C",
+            "mOutline": "#505050",
+            "mPrimary": "#FFB170",
+            "mSecondary": "#00CC99",
+            "mShadow": "#D9D9D9",
+            "mSurface": "#F2F2F2",
+            "mSurfaceVariant": "#E5E5E5",
+            "mTertiary": "#FBADFF"
+          },
+          "name": "Vesper",
+          "path": "Vesper"
+        }
+      ],
+      "timestamp": 1774378930
+    },
+    "ui": {
+      "settingsSidebarExpanded": true
+    }
+  }
+}
