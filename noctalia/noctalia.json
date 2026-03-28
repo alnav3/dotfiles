@@ -7,7 +7,8 @@
       "monitors": [
         "DP-10",
         "DP-11",
-        "eDP-1"
+        "eDP-1",
+        "winit"
       ],
       "density": "spacious",
       "showOutline": false,
