@@ -69,7 +69,6 @@ return {
                 "jdtls",
                 "pyright",
                 "html",
-                "htmx",
                 "tailwindcss",
             },
             handlers = {
