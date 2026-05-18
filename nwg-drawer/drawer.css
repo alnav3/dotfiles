@@ -1,0 +1,106 @@
+/* Catppuccin Mocha theme for nwg-drawer */
+
+window {
+    background-color: rgba(30, 30, 46, 0.95);
+    color: #cdd6f4;
+}
+
+/* Search entry */
+entry {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 2px solid #b4befe;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 6px;
+}
+
+entry:focus {
+    border-color: #cba6f7;
+}
+
+/* Remove ALL backgrounds from buttons and images */
+button, image {
+    background: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* FlowBoxChild is the wrapper around each app button - this is what creates the gray boxes! */
+flowbox, flowboxchild {
+    background: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+flowboxchild:selected,
+flowboxchild:focus,
+flowboxchild:hover,
+flowboxchild:active {
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Button hover effect - subtle lavender tint */
+button:hover {
+    background-color: rgba(180, 190, 254, 0.15);
+    border-radius: 10px;
+}
+
+button:focus,
+button:active {
+    background-color: rgba(180, 190, 254, 0.25);
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Category buttons */
+#category-button {
+    margin: 0 10px 0 10px;
+    background: none;
+    background-color: transparent;
+}
+
+#category-button:hover {
+    background-color: rgba(180, 190, 254, 0.15);
+}
+
+/* Pinned box separator */
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #6c7086;
+}
+
+/* Files box */
+#files-box {
+    padding: 5px;
+    border: 1px dotted #6c7086;
+    border-radius: 15px;
+}
+
+/* Math result label */
+#math-label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #cdd6f4;
+}
+
+/* Scrollbar */
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: #45475a;
+    border-radius: 10px;
+    min-width: 8px;
+}
+
+scrollbar slider:hover {
+    background-color: #6c7086;
+}
