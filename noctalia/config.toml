@@ -4,39 +4,37 @@ enable_sounds = false
 notification_sound = ""
 sound_volume = 0.5
 volume_change_sound = ""
-volume_step = 5
 
 [backdrop]
-blur_intensity = 0.36
+blur_intensity = 0.36000001430511475
 enabled = true
-tint_intensity = 0.44
+tint_intensity = 0.43999999761581421
 
 [bar]
 order = [ "default" ]
 
     [bar.default]
     auto_hide = false
-    background_opacity = 0.93
+    background_opacity = 0.93000000715255737
     border = "outline"
     border_width = 0.0
     capsule = true
     capsule_fill = "surface_variant"
+    capsule_foreground = "primary"
     capsule_group = []
     capsule_opacity = 1.0
     capsule_padding = 6.0
-    capsule_thickness = 0.68
-    center = [ "media_mini", "workspaces" ]
+    capsule_thickness = 0.75
+    center = [ "media", "workspaces" ]
     contact_shadow = false
     enabled = true
-    end = [ "tray", "pomodoro", "network", "bluetooth", "notification_history", "battery" ]
+    end = [ "tray", "pomodoro", "network", "bluetooth", "notifications", "battery" ]
     font_family = "FiraCode Nerd Font Mono SemBd"
     font_weight = 500
-    font_scale = 1.0
     layer = "top"
-    margin_edge = 10
+    margin_edge = 20
     margin_ends = 11
-    margin_vertical = 11
-    margin_horizontal = 10
+    margin_opposite_edge = 0
     padding = 14
     panel_overlap = 1
     position = "top"
@@ -46,162 +44,41 @@ order = [ "default" ]
     radius_top_left = 12
     radius_top_right = 12
     reserve_space = true
-    scale = 1.0
+    scale = 1.2000000476837158
     shadow = true
-    start = [ "clock", "volume", "brightness", "keep_awake", "plugin:noctalia/privacy-indicator" ]
-    thickness = 50
+    show_on_workspace_switch = true
+    start = [ "clock", "volume", "brightness", "caffeine", "indicator" ]
+    thickness = 45
     widget_spacing = 6
 
-    [bar.default.clock]
-    type = "clock"
-    use_custom_font = true
-    custom_font = "FiraCode Nerd Font Mono SemBd"
-    format_horizontal = "HH:mm"
-    format_vertical = "HH mm - dd MM"
-    tooltip_format = "HH:mm ddd, MMM dd"
-    clock_color = "primary"
-
-    [bar.default.volume]
-    type = "volume"
-    show_label = false
-    display_mode = "onhover"
-    icon_color = "primary"
-    text_color = "none"
-    middle_click_command = "pwvucontrol || pavucontrol"
-
-    [bar.default.brightness]
-    type = "brightness"
-    show_label = false
-    display_mode = "onhover"
-    icon_color = "secondary"
-    text_color = "secondary"
-    apply_to_all_monitors = false
-
-    [bar.default.keep_awake]
-    type = "keep_awake"
-    icon_color = "none"
-    text_color = "none"
-    [bar.default."plugin:noctalia/privacy-indicator"]
-    type = "plugin"
-
-
-    [bar.default.media_mini]
-    type = "media_mini"
-    compact_mode = false
-    hide_mode = "idle"
-    hide_when_idle = false
-    max_width = 145
-    panel_show_album_art = true
-    scrolling_mode = "hover"
-    show_album_art = true
-    show_artist_first = true
-    show_progress_ring = true
-    show_visualizer = false
-    text_color = "none"
-    use_fixed_width = false
-    visualizer_type = "linear"
-
-    [bar.default.workspaces]
-    type = "workspaces"
-    display = "none"
-    character_count = 2
-    colorize_icons = false
-    empty_color = "secondary"
-    enable_scroll_wheel = true
-    focused_color = "primary"
-    follow_focused_screen = false
-    font_weight = "bold"
-    grouped_border_opacity = 1.0
-    hide_unoccupied = true
-    icon_scale = 0.8
-    label_mode = "none"
-    occupied_color = "secondary"
-    pill_size = 0.68
-    show_applications = false
-    show_applications_hover = false
-    show_badge = true
-    show_labels_only_when_occupied = true
-    unfocused_icons_opacity = 1.0
-
-    [bar.default.tray]
-    type = "tray"
-    blacklist = []
-    chevron_color = "none"
-    colorize_icons = false
-    drawer_enabled = true
-    hide_passive = false
-    pinned = []
-
-    [bar.default.pomodoro]
-    type = "pomodoro"
-    auto_start_breaks = false
-    auto_start_work = false
-    long_break_duration = 15
-    sessions_before_long_break = 4
-    short_break_duration = 5
-    work_duration = 25
-
-    [bar.default.network]
-    type = "network"
-    show_label = false
-    display_mode = "onhover"
-    icon_color = "primary"
-    text_color = "primary"
-
-    [bar.default.bluetooth]
-    type = "bluetooth"
-    display_mode = "onhover"
-    icon_color = "tertiary"
-    text_color = "none"
-
-    [bar.default.notification_history]
-    type = "notification_history"
-    hide_when_zero = false
-    hide_when_zero_unread = false
-    icon_color = "secondary"
-    show_unread_badge = true
-    unread_badge_color = "secondary"
-
-    [bar.default.battery]
-    type = "battery"
-    device_native_path = "__default__"
-    display_mode = "graphic"
-    hide_if_idle = true
-    hide_if_not_detected = true
-    show_noctalia_performance = true
-    show_power_profiles = true
+        [bar.default.dead_zone]
+        command = ""
+        middle_command = ""
+        right_command = ""
+        scroll_down_command = ""
+        scroll_up_command = ""
 
 [battery]
 warning_threshold = 20
-critical_threshold = 5
 
 [brightness]
 enable_ddcutil = false
 ignore_mmids = []
-brightness_step = 5
-enforce_minimum = false
+minimum_brightness = 0.0
+sync_all_monitors = false
 
 [calendar]
 enabled = true
 refresh_minutes = 15
-show_week_number = false
-show_events = true
-show_weather = true
-analog_clock = false
-first_day_of_week = 1
-hide_weather_timezone = false
-hide_weather_city_name = true
-
-    [calendar.cards]
-    calendar-header-card = true
-    calendar-month-card = true
-    weather-card = true
 
 [control_center]
+hidden_tabs = []
 sidebar = "compact"
 sidebar_section = "compact"
-position = "close_to_bar_button"
-disk_path = "/"
+width = 700
+
+    [control_center.calendar]
+    show_events_card = true
 
     [[control_center.shortcuts]]
     type = "wifi"
@@ -227,14 +104,6 @@ disk_path = "/"
     [[control_center.shortcuts]]
     type = "night_light"
 
-    [control_center.cards]
-    profile-card = true
-    shortcuts-card = true
-    audio-card = true
-    brightness-card = false
-    weather-card = false
-    media-sysmon-card = false
-
 [desktop_widgets]
 enabled = false
 schema_version = 2
@@ -243,14 +112,6 @@ schema_version = 2
     cell_size = 16
     major_interval = 4
     visible = true
-
-    [[desktop_widgets.widget]]
-    id = "weather"
-    scale = 1.3740852671824144
-    show_background = true
-    x = 1059
-    y = 76
-    monitor = "eDP-1"
 
 [dock]
 active_monitor_only = true
@@ -261,15 +122,15 @@ background_opacity = 1.0
 cross_axis_padding = 8
 enabled = false
 icon_size = 48
-inactive_opacity = 0.6
+inactive_opacity = 0.60000002384185791
 inactive_scale = 1.0
 item_spacing = 6
+launcher_custom_image = ""
+launcher_custom_image_colorize = false
 launcher_icon = ""
 launcher_position = "end"
-launcher_use_distro_logo = false
-launcher_icon_color = "none"
 magnification = false
-magnification_scale = 1.45
+magnification_scale = 1.4500000476837158
 main_axis_padding = 16
 margin_edge = 8
 margin_ends = 0
@@ -286,17 +147,6 @@ shadow = true
 show_dots = false
 show_instance_count = true
 show_running = true
-pinned_static = false
-group_apps = false
-group_context_menu_mode = "extended"
-group_click_action = "cycle"
-group_indicator_style = "dots"
-animation_speed = 1.0
-sit_on_frame = false
-show_dock_indicator = false
-indicator_thickness = 3
-indicator_color = "primary"
-indicator_opacity = 0.6
 
 [hooks]
 battery_charging = []
@@ -327,40 +177,151 @@ pre_action_fade_seconds = 5.0
     command = ""
     enabled = false
     resume_command = ""
-    timeout = 0
+    timeout = 0.0
 
     [idle.behavior.lock-and-suspend]
     action = "lock_and_suspend"
     command = ""
     enabled = false
     resume_command = ""
-    timeout = 0
+    timeout = 0.0
 
     [idle.behavior.screen-off]
     action = "screen_off"
     command = ""
     enabled = false
     resume_command = ""
-    timeout = 180
+    timeout = 180.0
+
+[keybinds]
+cancel = [ "Escape" ]
+down = [ "Down" ]
+left = [ "Left" ]
+right = [ "Right" ]
+tab_next = [ "Tab" ]
+tab_previous = [ "Shift+ISO_Left_Tab" ]
+up = [ "Up" ]
+validate = [ "Return", "KP_Enter", "space" ]
+
+[location]
+address = ""
+auto_locate = false
+sunrise = ""
+sunset = ""
+
+[lockscreen]
+allow_empty_password = false
+blur_intensity = 0.5
+blurred_desktop = false
+enabled = true
+fingerprint = true
+monitors = []
+tint_intensity = 0.30000001192092896
+wallpaper = ""
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 720.0
+    cy = 837.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+[nightlight]
+enabled = false
+force = false
+temperature_day = 6500
+temperature_night = 4000
+
+[notification]
+background_opacity = 0.97000002861022949
+collapse_on_dismiss = true
+enable_daemon = true
+layer = "top"
+monitors = []
+offset_x = 20
+offset_y = 8
+position = "top_right"
+scale = 1.0
+show_actions = true
+show_app_name = true
+
+[osd]
+background_opacity = 0.97000002861022949
+monitors = []
+offset_x = 20
+offset_y = 8
+orientation = "horizontal"
+position = "top_center"
+position_vertical = "top_center"
+scale = 1.0
+
+    [osd.kinds]
+    bluetooth = true
+    brightness = true
+    caffeine = true
+    dnd = true
+    keyboard_layout = true
+    lock_keys = true
+    media = true
+    nightlight = true
+    power_profile = true
+    privacy = true
+    volume = true
+    volume_input = true
+    volume_output = true
+    wifi = true
 
 [plugins]
-enabled = []
-auto_update = false
-notify_updates = true
+enabled = [ "noctalia/example", "noctalia/privacy-indicator" ]
 
     [[plugins.source]]
-    auto_update = false
+    auto_update = true
+    enabled = true
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+    [[plugins.source]]
+    auto_update = true
     enabled = true
     kind = "git"
     location = "https://github.com/noctalia-dev/official-plugins"
     name = "official"
 
     [[plugins.source]]
-    auto_update = false
+    auto_update = true
     enabled = true
     kind = "git"
-    location = "https://github.com/noctalia-dev/community-plugins"
-    name = "community"
+    location = "https://github.com/noctalia-dev/legacy-v4-plugins"
+    name = "legacy-plugins"
+
+    [[plugins.source]]
+    auto_update = false
+    enabled = true
+    kind = "path"
+    location = "/home/alnav/.local/state/noctalia/plugins/sources/local-dev/repo"
+    name = "local-dev"
 
 [shell]
 app_icon_colorize = false
@@ -374,77 +335,75 @@ corner_radius_scale = 1.0
 date_format = "%A, %x"
 disable_mipmaps = false
 font_family = "DejaVu Sans"
-font_fixed = "monospace"
-font_default_scale = 1.0
-font_fixed_scale = 1.0
 launch_apps_as_systemd_services = false
+launch_apps_custom_command = ""
 middle_click_opens_widget_settings = true
 niri_overview_type_to_launch_enabled = false
 offline_mode = false
 password_style = "default"
 polkit_agent = false
 screen_time_enabled = false
-settings_show_advanced = false
+settings_show_advanced = true
 setup_wizard_enabled = true
 shared_gl_context = true
 show_location = true
 telemetry_enabled = false
 time_format = "{:%H:%M}"
 ui_scale = 1.0
-animation_speed = 1.0
-animation_enabled = true
-dimmer_opacity = 0.2
-compact_lock_screen = true
-lock_screen_animations = true
-lock_on_suspend = true
-show_session_buttons_on_lock_screen = false
-show_hibernate_on_lock_screen = true
-enable_lock_screen_media_controls = false
-password_chars = false
-lock_screen_monitors = []
-language = ""
-allow_panels_on_screen_without_bar = true
-show_changelog_on_startup = true
-enable_lock_screen_countdown = true
-lock_screen_countdown_duration = 10000
-auto_start_auth = false
-allow_password_with_fprintd = true
-clock_style = "digital"
-clock_format = "hh\\nmm"
-reverse_scroll = false
 
     [shell.animation]
     enabled = true
     speed = 1.0
+
+    [shell.greeter_sync]
+    auto_sync = false
+
+    [shell.launcher]
+    app_grid = false
+    categories = true
+    compact = false
+    session_search = false
+    show_icons = true
+    sort_by_usage = true
+
+        [shell.launcher.dmenu]
 
     [shell.mpris]
     blacklist = []
 
     [shell.panel]
     borders = true
-    clipboard_placement = "centered"
+    clipboard_placement = "floating"
+    clipboard_position = "center"
     control_center_placement = "attached"
-    launcher_categories = false
-    launcher_compact = false
+    control_center_position = "auto"
+    floating_offset = 8
     launcher_placement = "floating"
-    launcher_session_search = true
-    launcher_show_icons = true
-    launcher_sort_by_usage = true
+    launcher_position = "center"
     open_near_click_clipboard = false
     open_near_click_control_center = false
     open_near_click_launcher = false
     open_near_click_session = false
     open_near_click_wallpaper = false
+    polkit_placement = "floating"
+    polkit_position = "center"
     session_placement = "attached"
+    session_position = "auto"
     shadow = true
-    transparency_mode = "opaque"
+    transparency_mode = "solid"
     wallpaper_placement = "attached"
+    wallpaper_position = "auto"
+
+    [shell.privacy]
+    cam_filter_regex = ""
+    mic_filter_regex = ""
 
     [shell.screen_corners]
     enabled = false
     size = 32
 
     [shell.screenshot]
+    confirm_region = false
     copy_to_clipboard = true
     directory = ""
     filename_pattern = ""
@@ -453,95 +412,91 @@ reverse_scroll = false
     pipe_to_command = false
     save_to_file = true
 
+    [shell.session.power]
+
     [[shell.session.actions]]
     action = "lock"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "1"
     variant = "default"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "suspend"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "2"
     variant = "default"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "hibernate"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "3"
     variant = "default"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "reboot"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "4"
     variant = "default"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "logout"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "5"
     variant = "default"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "shutdown"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "6"
     variant = "destructive"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "reboot_to_uefi"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "7"
     variant = "default"
-    countdown_enabled = true
 
     [[shell.session.actions]]
     action = "userspace_reboot"
     command = ""
+    countdown_seconds = 0.0
     enabled = false
     glyph = ""
     label = ""
     shortcut = ""
     variant = "default"
-    countdown_enabled = true
 
     [shell.shadow]
-    alpha = 0.55
+    alpha = 0.55000001192092896
     direction = "down"
-
-    [shell.idle.custom_commands]
-    name = "lock with hyprlock"
-    timeout = 300
-    command = "status=$(cat /sys/class/power_supply/ACAD/online); [ \"$status\" -eq 1 ] && noctalia-shell ipc call lockScreen lock || (noctalia-shell ipc call lockScreen lock & systemctl suspend-then-hibernate)"
-    resume_command = ""
 
 [system.monitor]
 cpu_poll_seconds = 2.0
@@ -571,12 +526,6 @@ ram_pct_activity_threshold = 80.0
 ram_pct_critical_threshold = 90.0
 swap_pct_activity_threshold = 80.0
 swap_pct_critical_threshold = 90.0
-disk_avail_activity_threshold = 20.0
-disk_avail_critical_threshold = 10.0
-use_custom_colors = false
-warning_color = ""
-critical_color = ""
-external_monitor = "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor"
 
 [theme]
 builtin = "Catppuccin"
@@ -585,15 +534,6 @@ custom_palette = ""
 mode = "dark"
 source = "builtin"
 wallpaper_scheme = "m3-content"
-predefined_scheme = "Catppuccin"
-dark_mode = true
-scheduling_mode = "off"
-manual_sunrise = "06:30"
-manual_sunset = "18:30"
-generation_method = "tonal-spot"
-monitor_for_colors = ""
-sync_gsettings = true
-use_wallpaper_colors = false
 
     [theme.templates]
     builtin_ids = []
@@ -601,50 +541,24 @@ use_wallpaper_colors = false
     enable_builtin_templates = true
     enable_community_templates = true
 
-    [theme.templates.active]
-    kitty = true
-    zen_browser = true
-    hyprland = true
-    gtk = true
-
 [wallpaper]
 directory = "/home/alnav/wallpapers"
 directory_dark = ""
 directory_light = ""
-edge_smoothness = 0.05
+edge_smoothness = 0.05000000074505806
 enabled = true
 fill_color = "#000000"
 fill_mode = "crop"
 per_monitor_directories = false
-monitor_directories = []
-enable_multi_monitor_directories = false
-show_hidden_files = false
-view_mode = "browse"
-set_wallpaper_on_all_monitors = true
-overview_enabled = false
 transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
 transition_duration = 1500.0
 transition_on_startup = false
-panel_position = "follow_bar"
-hide_wallpaper_filenames = false
-use_original_images = true
-overview_blur = 0.4
-overview_tint = 0.6
-skip_startup_transition = false
 
     [wallpaper.automation]
     enabled = false
     interval_seconds = 1800
     order = "random"
     recursive = true
-
-    [wallpaper.favorites]
-    color_scheme = "Catppuccin"
-    dark_mode = true
-    generation_method = "tonal-spot"
-    palette_colors = [ "#cba6f7", "#fab387", "#94e2d5", "#f38ba8" ]
-    path = "/home/alnav/Pictures/Wallpapers/comfy-home.png"
-    use_wallpaper_colors = false
 
 [weather]
 effects = true
@@ -659,9 +573,25 @@ min_length = 80.0
 title_scroll = "none"
 type = "active_window"
 
+[widget.battery]
+color = "primary"
+display_mode = "graphic"
+hide_when_full = true
+show_label = false
+type = "battery"
+
+[widget.bluetooth]
+color = "on_surface_variant"
+type = "bluetooth"
+
 [widget.brightness]
+color = "secondary"
 show_label = false
 type = "brightness"
+
+[widget.cat]
+input_devices = "[/dev/input/event1]"
+type = "noctalia/bongocat:cat"
 
 [widget.cpu]
 stat = "cpu_usage"
@@ -670,6 +600,9 @@ type = "sysmon"
 [widget.date]
 format = "{:%a %d %b}"
 type = "clock"
+
+[widget.indicator]
+type = "noctalia/privacy-indicator:indicator"
 
 [widget.input_volume]
 device = "input"
@@ -690,12 +623,14 @@ type = "lock_keys"
 
 [widget.media]
 art_size = 16.0
+hide_when_no_media = true
 max_length = 220.0
 min_length = 80.0
 title_scroll = "none"
 type = "media"
 
 [widget.network]
+color = "tertiary"
 show_label = false
 type = "network"
 
@@ -706,6 +641,10 @@ type = "sysmon"
 [widget.network_tx]
 stat = "net_tx"
 type = "sysmon"
+
+[widget.notifications]
+icon_color = "secondary"
+type = "notifications"
 
 [widget.output_volume]
 device = "output"
@@ -723,6 +662,7 @@ stat = "cpu_temp"
 type = "sysmon"
 
 [widget.volume]
+color = "on_surface_variant"
 show_label = false
 type = "volume"
 
