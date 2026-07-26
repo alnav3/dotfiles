@@ -1,0 +1,33 @@
+<settings version="2">
+    <setting id="loc1_name">Valencia, Valencia, ES</setting>
+    <setting id="loc2_name" default="true" />
+    <setting id="loc3_name" default="true" />
+    <setting id="loc4_name" default="true" />
+    <setting id="loc5_name" default="true" />
+    <setting id="loc1_url">es/valencia/valencia</setting>
+    <setting id="loc2_url" default="true" />
+    <setting id="loc3_url" default="true" />
+    <setting id="loc4_url" default="true" />
+    <setting id="loc5_url" default="true" />
+    <setting id="loc1_lat">39.4612</setting>
+    <setting id="loc2_lat" default="true">0</setting>
+    <setting id="loc3_lat" default="true">0</setting>
+    <setting id="loc4_lat" default="true">0</setting>
+    <setting id="loc5_lat" default="true">0</setting>
+    <setting id="loc1_lon">-0.36928</setting>
+    <setting id="loc2_lon" default="true">0</setting>
+    <setting id="loc3_lon" default="true">0</setting>
+    <setting id="loc4_lon" default="true">0</setting>
+    <setting id="loc5_lon" default="true">0</setting>
+    <setting id="loc1_id">776688</setting>
+    <setting id="loc2_id" default="true">-1</setting>
+    <setting id="loc3_id" default="true">-1</setting>
+    <setting id="loc4_id" default="true">-1</setting>
+    <setting id="loc5_id" default="true">-1</setting>
+    <setting id="WAdd" default="true">false</setting>
+    <setting id="API" default="true" />
+    <setting id="WMaps" default="true">false</setting>
+    <setting id="MAPAPI" default="true" />
+    <setting id="Zoom" default="true">4</setting>
+    <setting id="Debug" default="true">false</setting>
+</settings>

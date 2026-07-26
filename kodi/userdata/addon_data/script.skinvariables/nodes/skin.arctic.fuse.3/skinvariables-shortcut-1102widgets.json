@@ -1,0 +1,32 @@
+[
+    {
+        "label": "",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "submenu": [],
+        "widgets": [],
+        "guid": "guid-1dbbbce0"
+    },
+    {
+        "label": "Trakt > Trending",
+        "path": "plugin://plugin.video.elementum/shows/trakt/trending",
+        "icon": "image://%2fhome%2falnav%2f.kodi%2faddons%2fplugin.video.elementum%2fresources%2fimg%2ftrending.png/",
+        "target": "videos",
+        "guid": "guid-5a075e53"
+    },
+    {
+        "label": "Trakt > Trending",
+        "path": "plugin://plugin.video.elementum/movies/trakt/trending",
+        "icon": "image://%2fhome%2falnav%2f.kodi%2faddons%2fplugin.video.elementum%2fresources%2fimg%2ftrending.png/",
+        "target": "videos",
+        "guid": "guid-07abf5ed"
+    },
+    {
+        "label": "Trakt > Box Office",
+        "path": "plugin://plugin.video.elementum/movies/trakt/boxoffice",
+        "icon": "image://%2fhome%2falnav%2f.kodi%2faddons%2fplugin.video.elementum%2fresources%2fimg%2fbox_office.png/",
+        "target": "videos",
+        "guid": "guid-c5147ca9"
+    }
+]

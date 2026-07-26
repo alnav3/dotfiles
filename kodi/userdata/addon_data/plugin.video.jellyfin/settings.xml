@@ -1,0 +1,75 @@
+<settings version="2">
+    <setting id="username">alnav</setting>
+    <setting id="serverName">node-0</setting>
+    <setting id="server">http://tv.home</setting>
+    <setting id="sslverify" default="true">true</setting>
+    <setting id="deviceNameOpt" default="true">false</setting>
+    <setting id="deviceName" default="true">Kodi</setting>
+    <setting id="kodiCompanion" default="true">true</setting>
+    <setting id="syncIndicator" default="true">999</setting>
+    <setting id="syncDuringPlay" default="true">true</setting>
+    <setting id="dbSyncScreensaver" default="true">true</setting>
+    <setting id="useDirectPaths">0</setting>
+    <setting id="limitIndex" default="true">15</setting>
+    <setting id="limitThreads" default="true">3</setting>
+    <setting id="enableCoverArt" default="true">true</setting>
+    <setting id="compressArt" default="true">false</setting>
+    <setting id="maxArtResolution" default="true">5</setting>
+    <setting id="enableMusic">true</setting>
+    <setting id="enableCinema" default="true">false</setting>
+    <setting id="askCinema" default="true">false</setting>
+    <setting id="playFromStream" default="true">true</setting>
+    <setting id="playFromTranscode" default="true">false</setting>
+    <setting id="maxBitrate" default="true">23</setting>
+    <setting id="enableExternalSubs" default="true">true</setting>
+    <setting id="videoPreferredCodec" default="true">H264/AVC</setting>
+    <setting id="transcode_h265" default="true">false</setting>
+    <setting id="transcode_h265_rext" default="true">false</setting>
+    <setting id="transcodeHi10P" default="true">false</setting>
+    <setting id="transcode_mpeg2" default="true">false</setting>
+    <setting id="transcode_vc1" default="true">false</setting>
+    <setting id="transcode_vp9" default="true">false</setting>
+    <setting id="transcode_av1" default="true">false</setting>
+    <setting id="audioPreferredCodec" default="true">AAC</setting>
+    <setting id="audioBitrate" default="true">4</setting>
+    <setting id="audioMaxChannels" default="true">6</setting>
+    <setting id="skipDialogTranscode" default="true">3</setting>
+    <setting id="allowBurnedSubs" default="true">true</setting>
+    <setting id="resumeJumpBack" default="true">10</setting>
+    <setting id="offerDelete" default="true">false</setting>
+    <setting id="deleteTV" default="true">false</setting>
+    <setting id="deleteMovies" default="true">false</setting>
+    <setting id="markPlayed" default="true">90</setting>
+    <setting id="mediaSegmentsEnabled" default="true">true</setting>
+    <setting id="skipIntroductionMode" default="true">2</setting>
+    <setting id="skipCreditsMode" default="true">2</setting>
+    <setting id="skipRecapMode" default="true">0</setting>
+    <setting id="skipPreviewMode" default="true">0</setting>
+    <setting id="skipCommercialMode" default="true">0</setting>
+    <setting id="enableContext" default="true">true</setting>
+    <setting id="enableContextTranscode" default="true">true</setting>
+    <setting id="enableContextDelete" default="true">false</setting>
+    <setting id="skipContextMenu" default="true">false</setting>
+    <setting id="additionalUsers" default="true" />
+    <setting id="connectMsg" default="true">true</setting>
+    <setting id="offlinetMsg" default="true">true</setting>
+    <setting id="restartMsg" default="true">true</setting>
+    <setting id="displayMessage" default="true">4</setting>
+    <setting id="syncProgress" default="true">15</setting>
+    <setting id="newContent" default="true">false</setting>
+    <setting id="newvideotime" default="true">5</setting>
+    <setting id="newmusictime" default="true">2</setting>
+    <setting id="maxDaysInNextEpisodes" default="true">366</setting>
+    <setting id="ignoreSpecialsNextEpisodes" default="true">false</setting>
+    <setting id="getCast" default="true">false</setting>
+    <setting id="remoteControl" default="true">true</setting>
+    <setting id="logLevel" default="true">1</setting>
+    <setting id="maskInfo" default="true">true</setting>
+    <setting id="enableAddon" default="true">true</setting>
+    <setting id="startupDelay" default="true">0</setting>
+    <setting id="backupPath" default="true" />
+    <setting id="LastIncrementalSync">2026-07-26T15:39:53Z</setting>
+    <setting id="SyncInstallRunDone">true</setting>
+    <setting id="groupedSets">false</setting>
+    <setting id="platformDetected">Linux/RPi</setting>
+</settings>

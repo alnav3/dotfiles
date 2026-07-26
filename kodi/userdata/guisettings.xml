@@ -1,0 +1,3479 @@
+<settings version="2">
+    <setting id="gamesgeneral.enable" default="true">true</setting>
+    <setting id="gamesgeneral.showosdhelp" default="true">true</setting>
+    <setting id="gamesgeneral.enableautosave" default="true">true</setting>
+    <setting id="gamesgeneral.enablerewind" default="true">true</setting>
+    <setting id="gamesgeneral.rewindtime" default="true">60</setting>
+    <setting id="gamesachievements.username" default="true" />
+    <setting id="gamesachievements.password" default="true" />
+    <setting id="gamesachievements.token" default="true" />
+    <setting id="gamesachievements.loggedin" default="true">false</setting>
+    <setting id="lookandfeel.skin">skin.arctic.fuse.3</setting>
+    <setting id="lookandfeel.skintheme" default="true">SKINDEFAULT</setting>
+    <setting id="lookandfeel.skincolors" default="true">SKINDEFAULT</setting>
+    <setting id="lookandfeel.font" default="true">Default</setting>
+    <setting id="lookandfeel.skinzoom" default="true">0</setting>
+    <setting id="lookandfeel.stereostrength" default="true">5</setting>
+    <setting id="lookandfeel.enablerssfeeds" default="true">false</setting>
+    <setting id="lookandfeel.rssedit" default="true" />
+    <setting id="locale.language" default="true">resource.language.en_gb</setting>
+    <setting id="locale.charset" default="true">DEFAULT</setting>
+    <setting id="locale.keyboardlayouts" default="true">English QWERTY</setting>
+    <setting id="locale.activekeyboardlayout" default="true">English QWERTY</setting>
+    <setting id="locale.country" default="true">USA (12h)</setting>
+    <setting id="locale.timezonecountry">Spain</setting>
+    <setting id="locale.timezone" default="true">Europe/Madrid</setting>
+    <setting id="locale.shortdateformat" default="true">regional</setting>
+    <setting id="locale.longdateformat" default="true">regional</setting>
+    <setting id="locale.timeformat" default="true">regional</setting>
+    <setting id="locale.use24hourclock" default="true">regional</setting>
+    <setting id="locale.temperatureunit">c</setting>
+    <setting id="locale.speedunit" default="true">regional</setting>
+    <setting id="screensaver.mode" default="true">screensaver.xbmc.builtin.dim</setting>
+    <setting id="screensaver.time" default="true">3</setting>
+    <setting id="screensaver.disableforaudio" default="true">true</setting>
+    <setting id="screensaver.usedimonpause" default="true">true</setting>
+    <setting id="masterlock.startuplock" default="true">false</setting>
+    <setting id="masterlock.maxretries" default="true">3</setting>
+    <setting id="lookandfeel.startupaction" default="true">0</setting>
+    <setting id="lookandfeel.startupwindow" default="true">10000</setting>
+    <setting id="window.width" default="true">720</setting>
+    <setting id="window.height" default="true">480</setting>
+    <setting id="videolibrary.updateonstartup">true</setting>
+    <setting id="videolibrary.backgroundupdate" default="true">false</setting>
+    <setting id="videolibrary.ignorevideoversions" default="true">true</setting>
+    <setting id="videolibrary.ignorevideoextras" default="true">true</setting>
+    <setting id="musiclibrary.updateonstartup">true</setting>
+    <setting id="musiclibrary.backgroundupdate" default="true">false</setting>
+    <setting id="musiclibrary.exportfiletype" default="true">0</setting>
+    <setting id="musiclibrary.exportfolder" default="true" />
+    <setting id="musiclibrary.exportitems" default="true">48</setting>
+    <setting id="musiclibrary.exportunscraped" default="true">false</setting>
+    <setting id="musiclibrary.exportoverwrite" default="true">false</setting>
+    <setting id="musiclibrary.exportartwork" default="true">false</setting>
+    <setting id="musiclibrary.exportskipnfo" default="true">false</setting>
+    <setting id="filelists.showparentdiritems">false</setting>
+    <setting id="filelists.ignorethewhensorting" default="true">true</setting>
+    <setting id="filelists.showextensions" default="true">true</setting>
+    <setting id="filelists.showaddsourcebuttons" default="true">true</setting>
+    <setting id="filelists.showhidden" default="true">false</setting>
+    <setting id="filelists.allowfiledeletion" default="true">false</setting>
+    <setting id="myvideos.selectaction" default="true">1</setting>
+    <setting id="myvideos.selectdefaultversion" default="true">false</setting>
+    <setting id="myvideos.playaction">2</setting>
+    <setting id="myvideos.usetags" default="true">false</setting>
+    <setting id="myvideos.extractflags" default="true">true</setting>
+    <setting id="myvideos.extractchapterthumbs" default="true">true</setting>
+    <setting id="myvideos.stackvideos" default="true">false</setting>
+    <setting id="myvideos.replacelabels" default="true">true</setting>
+    <setting id="videolibrary.showallitems" default="true">true</setting>
+    <setting id="videolibrary.showunwatchedplots" default="true">0,1,2</setting>
+    <setting id="videolibrary.groupmoviesets" default="true">false</setting>
+    <setting id="videolibrary.groupsingleitemsets" default="true">false</setting>
+    <setting id="videolibrary.showvideoversionsasfolder" default="true">false</setting>
+    <setting id="myvideos.flatten" default="true">false</setting>
+    <setting id="videolibrary.flattentvshows" default="true">1</setting>
+    <setting id="videolibrary.showemptytvshows" default="true">true</setting>
+    <setting id="videolibrary.tvshowsselectfirstunwatcheditem" default="true">0</setting>
+    <setting id="videolibrary.tvshowsincludeallseasonsandspecials" default="true">0</setting>
+    <setting id="videolibrary.moviesetsfolder" default="true" />
+    <setting id="videolibrary.musicvideosallperformers" default="true">true</setting>
+    <setting id="videolibrary.artworklevel" default="true">0</setting>
+    <setting id="videolibrary.movieartwhitelist" default="true" />
+    <setting id="videolibrary.tvshowartwhitelist" default="true" />
+    <setting id="videolibrary.episodeartwhitelist" default="true" />
+    <setting id="videolibrary.musicvideoartwhitelist" default="true" />
+    <setting id="videolibrary.actorthumbs" default="true">true</setting>
+    <setting id="myvideos.extractthumb" default="true">true</setting>
+    <setting id="musiclibrary.showallitems" default="true">true</setting>
+    <setting id="musiclibrary.showcompilationartists" default="true">true</setting>
+    <setting id="musiclibrary.showdiscs" default="true">true</setting>
+    <setting id="musiclibrary.useartistsortname" default="true">false</setting>
+    <setting id="musiclibrary.useoriginaldate" default="true">false</setting>
+    <setting id="musiclibrary.downloadinfo" default="true">false</setting>
+    <setting id="musiclibrary.artistsfolder" default="true" />
+    <setting id="musiclibrary.albumsscraper" default="true">metadata.generic.albums</setting>
+    <setting id="musiclibrary.artistsscraper" default="true">metadata.generic.artists</setting>
+    <setting id="musiclibrary.overridetags" default="true">false</setting>
+    <setting id="musiclibrary.artworklevel" default="true">0</setting>
+    <setting id="musiclibrary.usealllocalart" default="true">false</setting>
+    <setting id="musiclibrary.useallremoteart" default="true">false</setting>
+    <setting id="musiclibrary.artistartwhitelist" default="true" />
+    <setting id="musiclibrary.albumartwhitelist" default="true" />
+    <setting id="musiclibrary.musicthumbs" default="true">folder.jpg, cover.jpg, cover.jpeg, thumb.jpg</setting>
+    <setting id="musiclibrary.preferonlinealbumart" default="true">false</setting>
+    <setting id="musicfiles.selectaction" default="true">false</setting>
+    <setting id="musicfiles.trackformat" default="true">[%N. ]%A - %T</setting>
+    <setting id="musicfiles.nowplayingtrackformat" default="true" />
+    <setting id="musicfiles.librarytrackformat" default="true" />
+    <setting id="musicfiles.findremotethumbs" default="true">true</setting>
+    <setting id="musicfiles.usetags" default="true">true</setting>
+    <setting id="mymusic.songthumbinvis" default="true">false</setting>
+    <setting id="mymusic.defaultlibview" default="true" />
+    <setting id="pictures.usetags" default="true">true</setting>
+    <setting id="pictures.generatethumbs" default="true">true</setting>
+    <setting id="pictures.showvideos" default="true">true</setting>
+    <setting id="pictures.displayresolution">17</setting>
+    <setting id="scrapers.moviesdefault" default="true">metadata.themoviedb.org.python</setting>
+    <setting id="scrapers.tvshowsdefault" default="true">metadata.tvshows.themoviedb.org.python</setting>
+    <setting id="scrapers.musicvideosdefault" default="true">metadata.local</setting>
+    <setting id="videoplayer.autoplaynextitem" default="true" />
+    <setting id="videoplayer.seeksteps">-30,-10,10,30</setting>
+    <setting id="videoplayer.seekdelay" default="true">750</setting>
+    <setting id="videoplayer.adjustrefreshrate" default="true">0</setting>
+    <setting id="winsystem.ishdrdisplay" default="true">true</setting>
+    <setting id="videoplayer.usedisplayasclock" default="true">false</setting>
+    <setting id="videoplayer.errorinaspect" default="true">0</setting>
+    <setting id="videoplayer.stretch43" default="true">0</setting>
+    <setting id="videoplayer.rendermethod" default="true">0</setting>
+    <setting id="videoplayer.hqscalers" default="true">20</setting>
+    <setting id="videoplayer.usesuperresolution" default="true">false</setting>
+    <setting id="videoplayer.usemediacodecsurface" default="true">true</setting>
+    <setting id="videoplayer.usemediacodec" default="true">true</setting>
+    <setting id="videoplayer.usedxva2" default="true">true</setting>
+    <setting id="videoplayer.usevtb" default="true">true</setting>
+    <setting id="videoplayer.highprecision" default="true">true</setting>
+    <setting id="videoplayer.convertdovi" default="true">false</setting>
+    <setting id="videoplayer.allowedhdrformats" default="true">0,1</setting>
+    <setting id="videoplayer.usevdpau" default="true">true</setting>
+    <setting id="videoplayer.usevdpaumixer" default="true">true</setting>
+    <setting id="videoplayer.usevdpaumpeg2" default="true">false</setting>
+    <setting id="videoplayer.usevdpaumpeg4" default="true">false</setting>
+    <setting id="videoplayer.usevdpauvc1" default="true">true</setting>
+    <setting id="videoplayer.usevaapi" default="true">true</setting>
+    <setting id="videoplayer.usevaapimpeg2" default="true">false</setting>
+    <setting id="videoplayer.usevaapimpeg4" default="true">true</setting>
+    <setting id="videoplayer.usevaapivc1" default="true">true</setting>
+    <setting id="videoplayer.usevaapivp8" default="true">true</setting>
+    <setting id="videoplayer.usevaapivp9" default="true">true</setting>
+    <setting id="videoplayer.usevaapihevc" default="true">true</setting>
+    <setting id="videoplayer.usevaapiav1" default="true">true</setting>
+    <setting id="videoplayer.prefervaapirender" default="true">true</setting>
+    <setting id="videoplayer.useprimedecoder" default="true">false</setting>
+    <setting id="videoplayer.useprimedecoderforhw" default="true">true</setting>
+    <setting id="videoplayer.useprimerenderer" default="true">1</setting>
+    <setting id="videoplayer.stereoscopicplaybackmode" default="true">0</setting>
+    <setting id="videoplayer.quitstereomodeonstop" default="true">true</setting>
+    <setting id="videoplayer.teletextenabled" default="true">true</setting>
+    <setting id="videoplayer.teletextscale" default="true">true</setting>
+    <setting id="musicplayer.autoplaynextitem" default="true">true</setting>
+    <setting id="musicplayer.queuebydefault" default="true">false</setting>
+    <setting id="musicplayer.seeksteps" default="true">-60,-30,-10,10,30,60</setting>
+    <setting id="musicplayer.seekdelay" default="true">750</setting>
+    <setting id="musicplayer.crossfade" default="true">0</setting>
+    <setting id="musicplayer.crossfadealbumtracks" default="true">true</setting>
+    <setting id="musicplayer.visualisation" default="true" />
+    <setting id="musicplayer.replaygaintype" default="true">1</setting>
+    <setting id="musicplayer.replaygainpreamp" default="true">89</setting>
+    <setting id="musicplayer.replaygainnogainpreamp" default="true">89</setting>
+    <setting id="musicplayer.replaygainavoidclipping" default="true">false</setting>
+    <setting id="dvds.autorun" default="true">false</setting>
+    <setting id="dvds.playerregion" default="true">0</setting>
+    <setting id="dvds.automenu" default="true">false</setting>
+    <setting id="bluray.playerregion" default="true">1</setting>
+    <setting id="disc.playback" default="true">0</setting>
+    <setting id="audiocds.autoaction" default="true">0</setting>
+    <setting id="audiocds.usecddb" default="true">true</setting>
+    <setting id="audiocds.recordingpath" default="true" />
+    <setting id="audiocds.trackpathformat" default="true">%A/%A - %B/[%N. ][%A - ]%T</setting>
+    <setting id="audiocds.encoder" default="true">audioencoder.kodi.builtin.aac</setting>
+    <setting id="audiocds.ejectonrip" default="true">true</setting>
+    <setting id="slideshow.staytime" default="true">5</setting>
+    <setting id="slideshow.displayeffects" default="true">true</setting>
+    <setting id="slideshow.shuffle" default="true">false</setting>
+    <setting id="slideshow.highqualitydownscaling" default="true">false</setting>
+    <setting id="locale.audiolanguage">original</setting>
+    <setting id="videoplayer.preferdefaultflag">false</setting>
+    <setting id="locale.subtitlelanguage">English</setting>
+    <setting id="accessibility.audiovisual" default="true">false</setting>
+    <setting id="accessibility.audiohearing" default="true">false</setting>
+    <setting id="accessibility.subhearing">true</setting>
+    <setting id="subtitles.align" default="true">2</setting>
+    <setting id="subtitles.fontname" default="true">DEFAULT</setting>
+    <setting id="subtitles.fontsize" default="true">42</setting>
+    <setting id="subtitles.style" default="true">0</setting>
+    <setting id="subtitles.colorpick" default="true">FFFFFFFF</setting>
+    <setting id="subtitles.opacity" default="true">100</setting>
+    <setting id="subtitles.bordersize" default="true">25</setting>
+    <setting id="subtitles.bordercolorpick" default="true">FF000000</setting>
+    <setting id="subtitles.blur" default="true">0</setting>
+    <setting id="subtitles.backgroundtype" default="true">0</setting>
+    <setting id="subtitles.bgcolorpick" default="true">FF000000</setting>
+    <setting id="subtitles.bgopacity" default="true">80</setting>
+    <setting id="subtitles.shadowcolor" default="true">FF000000</setting>
+    <setting id="subtitles.shadowopacity" default="true">100</setting>
+    <setting id="subtitles.shadowsize" default="true">15</setting>
+    <setting id="subtitles.marginvertical" default="true">4.95</setting>
+    <setting id="subtitles.overridefonts" default="true">false</setting>
+    <setting id="subtitles.overridestyles" default="true">0</setting>
+    <setting id="subtitles.stereoscopicdepth" default="true">0</setting>
+    <setting id="subtitles.charset" default="true">DEFAULT</setting>
+    <setting id="subtitles.parsecaptions" default="true">false</setting>
+    <setting id="subtitles.captionsalign" default="true">0</setting>
+    <setting id="subtitles.languages" default="true">English</setting>
+    <setting id="subtitles.storagemode" default="true">0</setting>
+    <setting id="subtitles.custompath" default="true" />
+    <setting id="subtitles.pauseonsearch" default="true">true</setting>
+    <setting id="subtitles.downloadfirst" default="true">false</setting>
+    <setting id="subtitles.tv">service.subtitles.rvm.addic7ed</setting>
+    <setting id="subtitles.movie">plugin.video.elementum</setting>
+    <setting id="pvrmanager.backendchannelgroupsorder" default="true">true</setting>
+    <setting id="pvrmanager.backendchannelorder" default="true">true</setting>
+    <setting id="pvrmanager.usebackendchannelnumbersalways" default="true">false</setting>
+    <setting id="pvrmanager.usebackendchannelnumbers" default="true">false</setting>
+    <setting id="pvrmanager.startgroupchannelnumbersfromone" default="true">false</setting>
+    <setting id="pvrmenu.iconpath" default="true" />
+    <setting id="epg.pastdaystodisplay" default="true">1</setting>
+    <setting id="epg.futuredaystodisplay" default="true">3</setting>
+    <setting id="epg.selectaction" default="true">2</setting>
+    <setting id="epg.hidenoinfoavailable" default="true">true</setting>
+    <setting id="epg.epgupdate" default="true">120</setting>
+    <setting id="epg.preventupdateswhileplayingtv" default="true">false</setting>
+    <setting id="pvrplayback.switchtofullscreenchanneltypes" default="true">3</setting>
+    <setting id="pvrmanager.preselectplayingchannel" default="true">false</setting>
+    <setting id="pvrmenu.displaychannelinfo" default="true">5</setting>
+    <setting id="pvrmenu.closechannelosdonswitch" default="true">true</setting>
+    <setting id="pvrplayback.confirmchannelswitch" default="true">true</setting>
+    <setting id="pvrplayback.channelentrytimeout" default="true">0</setting>
+    <setting id="pvrplayback.delaymarklastwatched" default="true">0</setting>
+    <setting id="pvrplayback.signalquality" default="true">true</setting>
+    <setting id="pvrplayback.fps" default="true">0</setting>
+    <setting id="pvrplayback.autoplaynextprogramme" default="true">true</setting>
+    <setting id="pvrplayback.enableradiords" default="true">true</setting>
+    <setting id="pvrplayback.trafficadvisory" default="true">false</setting>
+    <setting id="pvrplayback.trafficadvisoryvolume" default="true">10</setting>
+    <setting id="pvrrecord.instantrecordaction" default="true">0</setting>
+    <setting id="pvrrecord.instantrecordtime" default="true">120</setting>
+    <setting id="pvrrecord.marginstart" default="true">0</setting>
+    <setting id="pvrrecord.marginend" default="true">0</setting>
+    <setting id="pvrrecord.timernotifications" default="true">true</setting>
+    <setting id="pvrrecord.grouprecordings" default="true">true</setting>
+    <setting id="pvrreminders.autoclosedelay" default="true">10</setting>
+    <setting id="pvrreminders.autorecord" default="true">true</setting>
+    <setting id="pvrreminders.autoswitch" default="true">false</setting>
+    <setting id="pvrpowermanagement.enabled" default="true">false</setting>
+    <setting id="pvrpowermanagement.backendidletime" default="true">15</setting>
+    <setting id="pvrpowermanagement.setwakeupcmd" default="true" />
+    <setting id="pvrpowermanagement.prewakeup" default="true">15</setting>
+    <setting id="pvrpowermanagement.dailywakeup" default="true">false</setting>
+    <setting id="pvrpowermanagement.dailywakeuptime" default="true">00:00:00</setting>
+    <setting id="pvrparental.enabled" default="true">false</setting>
+    <setting id="pvrparental.pin" default="true" />
+    <setting id="pvrparental.duration" default="true">300</setting>
+    <setting id="pvrtimers.hidedisabledtimers" default="true">false</setting>
+    <setting id="services.devicename" default="true">Kodi</setting>
+    <setting id="services.zeroconf" default="true">true</setting>
+    <setting id="services.deviceuuid">6badd82f-b05b-437b-be9e-32966236ab40</setting>
+    <setting id="services.webserver" default="true">false</setting>
+    <setting id="services.webserverport" default="true">8080</setting>
+    <setting id="services.webserverauthentication">false</setting>
+    <setting id="services.webserverusername" default="true">kodi</setting>
+    <setting id="services.webserverpassword" default="true" />
+    <setting id="services.webserverssl" default="true">false</setting>
+    <setting id="services.webskin" default="true">webinterface.default</setting>
+    <setting id="services.esenabled" default="true">true</setting>
+    <setting id="services.esport" default="true">9777</setting>
+    <setting id="services.esportrange" default="true">10</setting>
+    <setting id="services.esmaxclients" default="true">20</setting>
+    <setting id="services.esallinterfaces">true</setting>
+    <setting id="services.esinitialdelay" default="true">750</setting>
+    <setting id="services.escontinuousdelay" default="true">25</setting>
+    <setting id="services.upnp" default="true">false</setting>
+    <setting id="services.upnpserver" default="true">false</setting>
+    <setting id="services.upnpannounce" default="true">true</setting>
+    <setting id="services.upnplookforexternalsubtitles" default="true">false</setting>
+    <setting id="services.upnpcontroller" default="true">false</setting>
+    <setting id="services.upnpplayervolumesync" default="true">true</setting>
+    <setting id="services.upnprenderer" default="true">false</setting>
+    <setting id="services.airplay">true</setting>
+    <setting id="services.airplayvolumecontrol" default="true">true</setting>
+    <setting id="services.airplayvideosupport" default="true">false</setting>
+    <setting id="services.useairplaypassword" default="true">false</setting>
+    <setting id="services.airplaypassword" default="true" />
+    <setting id="smb.workgroup" default="true">WORKGROUP</setting>
+    <setting id="smb.winsserver" default="true">0.0.0.0</setting>
+    <setting id="smb.minprotocol" default="true">0</setting>
+    <setting id="smb.maxprotocol" default="true">3</setting>
+    <setting id="smb.legacysecurity" default="true">false</setting>
+    <setting id="services.wsdiscovery" default="true">true</setting>
+    <setting id="smb.chunksize" default="true">128</setting>
+    <setting id="nfs.version" default="true">3</setting>
+    <setting id="nfs.chunksize" default="true">128</setting>
+    <setting id="filecache.buffermode" default="true">4</setting>
+    <setting id="filecache.memorysize" default="true">20</setting>
+    <setting id="filecache.readfactor" default="true">400</setting>
+    <setting id="filecache.chunksize" default="true">131072</setting>
+    <setting id="weather.currentlocation" default="true">1</setting>
+    <setting id="weather.addon">weather.multi</setting>
+    <setting id="videoscreen.monitor" default="true">Default</setting>
+    <setting id="videoscreen.screen" default="true">0</setting>
+    <setting id="videoscreen.resolution">17</setting>
+    <setting id="videoscreen.screenmode" default="true">DESKTOP</setting>
+    <setting id="videoscreen.fakefullscreen" default="true">true</setting>
+    <setting id="videoscreen.blankdisplays" default="true">false</setting>
+    <setting id="videoscreen.delayrefreshchange" default="true">0</setting>
+    <setting id="videoscreen.10bitsurfaces" default="true">0</setting>
+    <setting id="videoscreen.dither" default="true">false</setting>
+    <setting id="videoscreen.ditherdepth" default="true">8</setting>
+    <setting id="videoscreen.cmsenabled" default="true">false</setting>
+    <setting id="videoscreen.cmsmode" default="true">0</setting>
+    <setting id="videoscreen.cms3dlut" default="true" />
+    <setting id="videoscreen.displayprofile" default="true" />
+    <setting id="videoscreen.cmswhitepoint" default="true">0</setting>
+    <setting id="videoscreen.cmsprimaries" default="true">0</setting>
+    <setting id="videoscreen.cmsgammamode" default="true">0</setting>
+    <setting id="videoscreen.cmsgamma" default="true">220</setting>
+    <setting id="videoscreen.cmslutsize" default="true">6</setting>
+    <setting id="videoscreen.hwscalingfilter" default="true">true</setting>
+    <setting id="videoscreen.limitguisize" default="true">0</setting>
+    <setting id="videoscreen.limitedrange" default="true">false</setting>
+    <setting id="videoscreen.usesystemsdrpeakluminance" default="true">true</setting>
+    <setting id="videoscreen.guipeakluminance" default="true">40</setting>
+    <setting id="videoscreen.whitelist" default="true" />
+    <setting id="videoscreen.whitelistpulldown" default="true">false</setting>
+    <setting id="videoscreen.whitelistdoublerefreshrate" default="true">false</setting>
+    <setting id="videoscreen.stereoscopicmode" default="true">0</setting>
+    <setting id="videoscreen.preferedstereoscopicmode" default="true">100</setting>
+    <setting id="videoscreen.noofbuffers" default="true">3</setting>
+    <setting id="audiooutput.audiodevice">PIPEWIRE:Default|Default Output Device (PIPEWIRE)</setting>
+    <setting id="audiooutput.channels" default="true">1</setting>
+    <setting id="audiooutput.config" default="true">2</setting>
+    <setting id="audiooutput.volumesteps" default="true">90</setting>
+    <setting id="audiooutput.maintainoriginalvolume" default="true">true</setting>
+    <setting id="audiooutput.stereoupmix" default="true">false</setting>
+    <setting id="audiooutput.processquality" default="true">30</setting>
+    <setting id="audiooutput.atempothreshold" default="true">2</setting>
+    <setting id="audiooutput.samplerate" default="true">48000</setting>
+    <setting id="audiooutput.streamsilence" default="true">1</setting>
+    <setting id="audiooutput.streamnoise" default="true">true</setting>
+    <setting id="audiooutput.guisoundmode">2</setting>
+    <setting id="audiooutput.guisoundvolume">80</setting>
+    <setting id="lookandfeel.soundskin">resource.uisounds.androidtv</setting>
+    <setting id="audiooutput.passthrough" default="true">false</setting>
+    <setting id="audiooutput.passthroughdevice" default="true">Default</setting>
+    <setting id="audiooutput.ac3passthrough" default="true">true</setting>
+    <setting id="audiooutput.ac3transcode" default="true">false</setting>
+    <setting id="audiooutput.eac3passthrough" default="true">false</setting>
+    <setting id="audiooutput.dtspassthrough" default="true">false</setting>
+    <setting id="audiooutput.truehdpassthrough" default="true">false</setting>
+    <setting id="audiooutput.dtshdpassthrough" default="true">false</setting>
+    <setting id="audiooutput.dtshdcorefallback" default="true">true</setting>
+    <setting id="input.enablemouse" default="true">true</setting>
+    <setting id="input.enablejoystick" default="true">true</setting>
+    <setting id="input.asknewcontrollers" default="true">true</setting>
+    <setting id="input.rumblenotify" default="true">false</setting>
+    <setting id="input.controllerpoweroff" default="true">false</setting>
+    <setting id="input.libinputkeyboardlayout" default="true">us</setting>
+    <setting id="network.usehttpproxy" default="true">false</setting>
+    <setting id="network.httpproxytype" default="true">0</setting>
+    <setting id="network.httpproxyserver">10.71.71.85</setting>
+    <setting id="network.httpproxyport">8888</setting>
+    <setting id="network.httpproxyusername" default="true" />
+    <setting id="network.httpproxypassword" default="true" />
+    <setting id="network.bandwidth" default="true">0</setting>
+    <setting id="powermanagement.displaysoff" default="true">0</setting>
+    <setting id="powermanagement.shutdowntime" default="true">0</setting>
+    <setting id="powermanagement.shutdownstate" default="true">1</setting>
+    <setting id="powermanagement.waitfornetwork" default="true">0</setting>
+    <setting id="powermanagement.wakeonaccess" default="true">false</setting>
+    <setting id="general.addonupdates" default="true">0</setting>
+    <setting id="general.addonnotifications" default="true">false</setting>
+    <setting id="addons.unknownsources">true</setting>
+    <setting id="addons.updatemode">1</setting>
+    <setting id="debug.showloginfo" default="true">false</setting>
+    <setting id="debug.extralogging" default="true">false</setting>
+    <setting id="debug.setextraloglevel" default="true" />
+    <setting id="debug.screenshotpath" default="true" />
+    <setting id="eventlog.enabled" default="true">true</setting>
+    <setting id="eventlog.enablednotifications" default="true">false</setting>
+    <setting id="cache.harddisk" default="true">256</setting>
+    <setting id="cachevideo.dvdrom" default="true">2048</setting>
+    <setting id="cachevideo.lan" default="true">2048</setting>
+    <setting id="cachevideo.internet" default="true">4096</setting>
+    <setting id="cacheaudio.dvdrom" default="true">256</setting>
+    <setting id="cacheaudio.lan" default="true">256</setting>
+    <setting id="cacheaudio.internet" default="true">256</setting>
+    <setting id="cachedvd.dvdrom" default="true">2048</setting>
+    <setting id="cachedvd.lan" default="true">2048</setting>
+    <setting id="cacheunknown.internet" default="true">4096</setting>
+    <setting id="system.playlistspath">special://profile/playlists/</setting>
+    <setting id="general.addonforeignfilter" default="true">false</setting>
+    <setting id="general.addonbrokenfilter" default="true">true</setting>
+    <viewstates>
+        <games>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </games>
+        <musicfiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicfiles>
+        <musiclastfm>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musiclastfm>
+        <musicnavalbums>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavalbums>
+        <musicnavartists>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavartists>
+        <musicnavsongs>
+            <viewmode>65536</viewmode>
+            <sortmethod>8</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavsongs>
+        <pictures>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </pictures>
+        <programs>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </programs>
+        <videofiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videofiles>
+        <videonavactors>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavactors>
+        <videonavepisodes>
+            <viewmode>720896</viewmode>
+            <sortmethod>23</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavepisodes>
+        <videonavgenres>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavgenres>
+        <videonavmusicvideos>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavmusicvideos>
+        <videonavseasons>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavseasons>
+        <videonavtitles>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavtitles>
+        <videonavtvshows>
+            <viewmode>131598</viewmode>
+            <sortmethod>29</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>1</sortattributes>
+        </videonavtvshows>
+        <videonavyears>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavyears>
+    </viewstates>
+    <general>
+        <settinglevel>0</settinglevel>
+        <eventlog>
+            <level>0</level>
+            <showhigherlevels>true</showhigherlevels>
+        </eventlog>
+        <systemtotaluptime>8791</systemtotaluptime>
+    </general>
+    <resolutions>
+        <resolution>
+            <description>gamescope: 3840x2160 @ 59.98Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.980930</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x352</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 2048x1536 @ 59.95Hz</description>
+            <subtitles>1536</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.953789</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x353</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1536</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1920x1440 @ 59.97Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.967991</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x354</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1600x1200 @ 59.87Hz</description>
+            <subtitles>1200</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.869110</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x355</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1440x1080 @ 59.99Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.988838</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x356</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1400x1050 @ 59.98Hz</description>
+            <subtitles>1050</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.978439</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x357</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1400</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1280x1024 @ 59.89Hz</description>
+            <subtitles>1024</subtitles>
+            <pixelratio>1.414493</pixelratio>
+            <refreshrate>59.894852</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x358</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1280x960 @ 59.94Hz</description>
+            <subtitles>960</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.939049</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x359</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1152x864 @ 59.96Hz</description>
+            <subtitles>864</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.958630</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x35a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>864</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1024x768 @ 59.92Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.920132</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x23</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 800x600 @ 59.86Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.861401</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x24</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 640x480 @ 59.38Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.375000</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x25</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 320x240 @ 59.29Hz</description>
+            <subtitles>240</subtitles>
+            <pixelratio>1.326087</pixelratio>
+            <refreshrate>59.288540</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x26</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>320</right>
+                <bottom>240</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 2560x1600 @ 59.99Hz</description>
+            <subtitles>1600</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.986591</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x35b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1920x1200 @ 59.88Hz</description>
+            <subtitles>1200</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.884602</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x35c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1680x1050 @ 59.95Hz</description>
+            <subtitles>1050</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.954250</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x35d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1440x900 @ 59.89Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.887451</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x35e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1280x800 @ 59.81Hz</description>
+            <subtitles>800</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.810329</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x22</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1152x720 @ 59.97Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.971748</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x27</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 960x600 @ 59.63Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.634892</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x28</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 928x580 @ 59.88Hz</description>
+            <subtitles>580</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.877972</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x29</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>928</right>
+                <bottom>580</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 800x500 @ 59.50Hz</description>
+            <subtitles>500</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.497089</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x2a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>500</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 768x480 @ 59.90Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.895828</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x2b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>768</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 720x480 @ 59.71Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.178744</pixelratio>
+            <refreshrate>59.709820</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x2c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 640x400 @ 59.95Hz</description>
+            <subtitles>400</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>59.952042</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x2d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>400</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 320x200 @ 58.14Hz</description>
+            <subtitles>200</subtitles>
+            <pixelratio>1.105072</pixelratio>
+            <refreshrate>58.139530</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x2e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>320</right>
+                <bottom>200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 3200x1800 @ 59.96Hz</description>
+            <subtitles>1800</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.956131</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x35f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3200</right>
+                <bottom>1800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 2880x1620 @ 59.96Hz</description>
+            <subtitles>1620</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.960258</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x360</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2880</right>
+                <bottom>1620</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 2560x1440 @ 59.96Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.960629</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x361</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 2048x1152 @ 59.90Hz</description>
+            <subtitles>1152</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.903179</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x362</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1152</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1920x1080 @ 59.96Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.962841</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x363</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1600x900 @ 59.95Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.946018</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x364</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1368x768 @ 59.88Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>0.992626</pixelratio>
+            <refreshrate>59.882050</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x365</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1368</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1280x720 @ 59.86Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.855129</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x2f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 1024x576 @ 59.90Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.899212</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x30</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 864x486 @ 59.92Hz</description>
+            <subtitles>486</subtitles>
+            <pixelratio>0.994565</pixelratio>
+            <refreshrate>59.915340</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x31</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>864</right>
+                <bottom>486</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 720x400 @ 59.27Hz</description>
+            <subtitles>400</subtitles>
+            <pixelratio>0.982287</pixelratio>
+            <refreshrate>59.266319</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x32</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>400</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>gamescope: 640x350 @ 59.28Hz</description>
+            <subtitles>350</subtitles>
+            <pixelratio>0.966938</pixelratio>
+            <refreshrate>59.281841</refreshrate>
+            <output>gamescope</output>
+            <xrandrid>0x33</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>350</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 60.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x47</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 50.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x50</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 59.94Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940102</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x51</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 59.97Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.968498</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x52</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 30.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x53</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 25.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x54</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 24.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>24.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x55</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 29.97Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>29.969999</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x56</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3840x2160 @ 23.98Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>23.976000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x57</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 60.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x48</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 50.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x49</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 59.94Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>59.940102</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x4a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 30.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x4b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 25.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x4c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 24.00Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>24.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x4d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 29.97Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>29.969999</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x4e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 4096x2160 @ 23.98Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>0.937500</pixelratio>
+            <refreshrate>23.976000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x4f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3200x1800 @ 59.96Hz</description>
+            <subtitles>1800</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.956131</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x58</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3200</right>
+                <bottom>1800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 3200x1800 @ 59.94Hz</description>
+            <subtitles>1800</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.941631</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x59</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3200</right>
+                <bottom>1800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2880x1620 @ 59.96Hz</description>
+            <subtitles>1620</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.960258</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x5a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2880</right>
+                <bottom>1620</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2880x1620 @ 59.97Hz</description>
+            <subtitles>1620</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.974651</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x5b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2880</right>
+                <bottom>1620</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2560x1600 @ 59.99Hz</description>
+            <subtitles>1600</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.986591</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x5c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2560x1600 @ 59.97Hz</description>
+            <subtitles>1600</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.971588</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x5d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2560x1440 @ 119.99Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.985733</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x5e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2560x1440 @ 59.96Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.960629</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x5f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2560x1440 @ 59.95Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.950550</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x60</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2048x1536 @ 60.00Hz</description>
+            <subtitles>1536</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>59.999550</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x61</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1536</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1440 @ 60.00Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x62</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1856x1392 @ 60.01Hz</description>
+            <subtitles>1392</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.008930</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x63</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1856</right>
+                <bottom>1392</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1792x1344 @ 60.01Hz</description>
+            <subtitles>1344</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.014439</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x64</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1792</right>
+                <bottom>1344</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2048x1152 @ 119.98Hz</description>
+            <subtitles>1152</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.978043</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x65</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1152</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2048x1152 @ 119.96Hz</description>
+            <subtitles>1152</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.959709</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x66</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1152</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2048x1152 @ 59.90Hz</description>
+            <subtitles>1152</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.903179</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x67</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1152</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 2048x1152 @ 59.91Hz</description>
+            <subtitles>1152</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.908730</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x68</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2048</right>
+                <bottom>1152</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1200 @ 59.88Hz</description>
+            <subtitles>1200</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.884602</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x69</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1200 @ 59.95Hz</description>
+            <subtitles>1200</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.950169</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x6a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 120.02Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>120.015503</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x6b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 119.94Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.936989</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x6c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 59.96Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.962841</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x6d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 60.00Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x6e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 50.00Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x6f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 59.94Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940201</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x70</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 59.93Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.933880</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x71</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 30.00Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x72</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 25.00Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x73</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 24.00Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>24.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x74</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 29.97Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>29.970100</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x75</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1920x1080 @ 23.98Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>23.976080</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x76</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1600x1200 @ 60.00Hz</description>
+            <subtitles>1200</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x77</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1680x1050 @ 59.95Hz</description>
+            <subtitles>1050</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.954250</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x78</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1680x1050 @ 59.88Hz</description>
+            <subtitles>1050</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.883251</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x79</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1400x1050 @ 59.98Hz</description>
+            <subtitles>1050</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>59.975620</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x7a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1400</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1600x900 @ 119.98Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.976593</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x7b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1600x900 @ 119.88Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.883270</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x7c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1600x900 @ 59.95Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.946018</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x7d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1600x900 @ 59.82Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.824760</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x7e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x1024 @ 60.02Hz</description>
+            <subtitles>1024</subtitles>
+            <pixelratio>1.422222</pixelratio>
+            <refreshrate>60.019741</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x7f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1440x900 @ 59.90Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.901459</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x80</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1400x900 @ 59.96Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.142857</pixelratio>
+            <refreshrate>59.964130</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x81</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1400</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1400x900 @ 59.88Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.142857</pixelratio>
+            <refreshrate>59.879822</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x82</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1400</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x960 @ 60.00Hz</description>
+            <subtitles>960</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x83</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1440x810 @ 119.99Hz</description>
+            <subtitles>810</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.991982</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x84</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>810</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1440x810 @ 119.95Hz</description>
+            <subtitles>810</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.949303</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x85</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>810</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1368x768 @ 59.88Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>0.998051</pixelratio>
+            <refreshrate>59.882050</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x86</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1368</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1368x768 @ 59.85Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>0.998051</pixelratio>
+            <refreshrate>59.853199</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x87</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1368</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x800 @ 119.97Hz</description>
+            <subtitles>800</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.973183</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x88</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x800 @ 119.94Hz</description>
+            <subtitles>800</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.943176</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x89</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x800 @ 59.81Hz</description>
+            <subtitles>800</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.810329</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x8a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x800 @ 59.91Hz</description>
+            <subtitles>800</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>59.909550</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x8b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 120.00Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>120.001633</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x8c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 119.98Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.982109</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x8d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 59.86Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.855129</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x8e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 60.00Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x8f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 50.00Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x90</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 59.94Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940201</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x91</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1280x720 @ 59.74Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.744709</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x92</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1024x768 @ 120.07Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.074669</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x93</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1024x768 @ 60.00Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.003841</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x94</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x720 @ 120.00Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x95</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 928x696 @ 120.10Hz</description>
+            <subtitles>696</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.101318</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x96</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>928</right>
+                <bottom>696</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 896x672 @ 120.03Hz</description>
+            <subtitles>672</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.028877</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x97</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>896</right>
+                <bottom>672</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1024x576 @ 119.91Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.906700</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x98</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1024x576 @ 119.92Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.918663</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x99</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1024x576 @ 59.90Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.899212</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x9a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 1024x576 @ 59.82Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.819519</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x9b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x600 @ 119.87Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.865479</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x9c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x600 @ 120.00Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.997513</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x9d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x540 @ 119.93Hz</description>
+            <subtitles>540</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.925690</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x9e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>540</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x540 @ 119.98Hz</description>
+            <subtitles>540</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.975739</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0x9f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>540</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x540 @ 59.63Hz</description>
+            <subtitles>540</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.629028</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa0</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>540</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 960x540 @ 59.82Hz</description>
+            <subtitles>540</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.818218</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa1</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>960</right>
+                <bottom>540</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 800x600 @ 120.00Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa2</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 800x600 @ 60.32Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.316540</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa3</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 800x600 @ 56.25Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>56.250000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa4</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 840x525 @ 120.02Hz</description>
+            <subtitles>525</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>120.018707</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa5</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>840</right>
+                <bottom>525</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 840x525 @ 119.77Hz</description>
+            <subtitles>525</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.766510</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa6</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>840</right>
+                <bottom>525</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 864x486 @ 59.92Hz</description>
+            <subtitles>486</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.915340</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa7</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>864</right>
+                <bottom>486</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 864x486 @ 59.57Hz</description>
+            <subtitles>486</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.570309</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa8</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>864</right>
+                <bottom>486</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 720x576 @ 50.00Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>1.422222</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xa9</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 700x525 @ 119.95Hz</description>
+            <subtitles>525</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>119.951233</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xaa</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>700</right>
+                <bottom>525</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 800x450 @ 119.89Hz</description>
+            <subtitles>450</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.892036</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xab</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>450</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 800x450 @ 119.65Hz</description>
+            <subtitles>450</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.649521</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xac</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>450</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 720x480 @ 60.00Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.185185</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xad</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 720x480 @ 59.94Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.185185</pixelratio>
+            <refreshrate>59.940060</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xae</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x512 @ 120.04Hz</description>
+            <subtitles>512</subtitles>
+            <pixelratio>1.422222</pixelratio>
+            <refreshrate>120.039482</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xaf</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>512</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 700x450 @ 119.93Hz</description>
+            <subtitles>450</subtitles>
+            <pixelratio>1.142857</pixelratio>
+            <refreshrate>119.928253</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb0</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>700</right>
+                <bottom>450</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 700x450 @ 119.76Hz</description>
+            <subtitles>450</subtitles>
+            <pixelratio>1.142857</pixelratio>
+            <refreshrate>119.759651</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb1</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>700</right>
+                <bottom>450</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x480 @ 120.00Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb2</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x480 @ 60.00Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb3</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x480 @ 59.94Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>59.940479</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb4</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 720x405 @ 59.51Hz</description>
+            <subtitles>405</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.506180</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb5</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>405</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 720x405 @ 58.99Hz</description>
+            <subtitles>405</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>58.987850</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb6</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>405</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 684x384 @ 119.76Hz</description>
+            <subtitles>384</subtitles>
+            <pixelratio>0.998051</pixelratio>
+            <refreshrate>119.764099</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb7</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>684</right>
+                <bottom>384</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 684x384 @ 119.71Hz</description>
+            <subtitles>384</subtitles>
+            <pixelratio>0.998051</pixelratio>
+            <refreshrate>119.706413</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb8</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>684</right>
+                <bottom>384</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x400 @ 119.76Hz</description>
+            <subtitles>400</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.764771</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xb9</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>400</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x400 @ 119.96Hz</description>
+            <subtitles>400</subtitles>
+            <pixelratio>1.111111</pixelratio>
+            <refreshrate>119.964859</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xba</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>400</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x360 @ 119.71Hz</description>
+            <subtitles>360</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.710251</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xbb</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>360</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x360 @ 119.65Hz</description>
+            <subtitles>360</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.650902</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xbc</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>360</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x360 @ 59.84Hz</description>
+            <subtitles>360</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.840431</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xbd</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>360</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 640x360 @ 59.32Hz</description>
+            <subtitles>360</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.324871</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xbe</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>360</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 512x384 @ 120.01Hz</description>
+            <subtitles>384</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.007683</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xbf</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>512</right>
+                <bottom>384</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 512x288 @ 120.00Hz</description>
+            <subtitles>288</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.998756</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc0</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>512</right>
+                <bottom>288</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 512x288 @ 119.84Hz</description>
+            <subtitles>288</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.841118</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc1</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>512</right>
+                <bottom>288</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 480x270 @ 119.26Hz</description>
+            <subtitles>270</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.258049</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc2</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>480</right>
+                <bottom>270</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 480x270 @ 119.64Hz</description>
+            <subtitles>270</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.636429</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc3</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>480</right>
+                <bottom>270</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 400x300 @ 120.63Hz</description>
+            <subtitles>300</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.633080</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc4</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>400</right>
+                <bottom>300</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 400x300 @ 112.68Hz</description>
+            <subtitles>300</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>112.680290</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc5</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>400</right>
+                <bottom>300</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 432x243 @ 119.83Hz</description>
+            <subtitles>243</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.830688</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc6</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>432</right>
+                <bottom>243</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 432x243 @ 119.14Hz</description>
+            <subtitles>243</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.140617</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc7</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>432</right>
+                <bottom>243</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 320x240 @ 120.10Hz</description>
+            <subtitles>240</subtitles>
+            <pixelratio>1.333333</pixelratio>
+            <refreshrate>120.104958</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc8</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>320</right>
+                <bottom>240</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 360x202 @ 119.01Hz</description>
+            <subtitles>202</subtitles>
+            <pixelratio>0.997531</pixelratio>
+            <refreshrate>119.012360</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xc9</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>360</right>
+                <bottom>202</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 360x202 @ 118.26Hz</description>
+            <subtitles>202</subtitles>
+            <pixelratio>0.997531</pixelratio>
+            <refreshrate>118.257942</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xca</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>360</right>
+                <bottom>202</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 320x180 @ 119.68Hz</description>
+            <subtitles>180</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>119.680847</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xcb</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>320</right>
+                <bottom>180</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>DP-2: 320x180 @ 118.65Hz</description>
+            <subtitles>180</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>118.649727</refreshrate>
+            <output>DP-2</output>
+            <xrandrid>0xcc</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>320</right>
+                <bottom>180</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 60.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>0</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 60.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>1</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 59.940063 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940063</refreshrate>
+            <output></output>
+            <xrandrid>2</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 50.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output></output>
+            <xrandrid>3</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 30.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output></output>
+            <xrandrid>4</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 29.970032 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>29.970032</refreshrate>
+            <output></output>
+            <xrandrid>5</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 25.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output></output>
+            <xrandrid>6</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 24.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>24.000000</refreshrate>
+            <output></output>
+            <xrandrid>7</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>4096x2160 @ 23.976025 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>23.976025</refreshrate>
+            <output></output>
+            <xrandrid>8</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>4096</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 59.940063 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940063</refreshrate>
+            <output></output>
+            <xrandrid>9</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 50.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output></output>
+            <xrandrid>10</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 30.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output></output>
+            <xrandrid>11</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 29.970032 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>29.970032</refreshrate>
+            <output></output>
+            <xrandrid>12</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 25.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output></output>
+            <xrandrid>13</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 24.000000 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>24.000000</refreshrate>
+            <output></output>
+            <xrandrid>14</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>3840x2160 @ 23.976025 Hz</description>
+            <subtitles>2160</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>23.976025</refreshrate>
+            <output></output>
+            <xrandrid>15</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>3840</right>
+                <bottom>2160</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>2560x1440 @ 60.000000 Hz</description>
+            <subtitles>1440</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>16</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>2560</right>
+                <bottom>1440</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 60.000000 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>17</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 59.940063 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940063</refreshrate>
+            <output></output>
+            <xrandrid>18</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 50.000000 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output></output>
+            <xrandrid>19</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 30.000000 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output></output>
+            <xrandrid>20</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 29.970032 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>29.970032</refreshrate>
+            <output></output>
+            <xrandrid>21</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 25.000000 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output></output>
+            <xrandrid>22</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 24.000000 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>24.000000</refreshrate>
+            <output></output>
+            <xrandrid>23</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 23.976025 Hz</description>
+            <subtitles>1080</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>23.976025</refreshrate>
+            <output></output>
+            <xrandrid>24</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024 @ 60.000000 Hz</description>
+            <subtitles>1024</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>25</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1440x900 @ 60.000000 Hz</description>
+            <subtitles>900</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>26</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720 @ 60.000000 Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>27</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720 @ 59.940063 Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940063</refreshrate>
+            <output></output>
+            <xrandrid>28</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720 @ 50.000000 Hz</description>
+            <subtitles>720</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output></output>
+            <xrandrid>29</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768 @ 60.000000 Hz</description>
+            <subtitles>768</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>30</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600 @ 60.000000 Hz</description>
+            <subtitles>600</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>31</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576 @ 50.000000 Hz</description>
+            <subtitles>576</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output></output>
+            <xrandrid>32</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480 @ 59.940063 Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.940063</refreshrate>
+            <output></output>
+            <xrandrid>33</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480 @ 60.000000 Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>34</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480 @ 60.000000 Hz</description>
+            <subtitles>480</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output></output>
+            <xrandrid>35</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <defaultvideosettings>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>0</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>1.000000</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <showsubtitles>true</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+        <centermixlevel>0</centermixlevel>
+        <tonemapmethod>1</tonemapmethod>
+        <tonemapparam>1.000000</tonemapparam>
+    </defaultvideosettings>
+    <defaultaudiosettings />
+    <defaultgamesettings>
+        <videofilter></videofilter>
+        <stretchmode>normal</stretchmode>
+        <rotation>0</rotation>
+    </defaultgamesettings>
+    <mymusic>
+        <playlist>
+            <repeat>false</repeat>
+            <shuffle>false</shuffle>
+        </playlist>
+        <needsupdate>0</needsupdate>
+    </mymusic>
+    <myvideos>
+        <watchmodemovies>0</watchmodemovies>
+        <watchmodetvshows>0</watchmodetvshows>
+        <watchmodemusicvideos>0</watchmodemusicvideos>
+        <watchmoderecordings>0</watchmoderecordings>
+        <playlist>
+            <repeat>false</repeat>
+            <shuffle>false</shuffle>
+        </playlist>
+        <needsupdate>0</needsupdate>
+    </myvideos>
+    <audio>
+        <mute>false</mute>
+        <fvolumelevel>1.000000</fvolumelevel>
+    </audio>
+</settings>

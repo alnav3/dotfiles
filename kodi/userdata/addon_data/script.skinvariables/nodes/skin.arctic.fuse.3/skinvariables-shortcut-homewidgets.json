@@ -1,0 +1,58 @@
+[
+    {
+        "label": "On Deck",
+        "icon": "",
+        "path": "special://skin/extras/playlists/InProgressMovies.xsp",
+        "target": "videos",
+        "guid": "guid-7f8c2cb1"
+    },
+    {
+        "label": "In-Progress",
+        "icon": "",
+        "path": "special://skin/extras/playlists/InProgressEpisodes.xsp",
+        "target": "videos",
+        "guid": "guid-c8b30e99"
+    },
+    {
+        "label": "Recent Shows",
+        "icon": "",
+        "path": "special://skin/extras/playlists/RecentTvShows.xsp",
+        "target": "videos",
+        "guid": "guid-17926f24"
+    },
+    {
+        "label": "New Movies",
+        "icon": "",
+        "path": "special://skin/extras/playlists/NewMovies.xsp",
+        "target": "videos",
+        "guid": "guid-3b29197c"
+    },
+    {
+        "label": "New Shows",
+        "icon": "",
+        "path": "special://skin/extras/playlists/NewShows.xsp",
+        "target": "videos",
+        "guid": "guid-3e470eb7"
+    },
+    {
+        "label": "Trakt > Trending",
+        "path": "plugin://plugin.video.elementum/movies/trakt/trending",
+        "icon": "image://%2fhome%2falnav%2f.kodi%2faddons%2fplugin.video.elementum%2fresources%2fimg%2ftrending.png/",
+        "target": "videos",
+        "guid": "guid-eec60205"
+    },
+    {
+        "label": "Trakt > Trending",
+        "path": "plugin://plugin.video.elementum/shows/trakt/trending",
+        "icon": "image://%2fhome%2falnav%2f.kodi%2faddons%2fplugin.video.elementum%2fresources%2fimg%2ftrending.png/",
+        "target": "videos",
+        "guid": "guid-b66fdee9"
+    },
+    {
+        "label": "youtube",
+        "path": "plugin://plugin.video.grayjay/?action=sub_feed",
+        "icon": "special://skin/extras/icons/folder.png",
+        "target": "videos",
+        "guid": "guid-95a1ad8b"
+    }
+]

@@ -1,0 +1,24 @@
+<settings version="2">
+    <setting id="languageDetails" default="true">en-US</setting>
+    <setting id="usedifferentlangforimages" default="true">false</setting>
+    <setting id="languageImages" default="true">en-US</setting>
+    <setting id="tmdbcertcountry" default="true">us</setting>
+    <setting id="usecertprefix" default="true">true</setting>
+    <setting id="certprefix" default="true">Rated </setting>
+    <setting id="keeporiginaltitle" default="true">false</setting>
+    <setting id="keywordsastags" default="true">true</setting>
+    <setting id="cat_landscape" default="true">true</setting>
+    <setting id="studio_country" default="true">false</setting>
+    <setting id="enab_trailer" default="true">true</setting>
+    <setting id="players_opt" default="true">Tubed</setting>
+    <setting id="ratings" default="true">TMDb</setting>
+    <setting id="imdbanyway" default="true">false</setting>
+    <setting id="traktanyway" default="true">false</setting>
+    <setting id="tmdbanyway" default="true">true</setting>
+    <setting id="enable_fanarttv" default="true">true</setting>
+    <setting id="fanarttv_clientkey" default="true" />
+    <setting id="verboselog" default="true">false</setting>
+    <setting id="lastUpdated">1765976316.710134</setting>
+    <setting id="originalUrl">https://image.tmdb.org/t/p/original</setting>
+    <setting id="previewUrl">https://image.tmdb.org/t/p/w780</setting>
+</settings>

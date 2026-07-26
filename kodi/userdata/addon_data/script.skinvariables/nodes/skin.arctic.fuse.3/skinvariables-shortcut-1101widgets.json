@@ -1,0 +1,27 @@
+[
+    {
+        "label": "",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "submenu": [],
+        "widgets": [],
+        "guid": "guid-10079693"
+    },
+    {
+        "label": "Shows",
+        "path": "library://video/tvshows/titles.xml/",
+        "icon": "special://skin/extras/icons/tv.png",
+        "target": "videos",
+        "guid": "guid-7ab3d4b5",
+        "widget_style": "Poster"
+    },
+    {
+        "label": "Movies",
+        "path": "library://video/movies/titles.xml/",
+        "icon": "special://skin/extras/icons/film.png",
+        "target": "videos",
+        "guid": "guid-97765add",
+        "widget_style": "Poster"
+    }
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<buttonmap>
+    <device name="python-uinput" provider="linux" buttoncount="12" axiscount="2">
+        <configuration />
+        <controller id="game.controller.default">
+            <feature name="a" button="0" />
+            <feature name="b" button="1" />
+            <feature name="back" button="6" />
+            <feature name="down" button="9" />
+            <feature name="left" button="10" />
+            <feature name="right" button="11" />
+            <feature name="start" button="7" />
+            <feature name="up" button="8" />
+            <feature name="x" button="2" />
+            <feature name="y" button="3" />
+        </controller>
+    </device>
+</buttonmap>

@@ -1,0 +1,24 @@
+<settings version="2">
+    <setting id="CurrentLocation">false</setting>
+    <setting id="Location1">Valencia</setting>
+    <setting id="Location2" default="true" />
+    <setting id="Location3" default="true" />
+    <setting id="Location4" default="true" />
+    <setting id="Location5" default="true" />
+    <setting id="Location1ID">1955</setting>
+    <setting id="Location2ID" default="true" />
+    <setting id="Location3ID" default="true" />
+    <setting id="Location4ID" default="true" />
+    <setting id="Location5ID" default="true" />
+    <setting id="Language" default="true">0</setting>
+    <setting id="Weekend" default="true">0</setting>
+    <setting id="TimeZone" default="true">0</setting>
+    <setting id="PresUnit" default="true">0</setting>
+    <setting id="PrecipUnit" default="true">0</setting>
+    <setting id="UseProviderIcons" default="true">false</setting>
+    <setting id="label9" default="true" />
+    <setting id="label1" default="true" />
+    <setting id="label3" default="true" />
+    <setting id="label5" default="true" />
+    <setting id="label7" default="true" />
+</settings>

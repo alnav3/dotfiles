@@ -1,0 +1,18 @@
+{
+    "Servers": [
+        {
+            "AccessToken": "bde312c8da524da3b850b90908596af8",
+            "DateLastAccessed": "2026-07-26T18:58:35Z",
+            "Id": "5f294e23b5f64d75bc05729ae4caffc6",
+            "Name": "node-0",
+            "UserId": "76f307839bd0448c885848dd4e97824d",
+            "Users": [
+                {
+                    "Id": "76f307839bd0448c885848dd4e97824d",
+                    "IsSignedInOffline": true
+                }
+            ],
+            "address": "http://tv.home"
+        }
+    ]
+}

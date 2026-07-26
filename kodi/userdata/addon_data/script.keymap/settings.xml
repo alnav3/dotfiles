@@ -1,0 +1,6 @@
+<settings version="2">
+    <setting id="longpress" default="true">false</setting>
+    <setting id="enable_multifile" default="true">false</setting>
+    <setting id="keymap_editor_filename" default="true">gen</setting>
+    <setting id="first_run">false</setting>
+</settings>
