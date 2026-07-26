@@ -1,0 +1,45 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>tv shows</name>
+            <path pathversion="1">/home/alnav/videos/tv shows/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>movies</name>
+            <path pathversion="1">/home/alnav/videos/movies/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+        <source>
+            <name>jellyfin</name>
+            <path pathversion="1">https://kodi.jellyfin.org/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>repository.bingie</name>
+            <path pathversion="1">https://matke-84.github.io/repository.bingie/repository.bingie/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>repository.jurialmunkey</name>
+            <path pathversion="1">https://jurialmunkey.github.io/repository.jurialmunkey/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </files>
+    <games>
+        <default pathversion="1"></default>
+    </games>
+</sources>

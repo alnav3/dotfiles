@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<favourites>
+    <favourite name="Switch to Steam Gaming Mode">System.Exec(/home/alnav/.local/bin/kodi-session-select)</favourite>
+</favourites>

@@ -1,0 +1,8 @@
+<keymap>
+  <FullscreenVideo>
+    <gamepad>
+      <up>noop</up>
+      <down>noop</down>
+    </gamepad>
+  </FullscreenVideo>
+</keymap>
