@@ -1,4 +1,17 @@
 <keymap>
+  <global>
+    <keyboard>
+      <!-- F2 / F3 on the Type Cover adjust screen brightness. -->
+      <f2>System.Exec(/run/current-system/sw/bin/kodi-brightness up)</f2>
+      <f3>System.Exec(/run/current-system/sw/bin/kodi-brightness down)</f3>
+      <!-- Long-press of the SP8 hardware volume rocker (Linux
+           keycodes 115=KEY_VOLUMEUP, 114=KEY_VOLUMEDOWN) also adjusts
+           screen brightness. Short press is left to the kodi default
+           (audio volume). -->
+      <key id="115" mod="longpress">System.Exec(/run/current-system/sw/bin/kodi-brightness up)</key>
+      <key id="114" mod="longpress">System.Exec(/run/current-system/sw/bin/kodi-brightness down)</key>
+    </keyboard>
+  </global>
   <FullscreenVideo>
     <gamepad>
       <up>noop</up>
