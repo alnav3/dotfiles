@@ -364,6 +364,10 @@
     <setting id="input.rumblenotify" default="true">false</setting>
     <setting id="input.controllerpoweroff" default="true">false</setting>
     <setting id="input.libinputkeyboardlayout" default="true">us</setting>
+    <!-- 0 = basic touch (mouse emulation only), 1 = advanced touch
+         (swipe, pinch, long-press = context menu, two-finger gestures).
+         Surface Pro 8 tablet needs this set to 1. -->
+    <setting id="input.touchmode" default="true">1</setting>
     <setting id="network.usehttpproxy" default="true">false</setting>
     <setting id="network.httpproxytype" default="true">0</setting>
     <setting id="network.httpproxyserver">10.71.71.85</setting>
